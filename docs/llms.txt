@@ -1,0 +1,14 @@
+# CiteReady — AI Search (llms.txt / GEO), Crawler & Schema.org Technical SEO Kit
+
+> Make your startup docs, landing pages, and SaaS site effortless for ChatGPT Search, Perplexity, Claude, and Google AI Overviews to crawl and cite.
+
+- Interactive Docs & Landing Page: https://zcoldwater.github.io/citeready-cli/
+- Free Live Web Diagnostic: https://citeready-checker.appwrite.network
+- Open-Source Lite CLI (MIT, zero dependencies): https://github.com/zColdWater/citeready-cli
+- CiteReady Pro ($19 Solo / $39 Agency — Sitemap-to-llms.txt compiler, Schema.org JSON-LD generator, local GEO workbench, CI gate & white-label client PDF/HTML reports): https://agentarenastudi.gumroad.com/l/omniforge-citeready
+
+## Quick CLI Usage
+
+```bash
+npx github:zColdWater/citeready-cli check https://stripe.com
+```

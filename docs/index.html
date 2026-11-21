@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CiteReady — AI Search (llms.txt / GEO), Crawler &amp; Schema.org Technical SEO Kit</title>
+  <meta name="description" content="Audit whether ChatGPT Search (OAI-SearchBot), Perplexity, Claude, and Google AI Overviews can crawl and cite your site. Auto-compile llms.txt &amp; llms-full.txt from your sitemap and generate Schema.org JSON-LD with CiteReady Pro ($19 one-time)." />
+  <meta name="keywords" content="llms.txt generator, GEO audit tool, AI search optimization, ChatGPT Search SEO, Perplexity SEO checker, OAI-SearchBot robots.txt, Schema.org JSON-LD validator, technical SEO CLI" />
+  <link rel="canonical" href="https://zcoldwater.github.io/citeready-cli/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="CiteReady — Make Your Docs &amp; SaaS Site Effortless for AI Search to Cite" />
+  <meta property="og:description" content="Instant AI crawler robots.txt check, /llms.txt validator, Schema.org JSON-LD inspector &amp; full-sitemap llms.txt compiler." />
+  <meta property="og:url" content="https://zcoldwater.github.io/citeready-cli/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CiteReady — AI Search (GEO), llms.txt &amp; Schema.org SEO Kit" />
+  <meta name="twitter:description" content="Verify AI search bot access, auto-compile /llms.txt from your sitemap &amp; ship valid JSON-LD." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "CiteReady Pro — AI Search (llms.txt / GEO), Crawler & Schema.org Technical SEO Kit",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Windows, Linux (Node.js 20+)",
+        "url": "https://zcoldwater.github.io/citeready-cli/",
+        "downloadUrl": "https://agentarenastudi.gumroad.com/l/omniforge-citeready",
+        "description": "Zero-dependency local Node.js CLI, interactive GEO workbench, automatic sitemap-to-llms.txt compiler, Schema.org JSON-LD generator, and CI gate.",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "CiteReady Pro — Solo Founder Edition",
+            "price": "19.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://agentarenastudi.gumroad.com/l/omniforge-citeready"
+          },
+          {
+            "@type": "Offer",
+            "name": "CiteReady Pro — Agency Edition",
+            "price": "39.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://agentarenastudi.gumroad.com/l/omniforge-citeready"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is /llms.txt and why does AI Search care?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The /llms.txt standard provides AI answer engines and coding assistants with a clean, low-noise Markdown map of your product documentation, pricing, and core pages without wading through heavy JavaScript bundles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which AI search crawlers does CiteReady audit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CiteReady checks robots.txt rules and live HTTP reachability for OAI-SearchBot (ChatGPT Search), GPTBot, PerplexityBot, ClaudeBot, Google-Extended, and Applebot-Extended."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #090d18;
+      --panel: #11182b;
+      --panel-2: #17213a;
+      --border: #26365c;
+      --text: #f3f6fc;
+      --muted: #9eb1d4;
+      --accent: #a78bfa;
+      --accent-2: #38bdf8;
+      --cta: #10b981;
+      --cta-hover: #059669;
+      --danger: #f43f5e;
+      --warn: #f59e0b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+      background: radial-gradient(circle at 50% 0%, #1e1b4b 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent-2); text-decoration: none; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 22px; }
+    header {
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(9, 13, 24, 0.88);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 66px; gap: 14px; }
+    .brand { font-weight: 800; font-size: 1.15rem; color: #fff; display: flex; align-items: center; gap: 10px; }
+    .logo-badge {
+      width: 28px; height: 28px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #080d1a; font-weight: 900; display: inline-flex; align-items: center; justify-content: center;
+    }
+    .nav-links { display: flex; align-items: center; gap: 18px; font-size: 0.93rem; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 11px 20px; border-radius: 10px; font-weight: 700; font-size: 0.95rem;
+      cursor: pointer; border: none; transition: transform 0.12s ease, background 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-cta { background: var(--cta); color: #041b13; }
+    .btn-cta:hover { background: var(--cta-hover); color: #fff; }
+    .btn-outline { background: rgba(255,255,255,0.05); color: var(--text); border: 1px solid var(--border); }
+    .hero { padding: 66px 0 42px; text-align: center; }
+    .eyebrow {
+      display: inline-block; padding: 5px 14px; border-radius: 999px; font-size: 0.82rem; font-weight: 600;
+      background: rgba(167, 139, 250, 0.14); border: 1px solid rgba(167, 139, 250, 0.36); color: #c4b5fd; margin-bottom: 18px;
+    }
+    h1 { font-size: clamp(2.05rem, 4.5vw, 3.25rem); line-height: 1.12; letter-spacing: -0.03em; margin: 0 auto 18px; max-width: 880px; }
+    .sub { font-size: 1.1rem; color: var(--muted); max-width: 740px; margin: 0 auto 28px; }
+    .scanner-box {
+      background: var(--panel); border: 1px solid var(--border); border-radius: 16px;
+      padding: 22px; max-width: 800px; margin: 0 auto 24px;
+      box-shadow: 0 22px 50px rgba(0,0,0,0.44); text-align: left;
+    }
+    .scan-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .scan-input {
+      flex: 1; min-width: 220px; padding: 13px 16px; border-radius: 10px;
+      border: 1px solid var(--border); background: #090f1f; color: #fff; font-size: 1rem;
+    }
+    .presets { margin-top: 10px; font-size: 0.84rem; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+    .pill { background: var(--panel-2); border: 1px solid var(--border); color: var(--text); padding: 3px 10px; border-radius: 999px; cursor: pointer; font-size: 0.8rem; }
+    .pill:hover { border-color: var(--accent-2); }
+    #geoResult { margin-top: 18px; display: none; }
+    .res-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)); gap: 10px; margin-top: 10px; }
+    .res-card { background: #0b1326; border: 1px solid var(--border); border-radius: 10px; padding: 11px 13px; font-size: 0.88rem; }
+    .ok { color: var(--cta); font-weight: 700; }
+    .bad { color: var(--danger); font-weight: 700; }
+    .unk { color: var(--warn); font-weight: 700; }
+    .upsell-strip {
+      margin-top: 16px; padding: 14px 16px; border-radius: 12px;
+      background: linear-gradient(90deg, rgba(167,139,250,0.15), rgba(16,185,129,0.15));
+      border: 1px solid rgba(16,185,129,0.42);
+      display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+    }
+    .cli-bar {
+      display: inline-flex; align-items: center; gap: 12px; background: #070c18;
+      border: 1px solid var(--border); padding: 10px 18px; border-radius: 10px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.9rem; color: #cbd5e1;
+    }
+    section { padding: 50px 0; }
+    h2 { font-size: 1.85rem; letter-spacing: -0.02em; margin: 0 0 12px; text-align: center; }
+    .sec-sub { text-align: center; color: var(--muted); max-width: 670px; margin: 0 auto 34px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 24px; }
+    .card h3 { margin-top: 0; font-size: 1.14rem; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 22px; align-items: stretch; }
+    .price-card { background: var(--panel); border: 1px solid var(--border); border-radius: 16px; padding: 28px; display: flex; flex-direction: column; justify-content: space-between; }
+    .price-card.featured { border: 2px solid var(--cta); background: linear-gradient(180deg, #161f3d 0%, var(--panel) 100%); position: relative; }
+    .badge-top { position: absolute; top: -12px; right: 20px; background: var(--cta); color: #041b13; font-size: 0.75rem; font-weight: 800; padding: 3px 10px; border-radius: 999px; text-transform: uppercase; }
+    .price-num { font-size: 2.5rem; font-weight: 800; margin: 8px 0 4px; }
+    .price-note { font-size: 0.85rem; color: var(--muted); margin-bottom: 18px; }
+    ul.feat { list-style: none; padding: 0; margin: 0 0 24px; }
+    ul.feat li { padding: 6px 0; font-size: 0.93rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    footer { border-top: 1px solid rgba(255,255,255,0.08); padding: 34px 0 50px; color: var(--muted); font-size: 0.88rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#">
+        <span class="logo-badge">C</span>
+        <span>CiteReady</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#features">AI Search &amp; GEO</a>
+        <a href="#pricing">Pro Compiler ($19)</a>
+        <a href="https://github.com/zColdWater/citeready-cli" target="_blank" rel="noopener">GitHub CLI</a>
+        <a class="btn btn-cta" href="https://agentarenastudi.gumroad.com/l/omniforge-citeready" target="_blank" rel="noopener">Get CiteReady Pro →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">OAI-SearchBot · PerplexityBot · ClaudeBot · /llms.txt &amp; Schema.org JSON-LD</span>
+      <h1>Can ChatGPT Search, Perplexity &amp; Claude Actually Cite Your Site?</h1>
+      <p class="sub">
+        Audit AI crawler <code>robots.txt</code> rules, <code>/llms.txt</code> compliance, and Schema.org JSON-LD graphs in seconds—then auto-compile spec-ready <code>llms.txt</code> &amp; <code>llms-full.txt</code> straight from your sitemap.
+      </p>
+
+      <div class="scanner-box">
+        <form id="geoForm" class="scan-row">
+          <input id="urlInput" class="scan-input" type="text" placeholder="Enter URL to audit (e.g. https://stripe.com or https://yoursite.com)" maxlength="120" required />
+          <button type="submit" class="btn btn-cta" id="geoBtn">Check AI Visibility Free</button>
+          <a class="btn btn-outline" id="fullGeoLink" href="https://citeready-checker.appwrite.network" target="_blank" rel="noopener">Full GEO Report ↗</a>
+        </form>
+        <div class="presets">
+          <span>Try live examples:</span>
+          <button type="button" class="pill" onclick="runGeo('https://stripe.com')">stripe.com</button>
+          <button type="button" class="pill" onclick="runGeo('https://cloudflare.com')">cloudflare.com</button>
+          <button type="button" class="pill" onclick="runGeo('https://zcoldwater.github.io/brandshield-cli/')">brandshield-cli</button>
+        </div>
+
+        <div id="geoResult">
+          <div id="geoHeader" style="font-weight:700; margin-top:6px;"></div>
+          <div id="geoGrid" class="res-grid"></div>
+          <div id="geoNotes" style="margin-top:10px; font-size:0.85rem; color:var(--muted);"></div>
+          <div class="upsell-strip">
+            <div>
+              <strong>Missing <code>/llms.txt</code> or valid JSON-LD across your docs &amp; pages?</strong>
+              <div style="font-size:0.86rem; color:var(--muted);">Auto-crawl your sitemap to generate <code>llms.txt</code> + <code>llms-full.txt</code>, build Schema.org JSON-LD, run CI gates &amp; export White-Label PDF reports.</div>
+            </div>
+            <a class="btn btn-cta" href="https://agentarenastudi.gumroad.com/l/omniforge-citeready" target="_blank" rel="noopener">Get CiteReady Pro ($19) →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cli-bar">
+        <span>$ npx github:zColdWater/citeready-cli check https://stripe.com</span>
+      </div>
+    </section>
+
+    <section id="features">
+      <h2>Ship Every Signal Modern Answer Engines Look For</h2>
+      <p class="sec-sub">Buyers increasingly ask ChatGPT, Perplexity, and Claude which SaaS tool or agency to hire. Invisible sites lose high-intent pipeline.</p>
+      <div class="grid-3">
+        <div class="card">
+          <h3>1. AI Search Crawler Gatekeeper Check</h3>
+          <p style="color:var(--muted);">Detects silent WAF or <code>robots.txt</code> rules blocking <code>OAI-SearchBot</code>, <code>PerplexityBot</code>, <code>ClaudeBot</code>, and <code>Google-Extended</code> while letting you separate training bots from search citation bots.</p>
+        </div>
+        <div class="card">
+          <h3>2. Sitemap → llms.txt Auto-Compiler</h3>
+          <p style="color:var(--muted);">CiteReady Pro crawls your live sitemap or docs folder, strips boilerplate nav clutter, estimates token budgets, and writes clean <code>llms.txt</code> + <code>llms-full.txt</code> ready to deploy.</p>
+        </div>
+        <div class="card">
+          <h3>3. Schema.org JSON-LD &amp; CI Gate</h3>
+          <p style="color:var(--muted);">Generates validated <code>SoftwareApplication</code>, <code>Product</code>, <code>Organization</code>, and <code>FAQPage</code> JSON-LD blocks—plus a GitHub Action that blocks PRs breaking structured data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h2>Own the Complete GEO &amp; Technical SEO Toolkit Forever</h2>
+      <p class="sec-sub">Zero monthly subscriptions. Runs 100% locally on Node.js 20+ with an interactive local workbench (<code>citeready serve</code>) and GEO Playbook.</p>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div>
+            <h3>CiteReady Lite CLI</h3>
+            <div class="price-num">$0</div>
+            <div class="price-note">Open-source MIT · Single-URL diagnostic</div>
+            <ul class="feat">
+              <li>✔ 1 URL per run</li>
+              <li>✔ 6 AI crawler <code>robots.txt</code> checks</li>
+              <li>✔ <code>/llms.txt</code> &amp; JSON-LD presence check</li>
+              <li>✔ Canonical &amp; sitemap check</li>
+              <li style="color:var(--muted);">— No automatic sitemap → <code>llms.txt</code> compiler</li>
+              <li style="color:var(--muted);">— No JSON-LD generator or CI gate</li>
+            </ul>
+          </div>
+          <a class="btn btn-outline" href="https://citeready-checker.appwrite.network" target="_blank" rel="noopener">Open Free Web Diagnostic ↗</a>
+        </div>
+
+        <div class="price-card featured">
+          <span class="badge-top">Most Popular for SaaS &amp; Docs</span>
+          <div>
+            <h3>CiteReady Pro — Solo</h3>
+            <div class="price-num">$19</div>
+            <div class="price-note">One-time payment · Full offline Node 20+ source ZIP</div>
+            <ul class="feat">
+              <li>✔ <strong>Automatic Sitemap Crawler &amp; <code>llms.txt</code> + <code>llms-full.txt</code> Compiler</strong></li>
+              <li>✔ <strong>Schema.org JSON-LD Generator</strong> (SaaS, Product, Docs, FAQ)</li>
+              <li>✔ <strong>Interactive Local GEO Workbench</strong> (<code>citeready serve</code>)</li>
+              <li>✔ <strong>Custom <code>robots.txt</code> Policy Builder</strong> (search vs. training bots)</li>
+              <li>✔ <strong>GitHub Actions CI Regression Gate</strong> + GEO Playbook</li>
+              <li>✔ Zero API keys, zero recurring fees</li>
+            </ul>
+          </div>
+          <a class="btn btn-cta" href="https://agentarenastudi.gumroad.com/l/omniforge-citeready" target="_blank" rel="noopener">Buy Solo Edition ($19) →</a>
+        </div>
+
+        <div class="price-card">
+          <div>
+            <h3>CiteReady Pro — Agency</h3>
+            <div class="price-num">$39</div>
+            <div class="price-note">One-time payment · SEO agencies, dev shops &amp; consultants</div>
+            <ul class="feat">
+              <li>✔ Everything in CiteReady Pro Solo</li>
+              <li>✔ <strong>White-Label HTML &amp; PDF Client GEO/SEO Reports</strong></li>
+              <li>✔ Custom agency logo &amp; client branding (<code>--brand</code> / <code>--client</code>)</li>
+              <li>✔ Commercial license for up to 10 seats &amp; unlimited client domains</li>
+              <li>✔ Multi-domain batch audit &amp; deliverable packager</li>
+              <li>✔ Lifetime v1.x updates included</li>
+            </ul>
+          </div>
+          <a class="btn btn-outline" style="border-color:var(--cta); color:var(--cta);" href="https://agentarenastudi.gumroad.com/l/omniforge-citeready" target="_blank" rel="noopener">Buy Agency Edition ($39) →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>
+        <a href="https://citeready-checker.appwrite.network">Free Live Web Diagnostic</a> ·
+        <a href="https://github.com/zColdWater/citeready-cli">Open-Source GitHub CLI</a> ·
+        <a href="https://agentarenastudi.gumroad.com/l/omniforge-citeready">CiteReady Pro on Gumroad</a> ·
+        <a href="./llms.txt">llms.txt</a>
+      </p>
+      <p>© 2026 OmniForge Studio · MIT Open-Source Lite CLI</p>
+    </div>
+  </footer>
+
+  <script>
+    function runGeo(u) {
+      document.getElementById("urlInput").value = u;
+      document.getElementById("geoForm").requestSubmit();
+    }
+
+    document.getElementById("geoForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      let raw = document.getElementById("urlInput").value.trim();
+      if (!raw) return;
+      if (!/^https?:\/\//i.test(raw)) raw = "https://" + raw;
+
+      const btn = document.getElementById("geoBtn");
+      const box = document.getElementById("geoResult");
+      const hdr = document.getElementById("geoHeader");
+      const grid = document.getElementById("geoGrid");
+      const notes = document.getElementById("geoNotes");
+      const fullLink = document.getElementById("fullGeoLink");
+      fullLink.href = "https://citeready-checker.appwrite.network/?url=" + encodeURIComponent(raw);
+
+      btn.disabled = true;
+      btn.textContent = "Auditing AI Signals...";
+      box.style.display = "block";
+      hdr.textContent = "Live AI Search & GEO Visibility Audit: " + raw;
+      grid.innerHTML = "";
+      notes.textContent = "";
+
+      try {
+        const r = await fetch("https://citeready-checker.appwrite.network/api/free-geo?url=" + encodeURIComponent(raw));
+        if (r.ok) {
+          const d = await r.json();
+          const sc = (d.assessment && typeof d.assessment.score === "number") ? d.assessment.score : 0;
+          const gr = (d.assessment && d.assessment.grade) ? d.assessment.grade : "-";
+          const crawlers = (d.robotsTxt && Array.isArray(d.robotsTxt.crawlers)) ? d.robotsTxt.crawlers : [];
+          const allowed = crawlers.filter(c => c.allowed).length;
+          const jldCount = (d.html && d.html.jsonLd && typeof d.html.jsonLd.count === "number") ? d.html.jsonLd.count : 0;
+
+          const cards = [
+            { label: "GEO Visibility Score", val: sc + "/100 (Grade " + gr + ")", cls: sc >= 80 ? "ok" : (sc >= 55 ? "unk" : "bad") },
+            { label: "AI Bots Allowed", val: crawlers.length ? (allowed + "/" + crawlers.length + " Allowed") : "Checked", cls: (!crawlers.length || allowed === crawlers.length) ? "ok" : "bad" },
+            { label: "/llms.txt Spec", val: (d.llmsTxt && d.llmsTxt.present) ? "Present ✔" : "Missing ✖", cls: (d.llmsTxt && d.llmsTxt.present) ? "ok" : "unk" },
+            { label: "Schema.org JSON-LD", val: jldCount > 0 ? (jldCount + " Block(s) ✔") : "Missing ✖", cls: jldCount > 0 ? "ok" : "unk" }
+          ];
+
+          grid.innerHTML = cards.map(c =>
+            '<div class="res-card"><div style="color:var(--muted);font-size:0.78rem;">' + c.label + '</div><div class="' + c.cls + '">' + c.val + '</div></div>'
+          ).join("");
+
+          const warns = (d.assessment && Array.isArray(d.assessment.warnings)) ? d.assessment.warnings : [];
+          notes.textContent = warns.length ? ("Top recommendation: " + warns[0]) : "All core AI citation signals verified.";
+          btn.disabled = false;
+          btn.textContent = "Check AI Visibility Free";
+          return;
+        }
+      } catch {}
+
+      grid.innerHTML =
+        '<div class="res-card"><div style="color:var(--muted);font-size:0.78rem;">Deep Cloud Scanner</div><div class="ok"><a href="' + fullLink.href + '" target="_blank" rel="noopener">Open Full Report ↗</a></div></div>' +
+        '<div class="res-card"><div style="color:var(--muted);font-size:0.78rem;">Terminal CLI</div><div class="ok">npx github:zColdWater/citeready-cli</div></div>';
+      notes.textContent = "Click 'Full GEO Report ↗' or run the zero-install CLI above to inspect cross-origin headers, robots.txt, /llms.txt, and JSON-LD.";
+      btn.disabled = false;
+      btn.textContent = "Check AI Visibility Free";
+    });
+  </script>
+</body>
+</html>

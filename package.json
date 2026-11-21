@@ -1,0 +1,41 @@
+{
+  "name": "citeready-cli",
+  "version": "1.0.0",
+  "description": "Zero-dependency AI Search (GEO), llms.txt & Schema.org technical SEO auditor — verify OAI-SearchBot, PerplexityBot, ClaudeBot & Google-Extended access, llms.txt compliance, and JSON-LD validity in seconds.",
+  "type": "module",
+  "bin": {
+    "citeready": "./bin/citeready.mjs"
+  },
+  "scripts": {
+    "start": "node ./bin/citeready.mjs",
+    "test": "node ./bin/citeready.mjs check https://stripe.com"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "seo",
+    "geo",
+    "llms-txt",
+    "ai-search",
+    "schema-org",
+    "json-ld",
+    "robots-txt",
+    "chatgpt-search",
+    "perplexity",
+    "technical-seo",
+    "cli",
+    "developer-tools",
+    "saas"
+  ],
+  "homepage": "https://zcoldwater.github.io/citeready-cli/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zColdWater/citeready-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zColdWater/citeready-cli/issues"
+  },
+  "author": "OmniForge Studio",
+  "license": "MIT"
+}
