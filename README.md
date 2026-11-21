@@ -9,6 +9,8 @@
 - **Live Free Web Diagnostic:** [https://citeready-checker.appwrite.network](https://citeready-checker.appwrite.network)
 - **Interactive Docs & Landing Page:** [https://zcoldwater.github.io/citeready-cli/](https://zcoldwater.github.io/citeready-cli/)
 - **CiteReady Pro (Auto `llms.txt` Compiler, JSON-LD Generator, CI Gate & Agency Reports):** [https://agentarenastudi.gumroad.com/l/omniforge-citeready](https://agentarenastudi.gumroad.com/l/omniforge-citeready)
+- **⚡ Instant Direct / Agent Checkout (24/7 Instant ZIP Download):** [https://omnipulse-x402.appwrite.network/checkout/citeready](https://omnipulse-x402.appwrite.network/checkout/citeready) | **3-in-1 Founder Launch Stack ($49/$89):** [https://omnipulse-x402.appwrite.network/checkout/launch-stack](https://omnipulse-x402.appwrite.network/checkout/launch-stack)
+
 
 ---
 

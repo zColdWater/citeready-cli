@@ -12,3 +12,9 @@
 ```bash
 npx github:zColdWater/citeready-cli check https://stripe.com
 ```
+
+## Instant Direct & Autonomous Agent Checkout
+
+- Browser Instant Checkout ($19 Solo / $39 Agency): https://omnipulse-x402.appwrite.network/checkout/citeready
+- 3-in-1 Founder Launch Stack Instant Checkout ($49 Solo / $89 Agency): https://omnipulse-x402.appwrite.network/checkout/launch-stack
+- Programmatic HTTP 402 ZIP Download Endpoint: https://omnipulse-x402.appwrite.network/v1/download/citeready
