@@ -15,7 +15,7 @@
 - **Interactive Docs & Landing Page:** [https://zcoldwater.github.io/citeready-cli/](https://zcoldwater.github.io/citeready-cli/)
 - **2026 GEO Tool Comparison ($19 One-Time vs. $99+/mo Trackers):** [https://zcoldwater.github.io/citeready-cli/compare.html](https://zcoldwater.github.io/citeready-cli/compare.html)
 - **GitHub Action CI/CD Guide:** [https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html](https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html)
-- **CiteReady Pro (Auto `llms.txt` Compiler, JSON-LD Generator, CI Gate & Agency Reports):** [https://agentarenastudi.gumroad.com/l/omniforge-citeready](https://agentarenastudi.gumroad.com/l/omniforge-citeready)
+- **CiteReady Pro (Auto `llms.txt` Compiler, JSON-LD Generator, CI Gate & Agency Reports):** [https://omnipulse-x402.appwrite.network/go/gumroad/citeready](https://omnipulse-x402.appwrite.network/go/gumroad/citeready)
 - **⚡ Instant Direct / Agent Checkout (24/7 Instant ZIP Download):** [https://omnipulse-x402.appwrite.network/checkout/citeready](https://omnipulse-x402.appwrite.network/checkout/citeready) | **3-in-1 Founder Launch Stack ($49/$89):** [https://omnipulse-x402.appwrite.network/checkout/launch-stack](https://omnipulse-x402.appwrite.network/checkout/launch-stack)
 
 ---
@@ -99,7 +99,7 @@ Outputs: `score`, `grade`, `llms-txt-present`, `jsonld-count`, and `json`.
 
 ## Free Lite CLI vs. CiteReady Pro
 
-`citeready-cli` is our free MIT-licensed **1-URL quick diagnostic & GitHub Action**. To automatically compile `/llms.txt` + `/llms-full.txt` from your live sitemap (1,000+ pages), generate validated Schema.org JSON-LD, and export branded client GEO audits, upgrade to **[CiteReady Pro](https://agentarenastudi.gumroad.com/l/omniforge-citeready)** (see [full comparison vs. $99+/mo GEO SaaS trackers](https://zcoldwater.github.io/citeready-cli/compare.html)):
+`citeready-cli` is our free MIT-licensed **1-URL quick diagnostic & GitHub Action**. To automatically compile `/llms.txt` + `/llms-full.txt` from your live sitemap (1,000+ pages), generate validated Schema.org JSON-LD, and export branded client GEO audits, upgrade to **[CiteReady Pro](https://omnipulse-x402.appwrite.network/go/gumroad/citeready)** (see [full comparison vs. $99+/mo GEO SaaS trackers](https://zcoldwater.github.io/citeready-cli/compare.html)):
 
 | Capability | CiteReady Lite (Free OSS) | CiteReady Pro Solo ($19) | CiteReady Pro Agency ($39) |
 | :--- | :---: | :---: | :---: |
@@ -109,7 +109,7 @@ Outputs: `score`, `grade`, `llms-txt-present`, `jsonld-count`, and `json`.
 | **GitHub Actions CI Regression Gate** | Single-URL `@v1` Action | **Multi-URL full-sitemap CI suite** | **Included** |
 | **White-Label Client HTML/PDF Reports** | — | Solo / own projects | **10-seat agency license + `--brand` / `--client`** |
 
-👉 **[Download CiteReady Pro ($19 Solo / $39 Agency — One-Time Payment) on Gumroad](https://agentarenastudi.gumroad.com/l/omniforge-citeready)** · **[⚡ Instant Direct / Agent Checkout](https://omnipulse-x402.appwrite.network/checkout/citeready)**
+👉 **[Download CiteReady Pro ($19 Solo / $39 Agency — One-Time Payment) on Gumroad](https://omnipulse-x402.appwrite.network/go/gumroad/citeready)** · **[⚡ Instant Direct / Agent Checkout](https://omnipulse-x402.appwrite.network/checkout/citeready)**
 
 ## License
 

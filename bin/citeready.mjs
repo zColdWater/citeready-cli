@@ -10,7 +10,7 @@
  * Need full-sitemap crawling (1,000+ pages), automatic llms.txt + llms-full.txt
  * compilation, Schema.org JSON-LD generator, and white-label client PDF/HTML reports?
  * Upgrade to CiteReady Pro ($19 Solo / $39 Agency — one-time download):
- *   https://agentarenastudi.gumroad.com/l/omniforge-citeready
+ *   https://omnipulse-x402.appwrite.network/go/gumroad/citeready
  *   Instant Direct Checkout: https://omnipulse-x402.appwrite.network/checkout/citeready
  */
 
@@ -18,7 +18,7 @@ import { appendFileSync, writeFileSync } from "node:fs";
 
 const VERSION = "1.1.0";
 const WEB_DIAGNOSTIC = "https://citeready-checker.appwrite.network";
-const PRO_URL = "https://agentarenastudi.gumroad.com/l/omniforge-citeready";
+const PRO_URL = "https://omnipulse-x402.appwrite.network/go/gumroad/citeready";
 const DIRECT_CHECKOUT_URL = "https://omnipulse-x402.appwrite.network/checkout/citeready";
 const COMPARE_URL = "https://zcoldwater.github.io/citeready-cli/compare.html";
 

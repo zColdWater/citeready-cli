@@ -7,7 +7,7 @@
 - llms.txt & JSON-LD GitHub Action CI Guide: https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html
 - Free Live Web Diagnostic: https://citeready-checker.appwrite.network
 - Open-Source Lite CLI & Composite GitHub Action (`uses: zColdWater/citeready-cli@v1`, MIT, zero dependencies): https://github.com/zColdWater/citeready-cli
-- CiteReady Pro ($19 Solo / $39 Agency — Sitemap-to-llms.txt compiler, Schema.org JSON-LD generator, local GEO workbench, CI gate & white-label client PDF/HTML reports): https://agentarenastudi.gumroad.com/l/omniforge-citeready
+- CiteReady Pro ($19 Solo / $39 Agency — Sitemap-to-llms.txt compiler, Schema.org JSON-LD generator, local GEO workbench, CI gate & white-label client PDF/HTML reports): https://omnipulse-x402.appwrite.network/go/gumroad/citeready
 
 ## Quick CLI & GitHub Action Usage
 
