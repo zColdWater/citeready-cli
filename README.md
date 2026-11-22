@@ -12,6 +12,7 @@
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-success.svg)](./package.json)
 
 - **Live Free Web Diagnostic:** [https://citeready-checker.appwrite.network](https://citeready-checker.appwrite.network)
+- **✨ Free 2-Second `/llms.txt` Starter Generator:** [https://citeready-checker.appwrite.network/generator](https://citeready-checker.appwrite.network/generator)
 - **Interactive Docs & Landing Page:** [https://zcoldwater.github.io/citeready-cli/](https://zcoldwater.github.io/citeready-cli/)
 - **2026 GEO Tool Comparison ($19 One-Time vs. $99+/mo Trackers):** [https://zcoldwater.github.io/citeready-cli/compare.html](https://zcoldwater.github.io/citeready-cli/compare.html)
 - **GitHub Action CI/CD Guide:** [https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html](https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html)
