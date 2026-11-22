@@ -12,9 +12,9 @@
 
 - **Flagship v5.0 Online Web App (Zero Signup, 2-Second Audit):** [https://citeready-checker.appwrite.network](https://citeready-checker.appwrite.network)
 - **Free Online `/llms.txt` Compiler & Sitemap Gap Scanner:** [https://citeready-checker.appwrite.network/generator](https://citeready-checker.appwrite.network/generator)
-- **Docs & Honest Comparisons ($12 Once vs. €89+/mo Trackers):** [https://zcoldwater.github.io/citeready-cli/](https://zcoldwater.github.io/citeready-cli/) · [Peec AI vs. CiteReady](https://zcoldwater.github.io/launch-audit-reports/compare/peec-ai-vs-citeready.html) · [Compare Guide](https://zcoldwater.github.io/citeready-cli/compare.html) · [GitHub Action CI Guide](https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html)
-- **CiteReady Web Pro ($12 One-Time — Instant In-Browser Unlock, 14-Day Refund):** [Gumroad Checkout](https://omnipulse-x402.appwrite.network/go/gumroad/citeready) · [Direct 7-Chain Checkout](https://omnipulse-x402.appwrite.network/checkout/citeready)
-- **4-in-1 OmniForge Web Pro Suite ($29 One-Time — Unlocks VibeShield + BrandShield + CiteReady + InboxShield, Save $19):** [Gumroad Bundle](https://omnipulse-x402.appwrite.network/go/gumroad/launch-stack) · [Direct Checkout](https://omnipulse-x402.appwrite.network/checkout/launch-stack)
+- **Docs & Honest Comparisons ($2 (was $12) vs. €89+/mo Trackers):** [https://zcoldwater.github.io/citeready-cli/](https://zcoldwater.github.io/citeready-cli/) · [Peec AI vs. CiteReady](https://zcoldwater.github.io/launch-audit-reports/compare/peec-ai-vs-citeready.html) · [Compare Guide](https://zcoldwater.github.io/citeready-cli/compare.html) · [GitHub Action CI Guide](https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html)
+- **CiteReady Web Pro ($2 Launch Special (was $12) — Instant In-Browser Unlock, 14-Day Refund):** [Gumroad Checkout](https://omnipulse-x402.appwrite.network/go/gumroad/citeready) · [Direct 7-Chain Checkout](https://omnipulse-x402.appwrite.network/checkout/citeready)
+- **OmniForge Complete Suite ($5 Launch Special, was $29 — Unlocks VibeShield + InboxShield + CiteReady; BrandShield 100% Free):** [Gumroad Bundle](https://omnipulse-x402.appwrite.network/go/gumroad/launch-stack) · [Direct Checkout](https://omnipulse-x402.appwrite.network/checkout/launch-stack)
 
 ---
 
@@ -26,22 +26,22 @@
 
 ---
 
-## Free Online Web App vs. CiteReady Web Pro (`$12` One-Time)
+## Free Online Web App vs. CiteReady Web Pro (`$2` Launch Special (was ~~`$12`~~))
 
 Zero software installs, zero monthly subscriptions. Unlock Web Pro right inside [citeready-checker.appwrite.network](https://citeready-checker.appwrite.network) with one-time payment (Gumroad or 7-chain USDT/USDC) and a **14-day refund guarantee**:
 
-| Capability | Free Online Scanner & OSS CLI | CiteReady Web Pro ($12 Once) | 4-in-1 Web Pro Suite ($29 Once) |
+| Capability | Free Online Scanner & OSS CLI | CiteReady Web Pro ($2 (was $12)) | Complete Suite ($5, was $29) |
 | :--- | :---: | :---: | :---: |
 | **10 Global & China AI Crawler Matrix + `X-Robots-Tag`** | Unlimited 1-by-1 | **Unlimited + exact `robots.txt` patch** | **All 4 v5.0 Web Apps Included** |
-| **Schema.org Entity Graph Depth Score** | Live scan + score | **Unmasked `@graph` JSON-LD code** | **CiteReady + VibeShield ($9)** |
-| **`/llms.txt` Online Compiler & Sitemap Gap Check** | Unlimited starter | **Full root `/llms.txt` + VS-Page blueprint** | **+ BrandShield Naming ($12)** |
-| **5-Platform 3-Step Fix Wizard** | Step 1 preview | **Next.js, WordPress, Webflow/Shopify, Cloudflare & Cursor/Lovable** | **+ InboxShield Email ($15)** |
+| **Schema.org Entity Graph Depth Score** | Live scan + score | **Unmasked `@graph` JSON-LD code** | **CiteReady + VibeShield ($2)** |
+| **`/llms.txt` Online Compiler & Sitemap Gap Check** | Unlimited starter | **Full root `/llms.txt` + VS-Page blueprint** | **+ BrandShield v6.2 (100% Free)** |
+| **5-Platform 3-Step Fix Wizard** | Step 1 preview | **Next.js, WordPress, Webflow/Shopify, Cloudflare & Cursor/Lovable** | **+ InboxShield Email ($2)** |
 | **Online Batch Scanner + Excel/CSV Export** | Preview 3 URLs | **Up to 50 URLs / batch + UTF-8 CSV** | **50-item batch CSV on all 4 apps** |
 | **Printable A4 Client GEO PDF Report** | Summary only | **Custom-header A4 PDF (`@media print`)** | **Branded A4 PDF on all 4 apps** |
 
 > **Honest Scope:** CiteReady audits and generates **technical on-site AI crawlability, `robots.txt`, Schema.org entity markup, and `/llms.txt`** on demand — it is not a `$1,000+/yr` daily LLM prompt-polling tracker.
 
-**[Unlock CiteReady Web Pro ($12 Once)](https://omnipulse-x402.appwrite.network/go/gumroad/citeready)** · **[Unlock 4-in-1 Suite ($29 Once — Save $19)](https://omnipulse-x402.appwrite.network/go/gumroad/launch-stack)** · **[Direct Multi-Chain Checkout](https://omnipulse-x402.appwrite.network/checkout/citeready)**
+**[Unlock CiteReady Web Pro ($2 (was $12))](https://omnipulse-x402.appwrite.network/go/gumroad/citeready)** · **[Complete Suite ($5, was $29)](https://omnipulse-x402.appwrite.network/go/gumroad/launch-stack)** · **[Direct Multi-Chain Checkout](https://omnipulse-x402.appwrite.network/checkout/citeready)**
 
 ---
 
