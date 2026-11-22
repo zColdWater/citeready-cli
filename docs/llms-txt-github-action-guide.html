@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>llms.txt GitHub Action &amp; AI Crawler CI Gate — Automate OAI-SearchBot, PerplexityBot &amp; JSON-LD Checks</title>
+  <meta name="description" content="Copy-paste GitHub Actions workflow (uses: zColdWater/citeready-cli@v1) and robots.txt template to verify OAI-SearchBot, PerplexityBot, ClaudeBot, /llms.txt, and Schema.org JSON-LD on every deploy." />
+  <meta name="keywords" content="llms.txt github action, OAI-SearchBot robots.txt, PerplexityBot allow robots.txt, validate Schema.org JSON-LD github actions, how to generate llms.txt from sitemap, GEO CI/CD gate" />
+  <link rel="canonical" href="https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Automate llms.txt, AI Crawler &amp; Schema.org JSON-LD Checks in GitHub Actions" />
+  <meta property="og:description" content="Drop-in composite GitHub Action (zColdWater/citeready-cli@v1) + production robots.txt template for ChatGPT Search, Perplexity &amp; Claude." />
+  <meta property="og:url" content="https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Enforce AI Search (llms.txt, Crawler & JSON-LD) Readiness in GitHub Actions",
+    "description": "Add a 1-step composite GitHub Action to audit OAI-SearchBot, PerplexityBot, ClaudeBot, /llms.txt, and Schema.org JSON-LD on every deployment.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Allow AI Search Citation Bots in robots.txt",
+        "text": "Explicitly allow OAI-SearchBot, PerplexityBot, and ClaudeBot in /robots.txt so answer engines can cite your live pages."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Compile and Publish /llms.txt and Valid JSON-LD",
+        "text": "Publish a Markdown map at /llms.txt (auto-compiled from your sitemap with CiteReady Pro) and embed Schema.org JSON-LD."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Add zColdWater/citeready-cli@v1 to GitHub Actions",
+        "text": "Add uses: zColdWater/citeready-cli@v1 with min-score, require-llms-txt, and require-jsonld inputs to block regressions in CI."
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #090d18;
+      --panel: #11182b;
+      --border: #26365c;
+      --text: #f3f6fc;
+      --muted: #9eb1d4;
+      --accent: #a78bfa;
+      --accent-2: #38bdf8;
+      --cta: #10b981;
+      --cta-hover: #059669;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+      background: radial-gradient(circle at 50% 0%, #1e1b4b 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    a { color: var(--accent-2); text-decoration: none; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 22px; }
+    header {
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(9, 13, 24, 0.9);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 66px; gap: 14px; flex-wrap: wrap; }
+    .brand { font-weight: 800; font-size: 1.15rem; color: #fff; display: flex; align-items: center; gap: 10px; }
+    .logo-badge {
+      width: 28px; height: 28px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #080d1a; font-weight: 900; display: inline-flex; align-items: center; justify-content: center;
+    }
+    .nav-links { display: flex; align-items: center; gap: 16px; font-size: 0.92rem; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 10px 18px; border-radius: 10px; font-weight: 700; font-size: 0.92rem;
+      cursor: pointer; border: none;
+    }
+    .btn-cta { background: var(--cta); color: #041b13; }
+    .btn-cta:hover { background: var(--cta-hover); color: #fff; }
+    .btn-outline { background: rgba(255,255,255,0.05); color: var(--text); border: 1px solid var(--border); }
+    .hero { padding: 52px 0 24px; }
+    h1 { font-size: clamp(1.85rem, 4vw, 2.7rem); line-height: 1.15; letter-spacing: -0.025em; margin: 0 0 14px; }
+    h2 { font-size: 1.45rem; margin: 34px 0 10px; }
+    .step-card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin: 18px 0; }
+    pre {
+      background: #070c18; border: 1px solid var(--border); border-radius: 12px;
+      padding: 16px; overflow-x: auto; font-size: 0.87rem; color: #e2e8f0; line-height: 1.52;
+    }
+    .cta-box {
+      margin: 34px 0; padding: 24px; border-radius: 16px;
+      background: linear-gradient(95deg, rgba(167,139,250,0.16), rgba(16,185,129,0.16));
+      border: 1px solid rgba(16,185,129,0.45);
+    }
+    footer { border-top: 1px solid rgba(255,255,255,0.08); padding: 34px 0 50px; color: var(--muted); font-size: 0.88rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="./index.html">
+        <span class="logo-badge">C</span>
+        <span>CiteReady</span>
+      </a>
+      <nav class="nav-links">
+        <a href="./index.html">Live Scanner</a>
+        <a href="./compare.html">GEO Tool Comparison</a>
+        <a href="./llms-txt-github-action-guide.html" style="color:#fff;font-weight:700;">GitHub Action Guide</a>
+        <a href="https://github.com/zColdWater/citeready-cli" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-cta" href="https://agentarenastudi.gumroad.com/l/omniforge-citeready" target="_blank" rel="noopener">Get CiteReady Pro ($19) →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Add an <code>llms.txt</code>, AI Crawler &amp; Schema.org JSON-LD CI Gate in GitHub Actions</h1>
+      <p style="color:var(--muted);font-size:1.06rem;">
+        Prevent accidental CDN rules, Next.js/Astro layout refactors, or broken JSON-LD edits from silently tanking your visibility in ChatGPT Search (<code>OAI-SearchBot</code>), Perplexity (<code>PerplexityBot</code>), and Claude (<code>ClaudeBot</code>).
+      </p>
+    </section>
+
+    <div class="step-card">
+      <h2 style="margin-top:0;">Step 1: Add <code>zColdWater/citeready-cli@v1</code> to <code>.github/workflows/geo-audit.yml</code></h2>
+      <p style="color:var(--muted);">
+        Runs in under 4 seconds with zero npm install overhead, writes a formatted Markdown scorecard straight to your GitHub Actions Job Summary (<code>$GITHUB_STEP_SUMMARY</code>), and fails the workflow if your score drops below your threshold:
+      </p>
+      <pre>name: AI Search (GEO) &amp; Technical SEO Gate
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 9 * * 1" # Weekly production drift check
+
+jobs:
+  citeready:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Audit Production AI Citation Signals
+        id: geo
+        uses: zColdWater/citeready-cli@v1
+        with:
+          url: "https://yoursite.com"
+          min-score: "80"
+          require-llms-txt: "true"
+          require-jsonld: "true"
+
+      - name: Read Action Outputs
+        run: echo "GEO Score ${{ steps.geo.outputs.score }}/100 (Grade ${{ steps.geo.outputs.grade }})"</pre>
+    </div>
+
+    <div class="step-card">
+      <h2 style="margin-top:0;">Step 2: Production <code>robots.txt</code> Policy (Allow Search Citation Bots)</h2>
+      <p style="color:var(--muted);">
+        Want ChatGPT Search and Perplexity to cite your pricing and docs while keeping unattributed bulk training crawlers out? Separate search user-agents from training user-agents explicitly:
+      </p>
+      <pre># Allow live AI Search &amp; Citation Engines
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Standard web search
+User-agent: *
+Allow: /
+
+Sitemap: https://yoursite.com/sitemap.xml</pre>
+    </div>
+
+    <div class="cta-box">
+      <h2 style="margin-top:0;">Step 3: Auto-Compile <code>/llms.txt</code>, <code>/llms-full.txt</code> &amp; Validated JSON-LD from Your Sitemap</h2>
+      <p style="color:var(--muted);">
+        Hand-maintaining Markdown indexes across dozens or hundreds of docs routes breaks down fast. <strong>CiteReady Pro ($19 Solo / $39 Agency — one-time download, $0/mo)</strong> crawls your entire XML sitemap locally, strips header/footer noise, calculates LLM token counts, compiles spec-compliant <code>llms.txt</code> + <code>llms-full.txt</code>, and generates validated <code>SoftwareApplication</code>, <code>Product</code>, and <code>FAQPage</code> JSON-LD blocks.
+      </p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px;">
+        <a class="btn btn-cta" href="https://agentarenastudi.gumroad.com/l/omniforge-citeready" target="_blank" rel="noopener">Download CiteReady Pro ($19 Solo / $39 Agency) →</a>
+        <a class="btn btn-outline" href="https://omnipulse-x402.appwrite.network/checkout/citeready" target="_blank" rel="noopener">⚡ Instant Direct / Agent Checkout →</a>
+        <a class="btn btn-outline" href="./compare.html">Compare vs. $99+/mo GEO Tools →</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>
+        <a href="./index.html">CiteReady Home</a> ·
+        <a href="./compare.html">GEO Tool Comparison</a> ·
+        <a href="./llms-txt-github-action-guide.html">GitHub Action Guide</a> ·
+        <a href="https://citeready-checker.appwrite.network">Free Web Diagnostic</a> ·
+        <a href="https://github.com/zColdWater/citeready-cli">GitHub Repo</a>
+      </p>
+      <p>© 2026 OmniForge Studio · MIT Open-Source Lite CLI &amp; GitHub Action</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CiteReady Pro ($19 One-Time) vs. Profound, Otterly.AI, Peec AI &amp; Manual llms.txt (2026 GEO Comparison)</title>
+  <meta name="description" content="Compare CiteReady Pro ($19 one-time, $0/mo) against $99–$499/mo AI Search &amp; GEO trackers (Profound, Otterly.AI, Peec AI) and manual llms.txt setups. Fix OAI-SearchBot/PerplexityBot access, auto-compile llms.txt from your sitemap, and enforce Schema.org JSON-LD in GitHub Actions." />
+  <meta name="keywords" content="CiteReady vs Profound, Otterly AI alternative, Peec AI alternative, best GEO tool 2026, AI search optimization tool comparison, llms.txt compiler, Schema.org JSON-LD generator, one-time SEO software" />
+  <link rel="canonical" href="https://zcoldwater.github.io/citeready-cli/compare.html" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="CiteReady Pro ($19 One-Time) vs. $99–$499/mo AI Search Trackers — 2026 GEO Buyer Guide" />
+  <meta property="og:description" content="Monthly prompt trackers only tell you that ChatGPT missed your brand. CiteReady Pro fixes the technical root causes: robots.txt AI crawler policies, sitemap-to-llms.txt compilation, Schema.org JSON-LD &amp; CI gates." />
+  <meta property="og:url" content="https://zcoldwater.github.io/citeready-cli/compare.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CiteReady Pro ($19) vs. Monthly GEO SaaS Subscriptions ($99–$499/mo)" />
+  <meta name="twitter:description" content="Side-by-side engineering &amp; TCO breakdown for SaaS founders, DevRel teams, and technical SEO agencies." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "CiteReady Pro vs. Monthly AI Search (GEO) Trackers & Manual llms.txt — 2026 Comparison",
+        "url": "https://zcoldwater.github.io/citeready-cli/compare.html",
+        "description": "Side-by-side comparison of CiteReady Pro ($19 Solo / $39 Agency one-time toolkit) vs. monthly AI visibility trackers and manual llms.txt / JSON-LD maintenance."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "CiteReady Pro — AI Search (llms.txt / GEO), Crawler & Schema.org Technical SEO Kit",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Windows, Linux (Node.js 20+)",
+        "url": "https://zcoldwater.github.io/citeready-cli/",
+        "downloadUrl": "https://agentarenastudi.gumroad.com/l/omniforge-citeready",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "CiteReady Pro — Solo Founder Edition",
+            "price": "19.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://agentarenastudi.gumroad.com/l/omniforge-citeready"
+          },
+          {
+            "@type": "Offer",
+            "name": "CiteReady Pro — Agency Edition (10 Seats + White-Label PDF/HTML Reports)",
+            "price": "39.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://agentarenastudi.gumroad.com/l/omniforge-citeready"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How is CiteReady Pro different from monthly GEO trackers like Otterly.AI, Peec AI, or Profound?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Monthly GEO dashboards ($99 to $499/month) passively monitor synthetic prompts to tell you whether an AI assistant mentioned your brand. CiteReady Pro ($19 Solo / $39 Agency one-time) fixes the underlying technical SEO & GEO infrastructure that answer engines actually crawl: robots.txt rules for OAI-SearchBot/PerplexityBot/ClaudeBot, automated sitemap-to-llms.txt compilation, validated Schema.org JSON-LD graphs, and GitHub Actions CI gates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why not write /llms.txt and Schema.org JSON-LD by hand?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hand-written /llms.txt files drift out of date as soon as docs URLs, pricing tiers, or product pages change, and a single trailing comma in hand-edited JSON-LD breaks structured parsing silently. CiteReady Pro crawls your live XML sitemap, strips navigation boilerplate, estimates token counts, compiles both /llms.txt and /llms-full.txt automatically, and validates JSON-LD in CI."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I run CiteReady in GitHub Actions on every deployment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Add uses: zColdWater/citeready-cli@v1 in any GitHub Actions workflow to audit your staging or production URL, publish a Markdown visibility scorecard to $GITHUB_STEP_SUMMARY, and fail builds if your GEO score drops or /llms.txt or JSON-LD breaks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does CiteReady Pro require external API keys or recurring credits?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. CiteReady Pro runs 100% locally on Node.js 20+ with zero third-party dependencies, zero API keys, and zero recurring subscription fees."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #090d18;
+      --panel: #11182b;
+      --panel-2: #17213a;
+      --border: #26365c;
+      --text: #f3f6fc;
+      --muted: #9eb1d4;
+      --accent: #a78bfa;
+      --accent-2: #38bdf8;
+      --cta: #10b981;
+      --cta-hover: #059669;
+      --danger: #f43f5e;
+      --warn: #f59e0b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+      background: radial-gradient(circle at 50% 0%, #1e1b4b 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.62;
+    }
+    a { color: var(--accent-2); text-decoration: none; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 22px; }
+    header {
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(9, 13, 24, 0.9);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 66px; gap: 14px; flex-wrap: wrap; }
+    .brand { font-weight: 800; font-size: 1.15rem; color: #fff; display: flex; align-items: center; gap: 10px; }
+    .logo-badge {
+      width: 28px; height: 28px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #080d1a; font-weight: 900; display: inline-flex; align-items: center; justify-content: center;
+    }
+    .nav-links { display: flex; align-items: center; gap: 16px; font-size: 0.92rem; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 11px 20px; border-radius: 10px; font-weight: 700; font-size: 0.94rem;
+      cursor: pointer; border: none; transition: transform 0.12s ease, background 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-cta { background: var(--cta); color: #041b13; }
+    .btn-cta:hover { background: var(--cta-hover); color: #fff; }
+    .btn-outline { background: rgba(255,255,255,0.05); color: var(--text); border: 1px solid var(--border); }
+    .hero { padding: 56px 0 32px; text-align: center; }
+    .eyebrow {
+      display: inline-block; padding: 5px 14px; border-radius: 999px; font-size: 0.82rem; font-weight: 600;
+      background: rgba(167, 139, 250, 0.14); border: 1px solid rgba(167, 139, 250, 0.36); color: #c4b5fd; margin-bottom: 16px;
+    }
+    h1 { font-size: clamp(1.95rem, 4.2vw, 3rem); line-height: 1.14; letter-spacing: -0.03em; margin: 0 auto 16px; max-width: 920px; }
+    .sub { font-size: 1.08rem; color: var(--muted); max-width: 780px; margin: 0 auto 26px; }
+    .table-wrap {
+      overflow-x: auto; background: var(--panel); border: 1px solid var(--border);
+      border-radius: 16px; box-shadow: 0 20px 46px rgba(0,0,0,0.42); margin: 24px 0 36px;
+    }
+    table { width: 100%; border-collapse: collapse; min-width: 760px; font-size: 0.93rem; }
+    th, td { padding: 14px 16px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.07); vertical-align: top; }
+    th { background: #0c1326; font-weight: 800; color: #fff; font-size: 0.92rem; }
+    th.highlight, td.highlight { background: rgba(16, 185, 129, 0.08); border-left: 1px solid rgba(16,185,129,0.35); border-right: 1px solid rgba(16,185,129,0.35); }
+    .ok { color: var(--cta); font-weight: 700; }
+    .bad { color: var(--danger); font-weight: 700; }
+    .warn { color: var(--warn); font-weight: 700; }
+    section { padding: 38px 0; }
+    h2 { font-size: 1.75rem; letter-spacing: -0.02em; margin: 0 0 12px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 20px; }
+    .card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 24px; }
+    .card h3 { margin-top: 0; font-size: 1.15rem; }
+    pre {
+      background: #070c18; border: 1px solid var(--border); border-radius: 12px;
+      padding: 16px; overflow-x: auto; font-size: 0.86rem; color: #dbeafe; line-height: 1.5;
+    }
+    .scanner-strip {
+      background: var(--panel); border: 1px solid var(--border); border-radius: 16px;
+      padding: 22px; margin: 20px 0 32px;
+    }
+    .scan-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+    .scan-input {
+      flex: 1; min-width: 220px; padding: 12px 15px; border-radius: 10px;
+      border: 1px solid var(--border); background: #090f1f; color: #fff; font-size: 0.96rem;
+    }
+    .upsell-banner {
+      padding: 24px; border-radius: 16px;
+      background: linear-gradient(95deg, rgba(167,139,250,0.16), rgba(16,185,129,0.16));
+      border: 1px solid rgba(16,185,129,0.45);
+      display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap;
+      margin: 28px 0;
+    }
+    .faq-item { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 18px 22px; margin-bottom: 14px; }
+    .faq-item h3 { margin: 0 0 6px; font-size: 1.05rem; }
+    footer { border-top: 1px solid rgba(255,255,255,0.08); padding: 34px 0 50px; color: var(--muted); font-size: 0.88rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="./index.html">
+        <span class="logo-badge">C</span>
+        <span>CiteReady</span>
+      </a>
+      <nav class="nav-links">
+        <a href="./index.html">Live Scanner</a>
+        <a href="./compare.html" style="color:#fff;font-weight:700;">GEO Tool Comparison</a>
+        <a href="./llms-txt-github-action-guide.html">GitHub Action Guide</a>
+        <a href="https://github.com/zColdWater/citeready-cli" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-cta" href="https://agentarenastudi.gumroad.com/l/omniforge-citeready" target="_blank" rel="noopener">Get CiteReady Pro ($19) →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">2026 Engineering &amp; Total Cost of Ownership Guide</span>
+      <h1>CiteReady Pro ($19 One-Time) vs. $99–$499/mo AI Search Trackers &amp; Manual <code>llms.txt</code></h1>
+      <p class="sub">
+        Monthly prompt-tracking dashboards only tell you <em>after the fact</em> that ChatGPT Search or Perplexity skipped your product. <strong>CiteReady Pro</strong> fixes the actual technical blockers—<code>robots.txt</code> crawler rules, full-sitemap <code>llms.txt</code> compilation, validated Schema.org JSON-LD, and GitHub Actions CI gates—for a single one-time payment.
+      </p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+        <a class="btn btn-cta" href="https://agentarenastudi.gumroad.com/l/omniforge-citeready" target="_blank" rel="noopener">Download CiteReady Pro ($19 Solo / $39 Agency) →</a>
+        <a class="btn btn-outline" href="https://omnipulse-x402.appwrite.network/checkout/citeready" target="_blank" rel="noopener">⚡ Instant Direct / Agent Checkout →</a>
+        <a class="btn btn-outline" href="https://citeready-checker.appwrite.network" target="_blank" rel="noopener">Run Free Live Audit ↗</a>
+      </div>
+    </section>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Capability / Cost</th>
+            <th class="highlight">CiteReady Pro<br /><span style="color:var(--cta);font-weight:700;">$19 Solo / $39 Agency (Once)</span></th>
+            <th>Monthly GEO Trackers<br /><span style="color:var(--muted);font-weight:500;">Profound / Otterly.AI / Peec AI</span></th>
+            <th>CiteReady Lite CLI<br /><span style="color:var(--muted);font-weight:500;">Free Open Source (MIT)</span></th>
+            <th>Manual Hand-Coding<br /><span style="color:var(--muted);font-weight:500;">DIY Markdown &amp; JSON-LD</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1-Year Total Cost</strong></td>
+            <td class="highlight"><span class="ok">$19 or $39 total ($0/mo)</span></td>
+            <td><span class="bad">$1,188 – $5,988 / year</span><br /><span style="color:var(--muted);font-size:0.83rem;">($99–$499/mo per workspace)</span></td>
+            <td><span class="ok">$0 (MIT)</span></td>
+            <td><span class="warn">6–15+ engineering hrs/yr</span><br /><span style="color:var(--muted);font-size:0.83rem;">Silent drift every docs update</span></td>
+          </tr>
+          <tr>
+            <td><strong>AI Crawler <code>robots.txt</code> Audit &amp; Policy Builder</strong><br /><span style="color:var(--muted);font-size:0.82rem;">OAI-SearchBot, PerplexityBot, ClaudeBot, Google-Extended</span></td>
+            <td class="highlight"><span class="ok">✔ Full audit + custom policy generator</span> (allow citation bots, optional training block)</td>
+            <td><span class="warn">Partial or none</span> (most only run prompt queries)</td>
+            <td>✔ 1-URL <code>robots.txt</code> check</td>
+            <td><span class="bad">✖ Easy to accidentally block search bots</span> with WAF presets</td>
+          </tr>
+          <tr>
+            <td><strong>Automatic Sitemap → <code>/llms.txt</code> &amp; <code>/llms-full.txt</code> Compiler</strong></td>
+            <td class="highlight"><span class="ok">✔ Auto-crawls 1,000+ sitemap URLs</span>, strips nav noise &amp; estimates token budget</td>
+            <td><span class="bad">✖ Not included</span> in prompt-monitoring plans</td>
+            <td>Spec presence check only</td>
+            <td><span class="bad">✖ Stale links &amp; missing routes</span> after every release</td>
+          </tr>
+          <tr>
+            <td><strong>Validated Schema.org JSON-LD Generator</strong><br /><span style="color:var(--muted);font-size:0.82rem;">SoftwareApplication, Product, Organization, FAQPage</span></td>
+            <td class="highlight"><span class="ok">✔ Ready-to-embed validated JSON-LD graphs</span> + syntax &amp; entity audit</td>
+            <td><span class="bad">✖ No code generation</span></td>
+            <td>Syntax &amp; <code>@type</code> check only</td>
+            <td><span class="warn">Error-prone</span> (1 bad comma breaks parser silently)</td>
+          </tr>
+          <tr>
+            <td><strong>GitHub Actions CI/CD Regression Gate</strong></td>
+            <td class="highlight"><span class="ok">✔ Multi-URL sitemap gate</span> + Lite <code>uses: zColdWater/citeready-cli@v1</code></td>
+            <td><span class="bad">✖ Dashboard-only SaaS</span></td>
+            <td><span class="ok">✔ Single-URL Action</span> (<code>@v1</code>)</td>
+            <td><span class="bad">✖ None</span></td>
+          </tr>
+          <tr>
+            <td><strong>Data Privacy &amp; Offline Execution</strong></td>
+            <td class="highlight"><span class="ok">✔ 100% local Node.js 20+ source ZIP</span> (audit staging/auth sites privately)</td>
+            <td>Cloud SaaS only (cannot hit private localhost/staging without tunnels)</td>
+            <td>✔ Local CLI</td>
+            <td>✔ Local</td>
+          </tr>
+          <tr>
+            <td><strong>White-Label Client HTML &amp; PDF GEO Audit Reports</strong></td>
+            <td class="highlight"><span class="ok">✔ Included in Agency ($39)</span> with <code>--brand</code> / <code>--client</code> flags (10 seats)</td>
+            <td><span class="bad">$299–$499+/mo</span> agency tiers</td>
+            <td>—</td>
+            <td>Manual slide decks</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="scanner-strip">
+      <h3 style="margin:0 0 4px;">Test Your Domain Right Now (Free Instant Check)</h3>
+      <div style="color:var(--muted);font-size:0.92rem;">See your current GEO Visibility Score, AI bot access, <code>/llms.txt</code> status, and JSON-LD count before choosing a tier:</div>
+      <form class="scan-row" onsubmit="event.preventDefault(); const v=document.getElementById('cmpUrl').value.trim(); if(v){ window.open('https://citeready-checker.appwrite.network/?url='+encodeURIComponent(/^https?:\/\//i.test(v)?v:'https://'+v), '_blank'); }">
+        <input id="cmpUrl" class="scan-input" type="text" placeholder="https://yoursite.com or docs.yoursite.com" required />
+        <button type="submit" class="btn btn-cta">Open Full Interactive GEO Report ↗</button>
+      </form>
+    </div>
+
+    <section>
+      <h2>When to Use Each Option</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Choose CiteReady Pro ($19 / $39) If You Ship Software, Docs, or Client SEO</h3>
+          <p style="color:var(--muted);">
+            You want ChatGPT Search, Perplexity, Claude, and Google AI Overviews to read clean pricing, feature tables, and canonical documentation without burning $2,000+/year on passive monitoring dashboards. Run <code>citeready compile</code> against your sitemap, drop the generated <code>llms.txt</code> + <code>JSON-LD</code> into your build, and lock it in CI.
+          </p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;">
+            <a class="btn btn-cta" href="https://agentarenastudi.gumroad.com/l/omniforge-citeready" target="_blank" rel="noopener">Get CiteReady Pro ($19) →</a>
+            <a class="btn btn-outline" href="https://omnipulse-x402.appwrite.network/checkout/citeready" target="_blank" rel="noopener">⚡ Instant Direct Checkout →</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Start with Free CiteReady GitHub Action (<code>@v1</code>) in 30 Seconds</h3>
+          <p style="color:var(--muted);">
+            Want to test single-URL enforcement in your repository first? Add our open-source composite GitHub Action to fail pull requests whenever an accidental WAF or template edit breaks your AI search readiness:
+          </p>
+          <pre>- name: Audit AI Search &amp; Schema.org Readiness
+  uses: zColdWater/citeready-cli@v1
+  with:
+    url: https://yoursite.com
+    min-score: "75"
+    require-llms-txt: "true"
+    require-jsonld: "true"</pre>
+        </div>
+      </div>
+    </section>
+
+    <div class="upsell-banner">
+      <div style="max-width:650px;">
+        <strong style="font-size:1.08rem;">🔥 Launching a New Product or Running an Agency? Save up to $38 with the 3-in-1 Founder Launch Stack</strong>
+        <div style="color:var(--muted);font-size:0.9rem;margin-top:4px;">
+          Bundle <strong>BrandShield Pro</strong> (500-name RDAP domain &amp; USPTO collision matrix) + <strong>InboxShield Pro</strong> (SPF 10-lookup flattener, DKIM/DMARC &amp; DNSBL monitor) + <strong>CiteReady Pro</strong> (sitemap-to-<code>llms.txt</code> compiler &amp; JSON-LD GEO kit).
+        </div>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a class="btn btn-cta" href="https://agentarenastudi.gumroad.com/l/omniforge-launch-stack" target="_blank" rel="noopener">Get 3-in-1 Stack ($49 Solo / $89 Agency) →</a>
+        <a class="btn btn-outline" href="https://omnipulse-x402.appwrite.network/checkout/launch-stack" target="_blank" rel="noopener">⚡ Instant Direct Checkout →</a>
+      </div>
+    </div>
+
+    <section>
+      <h2>Frequently Asked Buyer Questions</h2>
+      <div class="faq-item">
+        <h3>Does blocking <code>GPTBot</code> also block ChatGPT Search citations?</h3>
+        <p style="color:var(--muted);margin:0;">OpenAI separates model-training crawling (<code>GPTBot</code>) from live search citation indexing (<code>OAI-SearchBot</code>). Many boilerplate <code>robots.txt</code> snippets block all AI user-agents indiscriminately—CiteReady detects this immediately and generates a clean policy that keeps search citations open.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What do I receive immediately after purchasing CiteReady Pro?</h3>
+        <p style="color:var(--muted);margin:0;">You get an instant, self-contained Node.js 20+ source ZIP containing the full multi-page sitemap crawler, <code>llms.txt</code> + <code>llms-full.txt</code> compiler, Schema.org JSON-LD generator, local browser workbench (<code>citeready serve</code>), CI templates, and (on Agency) white-label HTML/PDF client report generator.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can SEO agencies bill clients using CiteReady Pro reports?</h3>
+        <p style="color:var(--muted);margin:0;">Yes. The <strong>$39 Agency Edition</strong> includes a commercial license for up to 10 seats, unlimited client domains, and custom agency logo/client name flags (<code>--brand</code>, <code>--client</code>) so you can sell high-margin AI Search / GEO readiness audits without paying $399/mo SaaS seat fees.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>
+        <a href="./index.html">CiteReady Home</a> ·
+        <a href="./compare.html">GEO Tool Comparison</a> ·
+        <a href="./llms-txt-github-action-guide.html">llms.txt GitHub Action Guide</a> ·
+        <a href="https://citeready-checker.appwrite.network">Free Live Web Diagnostic</a> ·
+        <a href="https://github.com/zColdWater/citeready-cli">GitHub CLI &amp; Action</a> ·
+        <a href="./llms.txt">llms.txt</a>
+      </p>
+      <p>© 2026 OmniForge Studio · MIT Open-Source Lite CLI &amp; GitHub Action</p>
+    </div>
+  </footer>
+</body>
+</html>

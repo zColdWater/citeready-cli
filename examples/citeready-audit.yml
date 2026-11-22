@@ -1,0 +1,36 @@
+name: CiteReady Self-Audit (GEO & Schema.org CI Gate)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  geo-audit:
+    name: Verify AI Crawler, llms.txt & JSON-LD Signals
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout CiteReady CLI Action
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Audit Live CiteReady Docs (zcoldwater.github.io/citeready-cli)
+        id: check
+        uses: zColdWater/citeready-cli@v1
+        with:
+          url: "https://zcoldwater.github.io/citeready-cli/"
+          min-score: "85"
+          require-llms-txt: "true"
+          require-jsonld: "true"
+
+      - name: Print Action Outputs
+        run: |
+          echo "Verified Score: ${{ steps.check.outputs.score }} (Grade ${{ steps.check.outputs.grade }})"
+          echo "llms.txt present: ${{ steps.check.outputs.llms-txt-present }}"
+          echo "JSON-LD blocks: ${{ steps.check.outputs.jsonld-count }}"

@@ -1,14 +1,14 @@
 {
   "name": "citeready-cli",
-  "version": "1.0.0",
-  "description": "Zero-dependency AI Search (GEO), llms.txt & Schema.org technical SEO auditor — verify OAI-SearchBot, PerplexityBot, ClaudeBot & Google-Extended access, llms.txt compliance, and JSON-LD validity in seconds.",
+  "version": "1.1.0",
+  "description": "Zero-dependency AI Search (GEO), llms.txt & Schema.org technical SEO auditor and GitHub Action — verify OAI-SearchBot, PerplexityBot, ClaudeBot & Google-Extended access, llms.txt compliance, and JSON-LD validity in seconds.",
   "type": "module",
   "bin": {
     "citeready": "./bin/citeready.mjs"
   },
   "scripts": {
     "start": "node ./bin/citeready.mjs",
-    "test": "node ./bin/citeready.mjs check https://stripe.com"
+    "test": "node ./bin/citeready.mjs check https://zcoldwater.github.io/citeready-cli/ --min-score 80 --require-llms-txt --require-jsonld"
   },
   "engines": {
     "node": ">=18.0.0"
@@ -16,6 +16,7 @@
   "keywords": [
     "seo",
     "geo",
+    "aeo",
     "llms-txt",
     "ai-search",
     "schema-org",
@@ -23,6 +24,7 @@
     "robots-txt",
     "chatgpt-search",
     "perplexity",
+    "github-actions",
     "technical-seo",
     "cli",
     "developer-tools",

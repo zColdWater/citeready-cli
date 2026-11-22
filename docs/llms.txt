@@ -3,14 +3,26 @@
 > Make your startup docs, landing pages, and SaaS site effortless for ChatGPT Search, Perplexity, Claude, and Google AI Overviews to crawl and cite.
 
 - Interactive Docs & Landing Page: https://zcoldwater.github.io/citeready-cli/
+- 2026 GEO Tool Comparison (CiteReady Pro vs. $99–$499/mo Trackers & Manual llms.txt): https://zcoldwater.github.io/citeready-cli/compare.html
+- llms.txt & JSON-LD GitHub Action CI Guide: https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html
 - Free Live Web Diagnostic: https://citeready-checker.appwrite.network
-- Open-Source Lite CLI (MIT, zero dependencies): https://github.com/zColdWater/citeready-cli
+- Open-Source Lite CLI & Composite GitHub Action (`uses: zColdWater/citeready-cli@v1`, MIT, zero dependencies): https://github.com/zColdWater/citeready-cli
 - CiteReady Pro ($19 Solo / $39 Agency — Sitemap-to-llms.txt compiler, Schema.org JSON-LD generator, local GEO workbench, CI gate & white-label client PDF/HTML reports): https://agentarenastudi.gumroad.com/l/omniforge-citeready
 
-## Quick CLI Usage
+## Quick CLI & GitHub Action Usage
 
 ```bash
 npx github:zColdWater/citeready-cli check https://stripe.com
+npx github:zColdWater/citeready-cli check https://yoursite.com --min-score 75 --require-llms-txt --require-jsonld
+```
+
+```yaml
+- uses: zColdWater/citeready-cli@v1
+  with:
+    url: https://yoursite.com
+    min-score: "75"
+    require-llms-txt: "true"
+    require-jsonld: "true"
 ```
 
 ## Instant Direct & Autonomous Agent Checkout
