@@ -1,32 +1,25 @@
-# CiteReady — AI Search (llms.txt / GEO), Crawler & Schema.org Technical SEO Kit
+# CiteReady — Online AI Search (GEO), 10-Bot Crawler & /llms.txt Auditor (v5.0)
 
-> Make your startup docs, landing pages, and SaaS site effortless for ChatGPT Search, Perplexity, Claude, and Google AI Overviews to crawl and cite.
+> Verify whether ChatGPT Search (OAI-SearchBot), Perplexity (PerplexityBot), Claude (ClaudeBot), Google AI Overviews (Google-Extended), Apple Intelligence, Doubao (Bytespider), and Baidu AI can crawl and cite your website — free in 2 seconds directly in your browser, plus MIT CLI & GitHub Action (`uses: zColdWater/citeready-cli@v1`).
 
-- Interactive Docs & Landing Page: https://zcoldwater.github.io/citeready-cli/
-- 2026 GEO Tool Comparison (CiteReady Pro vs. $99–$499/mo Trackers & Manual llms.txt): https://zcoldwater.github.io/citeready-cli/compare.html
-- llms.txt & JSON-LD GitHub Action CI Guide: https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html
-- Free Live Web Diagnostic: https://citeready-checker.appwrite.network
-- Open-Source Lite CLI & Composite GitHub Action (`uses: zColdWater/citeready-cli@v1`, MIT, zero dependencies): https://github.com/zColdWater/citeready-cli
-- CiteReady Pro ($19 Solo / $39 Agency — Sitemap-to-llms.txt compiler, Schema.org JSON-LD generator, local GEO workbench, CI gate & white-label client PDF/HTML reports): https://omnipulse-x402.appwrite.network/go/gumroad/citeready
+- Flagship v5.0 Live Web App: https://citeready-checker.appwrite.network
+- Free Online /llms.txt Compiler & Sitemap Gap Scanner: https://citeready-checker.appwrite.network/generator
+- Landing Page & Docs: https://zcoldwater.github.io/citeready-cli/
+- Comparison Guide (CiteReady $12 Once vs. Peec AI / Otterly.AI Subscriptions): https://zcoldwater.github.io/citeready-cli/compare.html
+- GitHub Action CI Guide: https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html
+- Open-Source CLI & GitHub Action (MIT, zero dependencies): https://github.com/zColdWater/citeready-cli
+- CiteReady Web Pro ($12 One-Time — Instant in-page unlock, 5-platform fix wizard for Next.js/WordPress/Webflow/Shopify/Cloudflare/Cursor, Schema.org Entity Graph, 50-URL batch CSV, printable A4 PDF, 14-day refund): https://omnipulse-x402.appwrite.network/go/gumroad/citeready
+- Direct Multi-Chain Checkout ($12): https://omnipulse-x402.appwrite.network/checkout/citeready
 
-## Quick CLI & GitHub Action Usage
+## OmniForge v5.0 Pre-Launch Web Pro Suite ($29 4-in-1 — Save $19)
 
-```bash
-npx github:zColdWater/citeready-cli check https://stripe.com
-npx github:zColdWater/citeready-cli check https://yoursite.com --min-score 75 --require-llms-txt --require-jsonld
-```
+- VibeShield v5.0 ($9 Once): https://vibe-checker.appwrite.network | https://omnipulse-x402.appwrite.network/go/gumroad/vibeshield
+- BrandShield v5.0 ($12 Once): https://brand-checker.appwrite.network | https://omnipulse-x402.appwrite.network/go/gumroad/brandshield
+- CiteReady v5.0 ($12 Once): https://citeready-checker.appwrite.network | https://omnipulse-x402.appwrite.network/go/gumroad/citeready
+- InboxShield v5.0 ($15 Once): https://inbox-checker.appwrite.network | https://omnipulse-x402.appwrite.network/go/gumroad/inboxshield
+- 4-in-1 Launch Stack ($29 Once — Unlocks Web Pro across all 4 apps): https://omnipulse-x402.appwrite.network/go/gumroad/launch-stack | https://omnipulse-x402.appwrite.network/checkout/launch-stack
 
-```yaml
-- uses: zColdWater/citeready-cli@v1
-  with:
-    url: https://yoursite.com
-    min-score: "75"
-    require-llms-txt: "true"
-    require-jsonld: "true"
-```
+## Support & Official Contact
 
-## Instant Direct & Autonomous Agent Checkout
-
-- Browser Instant Checkout ($19 Solo / $39 Agency): https://omnipulse-x402.appwrite.network/checkout/citeready
-- 3-in-1 Founder Launch Stack Instant Checkout ($49 Solo / $89 Agency): https://omnipulse-x402.appwrite.network/checkout/launch-stack
-- Programmatic HTTP 402 ZIP Download Endpoint: https://omnipulse-x402.appwrite.network/v1/download/citeready
+- OmniForge · Agent Arena Studio — agentarenastudio@proton.me | https://x.com/agentarenastudi
+- Support & 14-Day Refund Policy: https://omnipulse-x402.appwrite.network/support | https://omnipulse-x402.appwrite.network/refund-policy

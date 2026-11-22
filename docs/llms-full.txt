@@ -1,59 +1,42 @@
-# CiteReady Pro & CLI — Complete AI Search (GEO), llms.txt & Schema.org Technical SEO Reference
+# CiteReady v5.0 — Complete Online AI Search (GEO), 10-Crawler & /llms.txt Reference
 
-> Official full-context LLM reference for CiteReady by OmniForge Studio.
+> Official full-context LLM reference for CiteReady by OmniForge · Agent Arena Studio.
 
 ## Product Overview
 
-CiteReady helps SaaS founders, documentation engineers, and technical SEO agencies verify and fix how AI answer engines — including ChatGPT Search (`OAI-SearchBot`), Perplexity (`PerplexityBot`), Anthropic Claude (`ClaudeBot`), Google AI Overviews (`Google-Extended`), and Apple Intelligence (`Applebot-Extended`) — crawl, parse, and cite websites.
+CiteReady v5.0 helps founders, marketing teams, and technical SEO agencies verify and fix technical AI search crawlability directly in the browser in under 2 seconds — checking 10 global and China AI crawlers (`OAI-SearchBot`, `GPTBot`, `ChatGPT-User`, `PerplexityBot`, `ClaudeBot`, `Google-Extended`, `Applebot-Extended`, `Bytespider`, `Baiduspider`, `CCBot`), live `X-Robots-Tag` headers, Schema.org JSON-LD Entity Graph depth, and root `/llms.txt` readiness.
 
-- **Homepage & Live Browser Scanner:** https://zcoldwater.github.io/citeready-cli/
-- **Full Cloud GEO Diagnostic:** https://citeready-checker.appwrite.network
-- **2026 GEO Tool Comparison ($19 One-Time vs. $99–$499/mo Trackers):** https://zcoldwater.github.io/citeready-cli/compare.html
+- **Flagship v5.0 Web App:** https://citeready-checker.appwrite.network
+- **Free Online /llms.txt Generator:** https://citeready-checker.appwrite.network/generator
+- **Docs & Landing Page:** https://zcoldwater.github.io/citeready-cli/
+- **Comparison Guide ($12 One-Time vs. €89+/mo Trackers):** https://zcoldwater.github.io/citeready-cli/compare.html
 - **GitHub Action CI/CD Guide:** https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html
 - **Open-Source Repository (MIT):** https://github.com/zColdWater/citeready-cli
 
-## Open-Source CLI & GitHub Action (`v1.1.0`)
+## CiteReady Web Pro v5.0 ($12 One-Time, In-Browser Activation)
 
-Run a zero-install single-URL audit from any terminal (Node.js 18+):
+Unlike `$348–$1,068+/yr` passive prompt-tracking subscriptions (such as Peec AI or Otterly.AI), CiteReady Web Pro focuses strictly on **on-demand technical AI crawlability auditing and ready-to-paste configuration generation** with zero monthly fees and a 14-day refund guarantee:
+
+1. **CiteReady Web Pro ($12 One-Time)**
+   - Unmasked 5-platform 3-step fix wizard (`Next.js / Vercel`, `WordPress`, `Webflow / Shopify`, `Cloudflare / WAF`, `Cursor / Lovable` prompt)
+   - Complete copy-paste Schema.org `@graph` JSON-LD, `robots.txt` AI crawler rules, Competitor VS-Page blueprint, and root `/llms.txt`
+   - Online 50-URL batch scanner table with UTF-8 BOM Excel/CSV export
+   - Custom-header formal A4 printable PDF client audit report (`@media print`)
+   - Instant in-page unlock via Gumroad License Key or 7-chain USDT/USDC
+   - Gumroad Checkout: https://omnipulse-x402.appwrite.network/go/gumroad/citeready
+   - Direct Checkout: https://omnipulse-x402.appwrite.network/checkout/citeready
+
+2. **OmniForge 4-in-1 Launch Stack Web Pro ($29 One-Time — Save $19)**
+   - Unlocks Web Pro across all 4 v5.0 web apps in one license pass: **VibeShield ($9)** + **BrandShield ($12)** + **CiteReady ($12)** + **InboxShield ($15)**.
+   - Gumroad Bundle: https://omnipulse-x402.appwrite.network/go/gumroad/launch-stack
+   - Direct Checkout: https://omnipulse-x402.appwrite.network/checkout/launch-stack
+
+## Optional Open-Source CLI & GitHub Action (`uses: zColdWater/citeready-cli@v1`)
 
 ```bash
-npx github:zColdWater/citeready-cli check https://yoursite.com
-npx github:zColdWater/citeready-cli check https://yoursite.com --min-score 80 --require-llms-txt --require-jsonld
+npx github:zColdWater/citeready-cli check https://yoursite.com --min-score 75 --require-llms-txt --require-jsonld
 ```
 
-Or enforce AI Search & Schema.org readiness in GitHub Actions (`uses: zColdWater/citeready-cli@v1`):
+## Official Contact & Policies
 
-```yaml
-- name: Audit AI Search & Schema.org Readiness
-  uses: zColdWater/citeready-cli@v1
-  with:
-    url: https://yoursite.com
-    min-score: "80"
-    require-llms-txt: "true"
-    require-jsonld: "true"
-```
-
-## CiteReady Pro Editions (One-Time Purchase, $0/Month)
-
-Unlike $99–$499/month synthetic prompt trackers (such as Profound, Otterly.AI, or Peec AI) that only monitor mentions passively, CiteReady Pro runs 100% locally on Node.js 20+ to generate and enforce the technical assets answer engines crawl:
-
-1. **CiteReady Pro — Solo Edition ($19 One-Time)**
-   - Multi-page XML sitemap crawler (1,000+ routes)
-   - Automatic `/llms.txt` and `/llms-full.txt` Markdown compiler with boilerplate stripping and token estimation
-   - Validated Schema.org JSON-LD generator (`SoftwareApplication`, `Product`, `Organization`, `FAQPage`, `HowTo`)
-   - Custom `robots.txt` policy builder (allow citation bots while optionally restricting training scrapers)
-   - Local interactive GEO workbench (`citeready serve`) + multi-URL CI gate
-   - Gumroad Checkout: https://omnipulse-x402.appwrite.network/go/gumroad/citeready
-   - Instant Direct / Agent Checkout: https://omnipulse-x402.appwrite.network/checkout/citeready?tier=solo
-
-2. **CiteReady Pro — Agency Edition ($39 One-Time)**
-   - Everything in Solo Edition
-   - Commercial license for up to 10 seats and unlimited client domains
-   - White-label HTML & PDF client GEO/SEO audit reports (`--brand`, `--client`)
-   - Gumroad Checkout: https://omnipulse-x402.appwrite.network/go/gumroad/citeready
-   - Instant Direct / Agent Checkout: https://omnipulse-x402.appwrite.network/checkout/citeready?tier=agency
-
-3. **OmniForge 3-in-1 Founder Launch Stack ($49 Solo / $89 Agency — Save up to $38)**
-   - Bundles **BrandShield Pro** (500-name RDAP domain & USPTO trademark collision kit) + **InboxShield Pro** (SPF 10-lookup flattener, DKIM/DMARC & DNSBL monitor) + **CiteReady Pro**.
-   - Gumroad Bundle: https://omnipulse-x402.appwrite.network/go/gumroad/launch-stack
-   - Instant Direct Checkout: https://omnipulse-x402.appwrite.network/checkout/launch-stack
+OmniForge · Agent Arena Studio — `agentarenastudio@proton.me` · https://x.com/agentarenastudi · https://omnipulse-x402.appwrite.network/support · https://omnipulse-x402.appwrite.network/refund-policy

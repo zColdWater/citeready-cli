@@ -1,6 +1,6 @@
-# CiteReady CLI & GitHub Action (`citeready-cli`)
+# CiteReady — Online AI Search (GEO), 10-Bot Crawler & `/llms.txt` Auditor (`v5.0` Web App + OSS CLI & GitHub Action)
 
-**Zero-dependency AI Search (`llms.txt` / GEO), Crawler & Schema.org Technical SEO Auditor + GitHub Action — verify whether ChatGPT Search (`OAI-SearchBot`), Perplexity (`PerplexityBot`), Claude (`ClaudeBot`), and Google AI Overviews can crawl, understand, and cite your site.**
+**Verify whether ChatGPT Search (`OAI-SearchBot`), Perplexity (`PerplexityBot`), Claude (`ClaudeBot`), Google AI Overviews (`Google-Extended`), Apple Intelligence, Doubao (`Bytespider`), and Baidu AI can crawl and cite your site — free in 2 seconds directly in your browser, or in CI via `zColdWater/citeready-cli@v1`.**
 
 [![AI CiteReady Live](https://citeready-checker.appwrite.network/badge/citeready/stripe.com.svg)](https://citeready-checker.appwrite.network/?url=https://stripe.com)
 [![Email Security Live](https://inbox-checker.appwrite.network/badge/inbox/stripe.com.svg)](https://inbox-checker.appwrite.network/?domain=stripe.com)
@@ -8,60 +8,50 @@
 [![GitHub Action](https://img.shields.io/badge/GitHub%20Action-zColdWater%2Fciteready--cli%40v1-7c3aed?logo=githubactions&logoColor=white)](./action.yml)
 [![Release](https://img.shields.io/github/v/release/zColdWater/citeready-cli?color=10b981)](https://github.com/zColdWater/citeready-cli/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![Node.js >= 18](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-success.svg)](./package.json)
 
-- **Live Free Web Diagnostic:** [https://citeready-checker.appwrite.network](https://citeready-checker.appwrite.network)
-- **✨ Free 2-Second `/llms.txt` Starter Generator:** [https://citeready-checker.appwrite.network/generator](https://citeready-checker.appwrite.network/generator)
-- **Interactive Docs & Landing Page:** [https://zcoldwater.github.io/citeready-cli/](https://zcoldwater.github.io/citeready-cli/)
-- **2026 GEO Tool Comparison ($19 One-Time vs. $99+/mo Trackers):** [https://zcoldwater.github.io/citeready-cli/compare.html](https://zcoldwater.github.io/citeready-cli/compare.html)
-- **GitHub Action CI/CD Guide:** [https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html](https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html)
-- **CiteReady Pro (Auto `llms.txt` Compiler, JSON-LD Generator, CI Gate & Agency Reports):** [https://omnipulse-x402.appwrite.network/go/gumroad/citeready](https://omnipulse-x402.appwrite.network/go/gumroad/citeready)
-- **⚡ Instant Direct / Agent Checkout (24/7 Instant ZIP Download):** [https://omnipulse-x402.appwrite.network/checkout/citeready](https://omnipulse-x402.appwrite.network/checkout/citeready) | **3-in-1 Founder Launch Stack ($49/$89):** [https://omnipulse-x402.appwrite.network/checkout/launch-stack](https://omnipulse-x402.appwrite.network/checkout/launch-stack)
+- **Flagship v5.0 Online Web App (Zero Signup, 2-Second Audit):** [https://citeready-checker.appwrite.network](https://citeready-checker.appwrite.network)
+- **Free Online `/llms.txt` Compiler & Sitemap Gap Scanner:** [https://citeready-checker.appwrite.network/generator](https://citeready-checker.appwrite.network/generator)
+- **Docs & Comparison ($12 One-Time vs. €89+/mo Trackers):** [https://zcoldwater.github.io/citeready-cli/](https://zcoldwater.github.io/citeready-cli/) · [Compare Guide](https://zcoldwater.github.io/citeready-cli/compare.html) · [GitHub Action CI Guide](https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html)
+- **CiteReady Web Pro ($12 One-Time — Instant In-Browser Unlock, 14-Day Refund):** [Gumroad Checkout](https://omnipulse-x402.appwrite.network/go/gumroad/citeready) · [Direct 7-Chain Checkout](https://omnipulse-x402.appwrite.network/checkout/citeready)
+- **4-in-1 OmniForge Web Pro Suite ($29 One-Time — Unlocks VibeShield + BrandShield + CiteReady + InboxShield, Save $19):** [Gumroad Bundle](https://omnipulse-x402.appwrite.network/go/gumroad/launch-stack) · [Direct Checkout](https://omnipulse-x402.appwrite.network/checkout/launch-stack)
 
 ---
 
-## Embed a Live AI CiteReady Trust Badge
+## Why Websites Miss AI Search Citations
 
-Show developers and users that your docs and site are verified open to AI search engines — updates live via `/badge/citeready/<domain>.svg` (`flat`, `flat-square`, `for-the-badge`, or `card` footer widget):
-
-[![AI CiteReady Card](https://citeready-checker.appwrite.network/badge/citeready/stripe.com.svg?style=card)](https://citeready-checker.appwrite.network/?url=https://stripe.com)
-
-```markdown
-[![AI CiteReady](https://citeready-checker.appwrite.network/badge/citeready/yourdomain.com.svg)](https://citeready-checker.appwrite.network/?url=https://yourdomain.com)
-```
-
-Generate & preview all 4 styles in the **[Live Trust Badge Studio](https://citeready-checker.appwrite.network/badge)**.
+1. **Accidental `robots.txt` & `X-Robots-Tag` Blocks:** WAF presets and legacy `robots.txt` rules routinely block `OAI-SearchBot`, `PerplexityBot`, `ClaudeBot`, or `Bytespider`, preventing answer engines from crawling your product and pricing pages.
+2. **Missing Schema.org Entity Graph (`@graph`):** Without valid `Organization`, `SoftwareApplication`/`Product`, `Offer`, and `FAQPage` JSON-LD entities, LLMs cannot reliably extract structured product facts.
+3. **Missing `/llms.txt` & Low Server-Rendered Text:** Client-only JS apps without a clean root `/llms.txt` index leave AI crawlers guessing which docs matter most.
 
 ---
 
-## Why 80% of SaaS & DevTool Sites Miss AI Search Citations
+## Free Online Web App vs. CiteReady Web Pro (`$12` One-Time)
 
-1. **Accidental `robots.txt` Blocks:** WAF presets and legacy `robots.txt` templates routinely block `OAI-SearchBot`, `PerplexityBot`, or `ClaudeBot` — making your product invisible when buyers ask AI assistants for tool recommendations.
-2. **Missing `/llms.txt` & `/llms-full.txt`:** Docs and marketing SPAs bury core product facts in client-side bundles instead of publishing a clean Markdown index at `/llms.txt`.
-3. **Broken or Absent Schema.org JSON-LD:** Invalid JSON-LD syntax or missing `SoftwareApplication`, `Product`, and `FAQPage` graphs starve answer engines of structured pricing and feature facts.
+Zero software installs, zero monthly subscriptions. Unlock Web Pro right inside [citeready-checker.appwrite.network](https://citeready-checker.appwrite.network) with one-time payment (Gumroad or 7-chain USDT/USDC) and a **14-day refund guarantee**:
+
+| Capability | Free Online Scanner & OSS CLI | CiteReady Web Pro ($12 Once) | 4-in-1 Web Pro Suite ($29 Once) |
+| :--- | :---: | :---: | :---: |
+| **10 Global & China AI Crawler Matrix + `X-Robots-Tag`** | Unlimited 1-by-1 | **Unlimited + exact `robots.txt` patch** | **All 4 v5.0 Web Apps Included** |
+| **Schema.org Entity Graph Depth Score** | Live scan + score | **Unmasked `@graph` JSON-LD code** | **CiteReady + VibeShield ($9)** |
+| **`/llms.txt` Online Compiler & Sitemap Gap Check** | Unlimited starter | **Full root `/llms.txt` + VS-Page blueprint** | **+ BrandShield Naming ($12)** |
+| **5-Platform 3-Step Fix Wizard** | Step 1 preview | **Next.js, WordPress, Webflow/Shopify, Cloudflare & Cursor/Lovable** | **+ InboxShield Email ($15)** |
+| **Online Batch Scanner + Excel/CSV Export** | Preview 3 URLs | **Up to 50 URLs / batch + UTF-8 CSV** | **50-item batch CSV on all 4 apps** |
+| **Printable A4 Client GEO PDF Report** | Summary only | **Custom-header A4 PDF (`@media print`)** | **Branded A4 PDF on all 4 apps** |
+
+> **Honest Scope:** CiteReady audits and generates **technical on-site AI crawlability, `robots.txt`, Schema.org entity markup, and `/llms.txt`** on demand — it is not a `$1,000+/yr` daily LLM prompt-polling tracker.
+
+**[Unlock CiteReady Web Pro ($12 Once)](https://omnipulse-x402.appwrite.network/go/gumroad/citeready)** · **[Unlock 4-in-1 Suite ($29 Once — Save $19)](https://omnipulse-x402.appwrite.network/go/gumroad/launch-stack)** · **[Direct Multi-Chain Checkout](https://omnipulse-x402.appwrite.network/checkout/citeready)**
 
 ---
 
-## Quick Start (Zero Install via `npx`)
+## Optional Open-Source CLI & GitHub Action (`uses: zColdWater/citeready-cli@v1`)
 
 ```bash
-# Audit any live URL in seconds
+# Audit any live URL in seconds (Node.js 18+, zero dependencies)
 npx github:zColdWater/citeready-cli check https://stripe.com
-
-# Enforce CI thresholds (fail non-zero on regression)
 npx github:zColdWater/citeready-cli check https://yoursite.com --min-score 75 --require-llms-txt --require-jsonld
-
-# JSON or GitHub-Flavored Markdown output
-npx github:zColdWater/citeready-cli check https://linear.app --json
-npx github:zColdWater/citeready-cli check https://linear.app --markdown
 ```
-
----
-
-## Use as a GitHub Action (1-Line CI/CD Gate)
-
-Block pull requests or post-deploy regressions that accidentally break AI search crawler access, `/llms.txt`, or Schema.org JSON-LD — and render a clean Markdown scorecard directly inside `$GITHUB_STEP_SUMMARY`:
 
 ```yaml
 name: AI Search (GEO) & Schema.org Audit
@@ -74,7 +64,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-
       - name: Audit Production AI Citation Signals
         id: geo
         uses: zColdWater/citeready-cli@v1
@@ -85,33 +74,16 @@ jobs:
           require-jsonld: "true"
 ```
 
-### Action Inputs & Outputs
+## Live Badge Embed
 
-| Input | Default | Description |
-| :--- | :---: | :--- |
-| `url` | *(required)* | Live URL or preview deployment URL to audit |
-| `min-score` | `"0"` | Fail workflow if GEO Visibility Score (`0–100`) falls below threshold |
-| `require-llms-txt` | `"false"` | Set `"true"` to fail when spec-compliant `/llms.txt` is missing |
-| `require-jsonld` | `"false"` | Set `"true"` to fail when valid Schema.org JSON-LD is missing |
+```markdown
+[![AI CiteReady](https://citeready-checker.appwrite.network/badge/citeready/yourdomain.com.svg)](https://citeready-checker.appwrite.network/?url=https://yourdomain.com)
+```
 
-Outputs: `score`, `grade`, `llms-txt-present`, `jsonld-count`, and `json`.
+## Support & Contact
 
----
-
-## Free Lite CLI vs. CiteReady Pro
-
-`citeready-cli` is our free MIT-licensed **1-URL quick diagnostic & GitHub Action**. To automatically compile `/llms.txt` + `/llms-full.txt` from your live sitemap (1,000+ pages), generate validated Schema.org JSON-LD, and export branded client GEO audits, upgrade to **[CiteReady Pro](https://omnipulse-x402.appwrite.network/go/gumroad/citeready)** (see [full comparison vs. $99+/mo GEO SaaS trackers](https://zcoldwater.github.io/citeready-cli/compare.html)):
-
-| Capability | CiteReady Lite (Free OSS) | CiteReady Pro Solo ($19) | CiteReady Pro Agency ($39) |
-| :--- | :---: | :---: | :---: |
-| **AI Search Crawler `robots.txt` Audit** | 1 URL / run | **Full site + custom `robots.txt` builder** | **Unlimited client domains** |
-| **`/llms.txt` & `/llms-full.txt` Compiler** | Spec check only | **Auto-crawls sitemap & compiles clean Markdown** | **Multi-site batch compiler** |
-| **Schema.org JSON-LD Toolkit** | Syntax & `@type` check | **Validated JSON-LD generator (SaaS/Product/FAQ)** | **Client-ready JSON-LD snippet packs** |
-| **GitHub Actions CI Regression Gate** | Single-URL `@v1` Action | **Multi-URL full-sitemap CI suite** | **Included** |
-| **White-Label Client HTML/PDF Reports** | — | Solo / own projects | **10-seat agency license + `--brand` / `--client`** |
-
-👉 **[Download CiteReady Pro ($19 Solo / $39 Agency — One-Time Payment) on Gumroad](https://omnipulse-x402.appwrite.network/go/gumroad/citeready)** · **[⚡ Instant Direct / Agent Checkout](https://omnipulse-x402.appwrite.network/checkout/citeready)**
+OmniForge · Agent Arena Studio — `agentarenastudio@proton.me` · [@agentarenastudi](https://x.com/agentarenastudi) · [Support Portal](https://omnipulse-x402.appwrite.network/support) · [14-Day Refund Policy](https://omnipulse-x402.appwrite.network/refund-policy)
 
 ## License
 
-MIT © OmniForge Studio
+MIT © OmniForge · Agent Arena Studio
