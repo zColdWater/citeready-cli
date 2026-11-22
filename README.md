@@ -2,6 +2,9 @@
 
 **Zero-dependency AI Search (`llms.txt` / GEO), Crawler & Schema.org Technical SEO Auditor + GitHub Action — verify whether ChatGPT Search (`OAI-SearchBot`), Perplexity (`PerplexityBot`), Claude (`ClaudeBot`), and Google AI Overviews can crawl, understand, and cite your site.**
 
+[![AI CiteReady Live](https://citeready-checker.appwrite.network/badge/citeready/stripe.com.svg)](https://citeready-checker.appwrite.network/?url=https://stripe.com)
+[![Email Security Live](https://inbox-checker.appwrite.network/badge/inbox/stripe.com.svg)](https://inbox-checker.appwrite.network/?domain=stripe.com)
+[![BrandShield Live](https://brand-checker.appwrite.network/badge/brand/Zqxvora.svg)](https://brand-checker.appwrite.network/report/Zqxvora)
 [![GitHub Action](https://img.shields.io/badge/GitHub%20Action-zColdWater%2Fciteready--cli%40v1-7c3aed?logo=githubactions&logoColor=white)](./action.yml)
 [![Release](https://img.shields.io/github/v/release/zColdWater/citeready-cli?color=10b981)](https://github.com/zColdWater/citeready-cli/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
@@ -14,6 +17,20 @@
 - **GitHub Action CI/CD Guide:** [https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html](https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html)
 - **CiteReady Pro (Auto `llms.txt` Compiler, JSON-LD Generator, CI Gate & Agency Reports):** [https://agentarenastudi.gumroad.com/l/omniforge-citeready](https://agentarenastudi.gumroad.com/l/omniforge-citeready)
 - **⚡ Instant Direct / Agent Checkout (24/7 Instant ZIP Download):** [https://omnipulse-x402.appwrite.network/checkout/citeready](https://omnipulse-x402.appwrite.network/checkout/citeready) | **3-in-1 Founder Launch Stack ($49/$89):** [https://omnipulse-x402.appwrite.network/checkout/launch-stack](https://omnipulse-x402.appwrite.network/checkout/launch-stack)
+
+---
+
+## Embed a Live AI CiteReady Trust Badge
+
+Show developers and users that your docs and site are verified open to AI search engines — updates live via `/badge/citeready/<domain>.svg` (`flat`, `flat-square`, `for-the-badge`, or `card` footer widget):
+
+[![AI CiteReady Card](https://citeready-checker.appwrite.network/badge/citeready/stripe.com.svg?style=card)](https://citeready-checker.appwrite.network/?url=https://stripe.com)
+
+```markdown
+[![AI CiteReady](https://citeready-checker.appwrite.network/badge/citeready/yourdomain.com.svg)](https://citeready-checker.appwrite.network/?url=https://yourdomain.com)
+```
+
+Generate & preview all 4 styles in the **[Live Trust Badge Studio](https://citeready-checker.appwrite.network/badge)**.
 
 ---
 
