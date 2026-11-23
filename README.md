@@ -2,15 +2,15 @@
 
 **Verify whether ChatGPT Search (`OAI-SearchBot`), Perplexity (`PerplexityBot`), Claude (`ClaudeBot`), Google AI Overviews (`Google-Extended`), Apple Intelligence, Doubao (`Bytespider`), and Baidu AI can crawl and cite your site — free in 2 seconds directly in your browser, or in CI via `zColdWater/citeready-cli@v1`.**
 
-[![AI CiteReady Live](https://citeready-checker.appwrite.network/badge/citeready/stripe.com.svg)](https://citeready-checker.appwrite.network/?url=https://stripe.com)
-[![Email Security Live](https://inbox-checker.appwrite.network/badge/inbox/stripe.com.svg)](https://inbox-checker.appwrite.network/?domain=stripe.com)
-[![BrandShield Live](https://brand-checker.appwrite.network/badge/brand/Zqxvora.svg)](https://brand-checker.appwrite.network/report/Zqxvora)
+[![CiteReady AI Score](https://citeready-checker.appwrite.network/api/badge?url=citeready-checker.appwrite.network)](https://citeready-checker.appwrite.network/?url=citeready-checker.appwrite.network)
+[![Stripe AI Readiness](https://citeready-checker.appwrite.network/api/badge?url=stripe.com)](https://citeready-checker.appwrite.network/?url=stripe.com)
 [![GitHub Action](https://img.shields.io/badge/GitHub%20Action-zColdWater%2Fciteready--cli%40v1-7c3aed?logo=githubactions&logoColor=white)](./action.yml)
 [![Release](https://img.shields.io/github/v/release/zColdWater/citeready-cli?color=10b981)](https://github.com/zColdWater/citeready-cli/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-success.svg)](./package.json)
 
-- **Flagship v5.0 Online Web App (Zero Signup, 2-Second Audit):** [https://citeready-checker.appwrite.network](https://citeready-checker.appwrite.network)
+- **Flagship v6.0 Online Web App (Zero Signup, 2-Second Single & Side-by-Side PK Audit):** [https://citeready-checker.appwrite.network](https://citeready-checker.appwrite.network)
+- **NEW — 2026 Top 50 AI & Dev SaaS AI Search Readiness & `/llms.txt` Benchmark (Live Measured Study + Raw JSON):** [https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.html](https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.html) (`74%` `/llms.txt` · `22%` `/llms-full.txt` · `32%` zero Schema.org · 4 frontier AI labs missing root `/llms.txt`)
 - **Free Online `/llms.txt` Compiler & Sitemap Gap Scanner:** [https://citeready-checker.appwrite.network/generator](https://citeready-checker.appwrite.network/generator)
 - **Docs & Honest Comparisons ($2 (was $12) vs. €89+/mo Trackers):** [https://zcoldwater.github.io/citeready-cli/](https://zcoldwater.github.io/citeready-cli/) · [Peec AI vs. CiteReady](https://zcoldwater.github.io/launch-audit-reports/compare/peec-ai-vs-citeready.html) · [Compare Guide](https://zcoldwater.github.io/citeready-cli/compare.html) · [GitHub Action CI Guide](https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html)
 - **CiteReady Web Pro ($2 Launch Special (was $12) — Instant In-Browser Unlock, 14-Day Refund):** [Gumroad Checkout](https://omnipulse-x402.appwrite.network/go/gumroad/citeready) · [Direct 7-Chain Checkout](https://omnipulse-x402.appwrite.network/checkout/citeready)
@@ -77,7 +77,7 @@ jobs:
 ## Live Badge Embed
 
 ```markdown
-[![AI CiteReady](https://citeready-checker.appwrite.network/badge/citeready/yourdomain.com.svg)](https://citeready-checker.appwrite.network/?url=https://yourdomain.com)
+[![CiteReady AI Search Readiness](https://citeready-checker.appwrite.network/api/badge?url=yourdomain.com)](https://citeready-checker.appwrite.network/?url=yourdomain.com)
 ```
 
 ## Support & Contact

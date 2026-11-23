@@ -6,8 +6,10 @@
 
 CiteReady v5.0 helps founders, marketing teams, and technical SEO agencies verify and fix technical AI search crawlability directly in the browser in under 2 seconds — checking 10 global and China AI crawlers (`OAI-SearchBot`, `GPTBot`, `ChatGPT-User`, `PerplexityBot`, `ClaudeBot`, `Google-Extended`, `Applebot-Extended`, `Bytespider`, `Baiduspider`, `CCBot`), live `X-Robots-Tag` headers, Schema.org JSON-LD Entity Graph depth, and root `/llms.txt` readiness.
 
-- **Flagship v5.0 Web App:** https://citeready-checker.appwrite.network
+- **Flagship v6.0 Web App (100/100 A+ Self-Audited, Dual-Site PK & Live SVG Badges):** https://citeready-checker.appwrite.network
+- **2026 Top 50 AI & Dev SaaS Empirical Benchmark Study (74% /llms.txt, 32% Zero Schema, Full JSON Dataset):** https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.html | https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.json
 - **Free Online /llms.txt Generator:** https://citeready-checker.appwrite.network/generator
+- **Live SVG README Score Badge API:** https://citeready-checker.appwrite.network/api/badge?url=stripe.com
 - **Docs & Landing Page:** https://zcoldwater.github.io/citeready-cli/
 - **Comparison Guide ($2 Launch Special (was $12) vs. €89+/mo Trackers):** https://zcoldwater.github.io/citeready-cli/compare.html
 - **GitHub Action CI/CD Guide:** https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html
