@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>llms.txt Validator &amp; Spec Linter (2026) — Check Markdown Syntax, Token Budget &amp; Live URLs | CiteReady</title>
+  <meta name="description" content="Free 2026 /llms.txt validator and llmstxt.org spec linter. Validate H1 title, blockquote summary, H2 sections, absolute URLs, duplicate links, and token budget — or test any live website's /llms.txt &amp; /llms-full.txt in 2 seconds." />
+  <meta name="keywords" content="llms.txt validator, llms.txt linter, llmstxt.org spec checker, test llms.txt online, llms.txt token count, llms-full.txt checker, GEO audit tool" />
+  <link rel="canonical" href="https://zcoldwater.github.io/citeready-cli/llms-txt-validator-2026.html" />
+  <link rel="icon" type="image/svg+xml" href="https://citeready-checker.appwrite.network/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="llms.txt Validator &amp; Spec Linter (2026) — CiteReady" />
+  <meta property="og:description" content="Lint raw /llms.txt Markdown against llmstxt.org rules, measure token budget, auto-format clean output, or inspect any live domain in 2 seconds." />
+  <meta property="og:url" content="https://zcoldwater.github.io/citeready-cli/llms-txt-validator-2026.html" />
+  <meta property="og:image" content="https://brand-checker.appwrite.network/assets/cover-citeready-2usd.png" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="720" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="llms.txt Validator &amp; Spec Linter (2026)" />
+  <meta name="twitter:description" content="Validate llmstxt.org Markdown syntax, check token size, auto-fix formatting, or test any live site in 2 seconds." />
+  <meta name="twitter:image" content="https://brand-checker.appwrite.network/assets/cover-citeready-2usd.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://zcoldwater.github.io/citeready-cli/#org",
+        "name": "OmniForge · Agent Arena Studio",
+        "url": "https://citeready-checker.appwrite.network/",
+        "sameAs": [
+          "https://github.com/zColdWater/citeready-cli",
+          "https://x.com/agentarenastudi"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://zcoldwater.github.io/citeready-cli/#website",
+        "name": "CiteReady Docs & Tools",
+        "url": "https://zcoldwater.github.io/citeready-cli/",
+        "publisher": { "@id": "https://zcoldwater.github.io/citeready-cli/#org" }
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://zcoldwater.github.io/citeready-cli/llms-txt-validator-2026.html#app",
+        "name": "CiteReady /llms.txt Validator & Spec Linter (2026)",
+        "url": "https://zcoldwater.github.io/citeready-cli/llms-txt-validator-2026.html",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web",
+        "description": "Client-side llmstxt.org Markdown specification linter, token estimator, auto-formatter, and live website /llms.txt checker.",
+        "publisher": { "@id": "https://zcoldwater.github.io/citeready-cli/#org" },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://zcoldwater.github.io/citeready-cli/llms-txt-validator-2026.html"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "CiteReady CLI", "item": "https://zcoldwater.github.io/citeready-cli/" },
+          { "@type": "ListItem", "position": 2, "name": "llms.txt Validator", "item": "https://zcoldwater.github.io/citeready-cli/llms-txt-validator-2026.html" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What makes a valid /llms.txt file according to llmstxt.org?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A spec-compliant /llms.txt file lives at the root of your domain, begins with a single H1 (# Brand Name), follows with a concise blockquote (> summary) explaining the product, and organizes canonical absolute URLs under H2 (## Section) headings as bulleted Markdown links (- [Title](https://...): description)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between /llms.txt and /llms-full.txt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "/llms.txt is a compact curated table of contents (usually 1KB to 8KB) helping AI assistants locate key docs and pricing pages quickly, whereas /llms-full.txt inlines extended Markdown documentation for single-request LLM context ingestion. In our 2026 Top 50 SaaS Benchmark, 74% published /llms.txt but only 22% published /llms-full.txt."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #ffffff; --bg-subtle: #f8fafc; --ink: #0f172a; --ink-2: #334155; --muted: #64748b;
+      --line: #e2e8f0; --line-strong: #cbd5e1;
+      --accent: #4f46e5; --accent-hover: #4338ca; --accent-soft: #eef2ff; --accent-bd: #c7d2fe;
+      --ok-bg: #ecfdf5; --ok-fg: #047857; --ok-bd: #a7f3d0;
+      --warn-bg: #fffbeb; --warn-fg: #b45309; --warn-bd: #fde68a;
+      --bad-bg: #fef2f2; --bad-fg: #b91c1c; --bad-bd: #fecaca;
+      --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      --r: 10px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .mono { font-family: var(--mono); }
+    .num { font-variant-numeric: tabular-nums; }
+    .topbar { position: sticky; top: 0; z-index: 40; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+    .topbar-inner { max-width: 1180px; margin: 0 auto; padding: 0 24px; height: 63px; display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 800; font-size: 16px; letter-spacing: -0.02em; white-space: nowrap; }
+    .brand:hover { text-decoration: none; }
+    .brand-mark { width: 28px; height: 28px; border-radius: 7px; background: linear-gradient(135deg,#0f172a,#312e81 55%,#4f46e5); display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .nav { display: flex; align-items: center; gap: 14px; font-size: 13px; }
+    .nav a { color: var(--ink-2); font-weight: 500; white-space: nowrap; }
+    .nav a:hover { color: var(--ink); text-decoration: none; }
+    .nav a.active { color: var(--accent); font-weight: 700; }
+    .nav-actions { display: flex; align-items: center; gap: 8px; }
+    .lang-pill { display: inline-flex; border: 1px solid var(--line-strong); border-radius: 999px; padding: 2px; background: var(--bg-subtle); }
+    .lang-btn { border: 0; background: transparent; color: var(--muted); padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; cursor: pointer; font-family: inherit; }
+    .lang-btn.active { background: var(--ink); color: #fff; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 9px 15px; border-radius: 8px; font-size: 13.5px; font-weight: 600; cursor: pointer; border: 1px solid var(--line-strong); background: #fff; color: var(--ink); font-family: inherit; white-space: nowrap; }
+    .btn:hover { background: var(--bg-subtle); text-decoration: none; }
+    .btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: #fff; }
+    .btn-dark { background: var(--ink); border-color: var(--ink); color: #fff; }
+    .btn-dark:hover { background: #1e293b; color: #fff; }
+    .btn-sm { padding: 6px 12px; font-size: 12.5px; }
+    .shell { max-width: 1180px; margin: 0 auto; border-left: 1px solid var(--line); border-right: 1px solid var(--line); background: #fff; }
+    .band { padding: 40px 36px; border-bottom: 1px solid var(--line); }
+    .band.subtle { background: var(--bg-subtle); }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 11.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+    h1 { margin: 0 0 10px; font-size: clamp(26px, 3.6vw, 40px); line-height: 1.12; letter-spacing: -0.03em; font-weight: 800; max-width: 900px; }
+    .lead { margin: 0 0 20px; font-size: 15.5px; color: var(--ink-2); max-width: 780px; }
+    .live-card { background: var(--bg-subtle); border: 1px solid var(--line-strong); border-radius: 12px; padding: 14px 16px; margin-bottom: 18px; }
+    .live-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    .live-input { flex: 1; min-width: 220px; padding: 10px 12px; border: 1px solid var(--line-strong); border-radius: 8px; font-size: 13.5px; font-family: var(--mono); background: #fff; color: var(--ink); }
+    .chips { display: flex; gap: 7px; flex-wrap: wrap; align-items: center; margin-top: 9px; font-size: 12px; color: var(--muted); }
+    .chip { border: 1px solid var(--line-strong); background: #fff; color: var(--ink-2); padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; cursor: pointer; font-family: var(--mono); }
+    .chip:hover { border-color: var(--accent); color: var(--accent); }
+    .live-res { display: none; margin-top: 12px; padding: 12px 14px; border-radius: 9px; border: 1px solid var(--accent-bd); background: var(--accent-soft); font-size: 13px; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .live-res.show { display: flex; }
+    .preset-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+    .preset-btn { padding: 7px 13px; border-radius: 8px; border: 1px solid var(--line-strong); background: #fff; color: var(--ink-2); font-size: 12.5px; font-weight: 600; cursor: pointer; font-family: inherit; }
+    .preset-btn.active { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+    .workspace { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 22px; align-items: start; }
+    .panel { border: 1px solid var(--line); border-radius: var(--r); background: #fff; overflow: hidden; }
+    .panel-head { padding: 13px 18px; border-bottom: 1px solid var(--line); background: var(--bg-subtle); display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .panel-body { padding: 16px 18px; }
+    .editor { width: 100%; min-height: 410px; padding: 14px; border: 1px solid var(--line-strong); border-radius: 8px; background: #0f172a; color: #e2e8f0; font-family: var(--mono); font-size: 12.5px; line-height: 1.55; resize: vertical; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 16px; }
+    .kpi { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; background: var(--bg-subtle); }
+    .kpi-v { font-size: 20px; font-weight: 800; color: var(--ink); line-height: 1.15; }
+    .kpi-l { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 4px; font-weight: 700; }
+    .check-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+    .check-item { display: flex; align-items: flex-start; gap: 10px; padding: 9px 11px; border: 1px solid var(--line); border-radius: 8px; font-size: 13px; background: #fff; }
+    .pill { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 999px; font-size: 10.5px; font-weight: 700; border: 1px solid transparent; white-space: nowrap; flex-shrink: 0; }
+    .p-ok { background: var(--ok-bg); color: var(--ok-fg); border-color: var(--ok-bd); }
+    .p-warn { background: var(--warn-bg); color: var(--warn-fg); border-color: var(--warn-bd); }
+    .p-bad { background: var(--bad-bg); color: var(--bad-fg); border-color: var(--bad-bd); }
+    .p-info { background: var(--accent-soft); color: var(--accent); border-color: var(--accent-bd); }
+    .cta-box { background: linear-gradient(135deg,#0f172a 0%,#1e1b4b 60%,#312e81 100%); color: #fff; border-radius: 12px; padding: 24px 26px; display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap; }
+    .cta-box h2 { color: #fff; margin: 0 0 6px; font-size: 20px; }
+    .cta-box p { margin: 0; color: #cbd5e1; font-size: 13.5px; max-width: 640px; }
+    .price-old { text-decoration: line-through; opacity: 0.65; margin-right: 4px; }
+    footer { padding: 26px 36px; font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; background: #fff; }
+    .ft-links { display: flex; gap: 14px; flex-wrap: wrap; }
+    .ft-links a { color: var(--ink-2); }
+    @media (max-width: 960px) { .workspace { grid-template-columns: 1fr; } .kpi-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 720px) {
+      .nav { display: none; }
+      .band { padding: 26px 16px; }
+      footer { padding: 20px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="https://citeready-checker.appwrite.network/">
+        <span class="brand-mark"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5Z" fill="#ffffff"/><circle cx="12" cy="12" r="2.2" fill="#38bdf8"/></svg></span>
+        <span>CiteReady</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="https://citeready-checker.appwrite.network/">Live Auditor</a>
+        <a href="./ai-search-readiness-benchmark-2026.html">Top 50 Benchmark</a>
+        <a href="./robots-txt-ai-bots-2026.html">robots.txt Builder</a>
+        <a href="./schema-jsonld-graph-builder.html">Schema @graph</a>
+        <a href="./llms-txt-validator-2026.html" class="active">/llms.txt Linter</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-pill" role="group" aria-label="Language">
+          <button type="button" class="lang-btn active" id="lpEn">EN</button>
+          <button type="button" class="lang-btn" id="lpZh">中文</button>
+        </div>
+        <a class="btn btn-primary btn-sm" href="https://citeready-checker.appwrite.network/generator" target="_blank" rel="noopener" data-i18n="navGen">Auto-Compile /llms.txt &rarr;</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="band">
+      <div class="eyebrow mono"><span class="dot"></span><span data-i18n="eyebrow">2026 LLMSTXT.ORG SPEC VALIDATOR · TOKEN BUDGET &amp; LIVE DOMAIN CHECK</span></div>
+      <h1 data-i18n="h1">Validate &amp; lint your /llms.txt before AI crawlers index it.</h1>
+      <p class="lead" data-i18n="lead">Paste your /llms.txt Markdown to run 8 instant llmstxt.org specification checks, estimate LLM token consumption, and auto-format clean output — or check any live domain's /llms.txt &amp; /llms-full.txt in 2 seconds.</p>
+
+      <div class="live-card">
+        <form id="liveForm" class="live-row" autocomplete="off">
+          <input id="liveInput" class="live-input" type="text" maxlength="160" placeholder="Check a live domain's /llms.txt & /llms-full.txt, e.g. stripe.com, supabase.com, mintlify.com" />
+          <button id="liveBtn" type="submit" class="btn btn-dark" data-i18n="liveBtn">Check Live Domain</button>
+        </form>
+        <div class="chips">
+          <span data-i18n="tryLive">Try live domain:</span>
+          <button type="button" class="chip" data-dom="stripe.com">stripe.com</button>
+          <button type="button" class="chip" data-dom="supabase.com">supabase.com</button>
+          <button type="button" class="chip" data-dom="mintlify.com">mintlify.com</button>
+          <button type="button" class="chip" data-dom="linear.app">linear.app</button>
+        </div>
+        <div id="liveRes" class="live-res" role="status"></div>
+      </div>
+
+      <div class="preset-row">
+        <button type="button" class="preset-btn active" data-tpl="saas" data-i18n="tplSaas">Sample: SaaS / DevTool</button>
+        <button type="button" class="preset-btn" data-tpl="docs" data-i18n="tplDocs">Sample: API Docs Hub</button>
+        <button type="button" class="preset-btn" data-tpl="broken" data-i18n="tplBroken">Sample: Common Spec Mistakes</button>
+      </div>
+
+      <div class="workspace">
+        <div class="panel">
+          <div class="panel-head">
+            <strong class="mono">/llms.txt Markdown</strong>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <button type="button" class="btn btn-sm" id="fmtBtn" data-i18n="fmtBtn">Auto-Format</button>
+              <button type="button" class="btn btn-sm" id="copyBtn" data-i18n="copyBtn">Copy</button>
+              <button type="button" class="btn btn-primary btn-sm" id="dlBtn" data-i18n="dlBtn">Download llms.txt</button>
+            </div>
+          </div>
+          <div class="panel-body">
+            <textarea id="mdInput" class="editor" spellcheck="false" aria-label="llms.txt Markdown input"></textarea>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <strong data-i18n="repTitle">Live llmstxt.org Spec Report</strong>
+            <span class="pill p-ok num" id="scorePill">100/100 · PASS</span>
+          </div>
+          <div class="panel-body">
+            <div class="kpi-grid">
+              <div class="kpi"><div class="kpi-v num" id="kScore">100</div><div class="kpi-l" data-i18n="kScore">Spec Score</div></div>
+              <div class="kpi"><div class="kpi-v num" id="kLinks">0</div><div class="kpi-l" data-i18n="kLinks">Valid Links</div></div>
+              <div class="kpi"><div class="kpi-v num" id="kTokens">0</div><div class="kpi-l" data-i18n="kTokens">Est. Tokens</div></div>
+              <div class="kpi"><div class="kpi-v num" id="kBytes">0B</div><div class="kpi-l" data-i18n="kBytes">File Size</div></div>
+            </div>
+            <ul class="check-list" id="checkList"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band subtle">
+      <div class="cta-box">
+        <div>
+          <h2 data-i18n="ctaTitle">Auto-compile /llms.txt from your sitemap + 5-platform fixes — $2 once.</h2>
+          <p data-i18n="ctaSub">Need unmasked Schema.org @graph HTML, Cloudflare WAF rules, 50-URL batch CSV exports, and branded A4 PDF reports? Unlock CiteReady Web Pro right in your browser ($2 Launch Special, was $12 — or $5 Complete Suite, was $29). 14-day refund.</p>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" style="background:#fff;color:#0f172a;border-color:#fff" id="ctaDirectLink" href="https://omnipulse-x402.appwrite.network/checkout/citeready" target="_blank" rel="noopener"><span class="price-old">$12</span> Unlock Pro — $2</a>
+          <a class="btn" style="background:rgba(255,255,255,0.12);color:#fff;border-color:rgba(255,255,255,0.3)" href="https://omnipulse-x402.appwrite.network/go/gumroad/suite" target="_blank" rel="noopener"><span class="price-old">$29</span> Complete Suite — $5</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>OmniForge &middot; Agent Arena Studio &middot; <a href="mailto:agentarenastudio@proton.me">agentarenastudio@proton.me</a></span>
+      <div class="ft-links">
+        <a href="./index.html">CiteReady CLI</a>
+        <a href="./ai-search-readiness-benchmark-2026.html">Top 50 Benchmark</a>
+        <a href="./robots-txt-ai-bots-2026.html">robots.txt Builder</a>
+        <a href="./schema-jsonld-graph-builder.html">Schema @graph Builder</a>
+        <a href="./compare.html">Compare</a>
+        <a href="https://citeready-checker.appwrite.network/robots-builder" target="_blank" rel="noopener">Live Robots Import</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+  (function () {
+    const opTrack=(()=>{const E="https://omnipulse-x402.appwrite.network/v1/telemetry",D=document,W=window,R=D.documentElement,G=navigator,L=location,S=W.screen,M=Math,N=Date.now,I="cr_"+N().toString(36)+"_"+M.random().toString(36).slice(2,10),on=(t,e,f,o)=>t.addEventListener(e,f,o);let z="",d=0,v=D.hidden?0:N(),m=0,la=0,c={scan:0,outbound:0,paywall:0};try{z=Intl.DateTimeFormat().resolvedOptions().timeZone||""}catch{}const fl=()=>{if(v)d+=M.max(0,N()-v);v=D.hidden?0:N()},us=()=>{m=M.max(m,M.min(100,M.round(M.max(0,W.scrollY)/M.max(1,R.scrollHeight-W.innerHeight)*100)))},tx=ev=>{fl();us();const b=JSON.stringify({site:"citeready",sid:I,event:ev,path:"/llms-txt-validator-2026",webdriver:!!G.webdriver,screen:S?S.width+"x"+S.height:"0x0",dwellSec:M.round(d/1e3),scrollPct:m,scansRun:c.scan,outboundClicks:c.outbound,paywallClicks:c.paywall,referrer:(D.referrer||"").slice(0,128),tz:z,lang:R.lang||"en"});try{if(!G.sendBeacon?.(E,new Blob([b],{type:"text/plain"})))fetch(E,{method:"POST",body:b,keepalive:!0}).catch(()=>{})}catch{}},lv=()=>{fl();v=0;if(N()-la>1e3){la=N();tx("leave")}},tr=ev=>{if(ev in c)c[ev]++;tx(ev)};on(W,"scroll",us,{passive:!0});on(D,"visibilitychange",()=>D.hidden?lv():v=N());on(W,"pagehide",lv);setInterval(()=>!D.hidden&&tx("heartbeat"),15e3);on(D,"click",e=>{const a=e.target?.closest?.("a[href]"),h=a?.href||"";if(/\/(go\/gumroad|checkout)\/|gumroad\.com/i.test(h))tr("paywall");else if(/^https?:/.test(h)&&a.origin!==L.origin)tr("outbound")},!0);return tr})();
+
+    const SAMPLES = {
+      saas: [
+        "# Acme Cloud API",
+        "",
+        "> Serverless Postgres branching and instant preview databases for TypeScript teams, with sub-second copy-on-write forks and automated daily backups.",
+        "",
+        "## Core Documentation",
+        "- [Quickstart Guide](https://acme-api.example/docs/quickstart): Create your first branched Postgres database in 60 seconds.",
+        "- [CLI Reference](https://acme-api.example/docs/cli): Commands for branch creation, migrations, and CI previews.",
+        "- [API Reference](https://acme-api.example/docs/api): REST and TypeScript SDK endpoints with authentication examples.",
+        "",
+        "## Pricing & Security",
+        "- [Pricing Plans](https://acme-api.example/pricing): Free starter tier ($0/mo) and Pro usage-based billing.",
+        "- [Security & SOC 2](https://acme-api.example/security): Encryption at rest, private networking, and compliance documentation.",
+        "",
+        "## Optional",
+        "- [Full Markdown Index](https://acme-api.example/llms-full.txt): Consolidated single-file documentation for deep LLM ingestion."
+      ].join("\n"),
+      docs: [
+        "# VectorDB Engine",
+        "",
+        "> High-throughput hybrid vector and BM25 search engine written in Rust for RAG pipelines and low-latency agent memory.",
+        "",
+        "## Getting Started",
+        "- [Installation](https://vectordb.example/docs/install): Docker, Homebrew, and managed cloud cluster setup.",
+        "- [Hybrid Search](https://vectordb.example/docs/hybrid-search): Combine dense embeddings with sparse BM25 reranking.",
+        "- [Benchmarks](https://vectordb.example/benchmarks): p99 latency across 10M vectors at 1536 dimensions.",
+        "",
+        "## SDKs",
+        "- [TypeScript SDK](https://vectordb.example/docs/sdk/ts): Typed client for Node.js, Edge Workers, and Next.js.",
+        "- [Python SDK](https://vectordb.example/docs/sdk/python): Async client compatible with LangChain and LlamaIndex."
+      ].join("\n"),
+      broken: [
+        "Welcome to MySite",
+        "",
+        "- [Docs](/docs/getting-started)",
+        "- [Pricing](/pricing)",
+        "- [Docs Again](/docs/getting-started)",
+        "- http://mysite.example/raw-unformatted-link"
+      ].join("\n")
+    };
+
+    const I18N = {
+      en: {
+        navGen: "Auto-Compile /llms.txt →",
+        eyebrow: "2026 LLMSTXT.ORG SPEC VALIDATOR · TOKEN BUDGET & LIVE DOMAIN CHECK",
+        h1: "Validate & lint your /llms.txt before AI crawlers index it.",
+        lead: "Paste your /llms.txt Markdown to run 8 instant llmstxt.org specification checks, estimate LLM token consumption, and auto-format clean output — or check any live domain's /llms.txt & /llms-full.txt in 2 seconds.",
+        liveBtn: "Check Live Domain", checking: "Checking live...", tryLive: "Try live domain:",
+        tplSaas: "Sample: SaaS / DevTool", tplDocs: "Sample: API Docs Hub", tplBroken: "Sample: Common Spec Mistakes",
+        fmtBtn: "Auto-Format", copyBtn: "Copy", copied: "Copied", dlBtn: "Download llms.txt",
+        repTitle: "Live llmstxt.org Spec Report",
+        kScore: "Spec Score", kLinks: "Valid Links", kTokens: "Est. Tokens", kBytes: "File Size",
+        ctaTitle: "Auto-compile /llms.txt from your sitemap + 5-platform fixes — $2 once.",
+        ctaSub: "Need unmasked Schema.org @graph HTML, Cloudflare WAF rules, 50-URL batch CSV exports, and branded A4 PDF reports? Unlock CiteReady Web Pro right in your browser ($2 Launch Special, was $12 — or $5 Complete Suite, was $29). 14-day refund."
+      },
+      zh: {
+        navGen: "在线自动编译 /llms.txt →",
+        eyebrow: "2026 LLMSTXT.ORG 规范校验器 · TOKEN 估算与线上实测",
+        h1: "上线前先校验 /llms.txt 规范与 Token 体积，确保 AI 爬虫秒懂。",
+        lead: "粘贴 /llms.txt Markdown 即刻执行 8 项 llmstxt.org 规范静态校验、估算大模型 Token 消耗并一键自动格式化；也可输入任意线上域名 2 秒实测其 /llms.txt 与 /llms-full.txt 状态。",
+        liveBtn: "2 秒实测线上站点", checking: "实时检测中...", tryLive: "一键实测域名：",
+        tplSaas: "示例：开发者 SaaS", tplDocs: "示例：API 文档中心", tplBroken: "示例：常见错误演示",
+        fmtBtn: "一键格式化修复", copyBtn: "复制", copied: "已复制", dlBtn: "下载 llms.txt",
+        repTitle: "llmstxt.org 实时规范检测报告",
+        kScore: "规范得分", kLinks: "有效链接", kTokens: "预估 Tokens", kBytes: "文件体积",
+        ctaTitle: "从 Sitemap 自动生成 /llms.txt + 全栈 5 平台修复 — $2 买断。",
+        ctaSub: "需要完整无打码 Schema.org @graph 代码、Cloudflare WAF 规则、50 站批量 CSV 与正式 A4 PDF 报告？浏览器原地解锁 CiteReady Web Pro（$2 破冰特惠，原价 $12；全栈套票 $5，原价 $29），享 14 天退款保障。"
+      }
+    };
+
+    let lang = "en";
+    try {
+      const q = new URLSearchParams(location.search).get("lang");
+      const saved = localStorage.getItem("of_lang_v5");
+      if (q === "zh" || q === "en") lang = q;
+      else if (saved === "zh" || saved === "en") lang = saved;
+    } catch {}
+
+    function t(k) { return (I18N[lang] && I18N[lang][k]) || I18N.en[k] || k; }
+    function esc(s) { return String(s == null ? "" : s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+    function cleanDomain(raw) { return String(raw || "").trim().replace(/^https?:\/\//i, "").replace(/\/.*$/, "").replace(/[^a-zA-Z0-9.-]/g, ""); }
+
+    function lintLlmsTxt(raw) {
+      const txt = String(raw || "");
+      const lines = txt.split(/\r?\n/);
+      const bytes = new TextEncoder().encode(txt).length;
+      const tokens = Math.ceil(txt.length / 4);
+
+      const h1s = lines.filter(function (l) { return /^#\s+\S/.test(l.trim()); });
+      const hasSingleH1 = h1s.length === 1 && /^#\s+\S/.test((lines.find(function (l) { return l.trim().length > 0; }) || "").trim());
+      const hasBlockquote = lines.some(function (l) { return /^>\s+\S/.test(l.trim()); });
+      const h2s = lines.filter(function (l) { return /^##\s+\S/.test(l.trim()); });
+      const mdLinks = [];
+      const relLinks = [];
+      const seenUrls = new Set();
+      let dupes = 0;
+      const bareUrls = [];
+
+      lines.forEach(function (l) {
+        const s = l.trim();
+        let m;
+        const re = /\[([^\]]+)\]\(([^)\s]+)\)/g;
+        let foundMd = false;
+        while ((m = re.exec(s)) !== null) {
+          foundMd = true;
+          const u = m[2].trim();
+          if (/^https?:\/\//i.test(u)) {
+            mdLinks.push({ title: m[1].trim(), url: u });
+            if (seenUrls.has(u)) dupes++;
+            seenUrls.add(u);
+          } else {
+            relLinks.push(u);
+          }
+        }
+        if (!foundMd && /https?:\/\/\S+/.test(s) && !s.startsWith(">")) bareUrls.push(s);
+      });
+
+      const hasLlmsFull = /llms-full\.txt/i.test(txt);
+      const sizeOk = bytes >= 120 && bytes <= 32768;
+
+      const checks = [
+        {
+          pass: hasSingleH1, sev: "bad",
+          en: hasSingleH1 ? "Starts with a single H1 title (# Brand Name)." : "Missing or misplaced single H1 title on line 1 (llmstxt.org requires # Title).",
+          zh: hasSingleH1 ? "首行包含唯一 H1 标题（# 品牌名）。" : "缺少或未在首行放置唯一 H1 标题（llmstxt.org 强制要求 # Title）。"
+        },
+        {
+          pass: hasBlockquote, sev: "bad",
+          en: hasBlockquote ? "Includes concise blockquote summary (> Product summary)." : "Missing blockquote summary (> one-line product summary) under H1.",
+          zh: hasBlockquote ? "包含精炼引用摘要（> 一句话产品定义）。" : "H1 下方缺少引用摘要行（> 产品定位说明）。"
+        },
+        {
+          pass: h2s.length >= 1, sev: "warn",
+          en: h2s.length >= 1 ? ("Structured into " + h2s.length + " H2 section(s) (## Section).") : "Add at least one H2 section (## Docs, ## Pricing) to group links.",
+          zh: h2s.length >= 1 ? ("已按 " + h2s.length + " 个 H2 分区清晰组织（## 章节）。") : "建议增加至少 1 个 H2 标题（如 ## Docs）对链接分组。"
+        },
+        {
+          pass: mdLinks.length >= 3, sev: "bad",
+          en: mdLinks.length >= 3 ? ("Contains " + mdLinks.length + " valid absolute HTTPS Markdown links.") : ("Only " + mdLinks.length + " absolute Markdown link(s) found (aim for 3+ canonical URLs)."),
+          zh: mdLinks.length >= 3 ? ("包含 " + mdLinks.length + " 条规范绝对路径 Markdown 链接。") : ("仅检测到 " + mdLinks.length + " 条绝对路径链接（建议至少提供 3 条核心文档/定价页）。")
+        },
+        {
+          pass: relLinks.length === 0, sev: "bad",
+          en: relLinks.length === 0 ? "Zero relative links (all URLs use full https:// origins)." : (relLinks.length + " relative link(s) detected (" + relLinks.slice(0, 2).join(", ") + ") — replace with full https:// URLs."),
+          zh: relLinks.length === 0 ? "无相对路径链接，全部采用完整 https:// 域名。" : ("检测到 " + relLinks.length + " 条相对路径链接（" + relLinks.slice(0, 2).join(", ") + "），请改为完整 https:// URL。")
+        },
+        {
+          pass: dupes === 0 && bareUrls.length === 0, sev: "warn",
+          en: (dupes === 0 && bareUrls.length === 0) ? "No duplicate URLs or unformatted bare links." : ((dupes ? dupes + " duplicate URL(s); " : "") + (bareUrls.length ? bareUrls.length + " bare link(s) missing [Title](url) format." : "")),
+          zh: (dupes === 0 && bareUrls.length === 0) ? "无重复 URL 或未加标题的裸链接。" : ((dupes ? dupes + " 条重复 URL；" : "") + (bareUrls.length ? bareUrls.length + " 条裸链接缺少 [标题](URL) 格式。" : ""))
+        },
+        {
+          pass: sizeOk, sev: "warn",
+          en: sizeOk ? ("Compact token budget (" + tokens + " est. tokens / " + bytes + " bytes).") : (bytes < 120 ? "File is very short (<120 bytes) — add key docs & pricing links." : "File exceeds 32 KB — move long bodies into /llms-full.txt."),
+          zh: sizeOk ? ("文件体积与 Token 预算紧凑合理（约 " + tokens + " tokens / " + bytes + " B）。") : (bytes < 120 ? "内容过短（<120B），建议补充核心文档与定价页。" : "超过 32KB，建议将完整正文移至 /llms-full.txt。")
+        },
+        {
+          pass: hasLlmsFull, sev: "info",
+          en: hasLlmsFull ? "References /llms-full.txt for deep single-fetch ingestion." : "Optional tip: link a companion /llms-full.txt (only 22% of top 50 SaaS ship one).",
+          zh: hasLlmsFull ? "已关联深度文档索引 /llms-full.txt。" : "进阶建议：补充关联 /llms-full.txt（全球 50 强仅 22% 已部署）。"
+        }
+      ];
+
+      let score = 100;
+      if (!hasSingleH1) score -= 20;
+      if (!hasBlockquote) score -= 18;
+      if (h2s.length < 1) score -= 10;
+      if (mdLinks.length < 3) score -= 18;
+      if (relLinks.length > 0) score -= 16;
+      if (dupes > 0) score -= 6;
+      if (bareUrls.length > 0) score -= 6;
+      if (!sizeOk) score -= 6;
+      score = Math.max(0, Math.min(100, score));
+      return { score, bytes, tokens, linkCount: mdLinks.length, checks };
+    }
+
+    function autoFormat(raw) {
+      const lines = String(raw || "").split(/\r?\n/).map(function (l) { return l.trim(); }).filter(Boolean);
+      let h1 = "# Your Brand";
+      let bq = "> Concise one-sentence description of what your product does and who it serves.";
+      const sections = [];
+      let cur = { title: "## Core Documentation", items: [] };
+      const seen = new Set();
+
+      lines.forEach(function (l) {
+        if (/^#\s+/.test(l)) { h1 = l; return; }
+        if (/^>\s+/.test(l)) { bq = l; return; }
+        if (/^##\s+/.test(l)) {
+          if (cur.items.length) sections.push(cur);
+          cur = { title: l, items: [] };
+          return;
+        }
+        const m = l.match(/\[([^\]]+)\]\(([^)\s]+)\)(.*)/);
+        if (m) {
+          let u = m[2].trim();
+          if (u.startsWith("/")) u = "https://example.com" + u;
+          if (!seen.has(u)) {
+            seen.add(u);
+            const tail = m[3] ? m[3].trim() : "";
+            cur.items.push("- [" + m[1].trim() + "](" + u + ")" + (tail ? (" " + tail) : ""));
+          }
+          return;
+        }
+        const bm = l.match(/(https?:\/\/\S+)/);
+        if (bm && !seen.has(bm[1])) {
+          seen.add(bm[1]);
+          cur.items.push("- [Resource](" + bm[1] + ")");
+        }
+      });
+      if (cur.items.length || !sections.length) sections.push(cur);
+
+      const out = [h1, "", bq];
+      sections.forEach(function (sec) {
+        out.push("", sec.title);
+        sec.items.forEach(function (it) { out.push(it); });
+      });
+      return out.join("\n");
+    }
+
+    function renderLint() {
+      const res = lintLlmsTxt(document.getElementById("mdInput").value);
+      document.getElementById("kScore").textContent = String(res.score);
+      document.getElementById("kLinks").textContent = String(res.linkCount);
+      document.getElementById("kTokens").textContent = res.tokens.toLocaleString();
+      document.getElementById("kBytes").textContent = res.bytes >= 1024 ? ((res.bytes / 1024).toFixed(1) + "KB") : (res.bytes + "B");
+      const pill = document.getElementById("scorePill");
+      pill.className = "pill num " + (res.score >= 85 ? "p-ok" : (res.score >= 60 ? "p-warn" : "p-bad"));
+      pill.textContent = res.score + "/100 · " + (res.score >= 85 ? (lang === "zh" ? "规范通过" : "SPEC PASS") : (lang === "zh" ? "需修复" : "NEEDS FIX"));
+
+      document.getElementById("checkList").innerHTML = res.checks.map(function (c) {
+        const cls = c.pass ? "p-ok" : (c.sev === "bad" ? "p-bad" : (c.sev === "warn" ? "p-warn" : "p-info"));
+        const tag = c.pass ? (lang === "zh" ? "通过" : "PASS") : (c.sev === "bad" ? (lang === "zh" ? "必改" : "FAIL") : (c.sev === "warn" ? (lang === "zh" ? "建议" : "WARN") : (lang === "zh" ? "提示" : "TIP")));
+        return '<li class="check-item"><span class="pill ' + cls + '">' + esc(tag) + '</span><span>' + esc(lang === "zh" ? c.zh : c.en) + '</span></li>';
+      }).join("");
+    }
+
+    async function checkLiveDomain(raw) {
+      const dom = cleanDomain(raw);
+      if (!dom) return;
+      const btn = document.getElementById("liveBtn");
+      const box = document.getElementById("liveRes");
+      btn.disabled = true;
+      btn.textContent = t("checking");
+      opTrack("scan");
+      try {
+        const r = await fetch("https://citeready-checker.appwrite.network/api/free-geo?url=" + encodeURIComponent("https://" + dom), { headers: { Accept: "application/json" } });
+        const d = await r.json();
+        if (!r.ok || !d.ok) throw new Error(d.error || "Audit failed");
+        const host = d.domain || dom;
+        const sc = Number(d.assessment && d.assessment.score) || 0;
+        const issues = Array.isArray(d.assessment && d.assessment.structuredIssues) ? d.assessment.structuredIssues.length : 0;
+        const hasLlms = Boolean(d.llmsTxt && d.llmsTxt.present);
+        const hasFull = Boolean(d.llmsFullTxt && d.llmsFullTxt.present);
+        const ckUrl = (d.upgrade && d.upgrade.instantCheckoutUrl) || ("https://omnipulse-x402.appwrite.network/checkout/citeready?domain=" + encodeURIComponent(host) + "&score=" + sc + "&issues=" + issues);
+        document.getElementById("ctaDirectLink").href = ckUrl;
+        box.className = "live-res show";
+        box.innerHTML =
+          '<div><strong>' + esc(host) + '</strong> &middot; ' +
+            esc(lang === "zh"
+              ? ("综合分 " + sc + "/100 · /llms.txt: " + (hasLlms ? "已上线" : "缺失") + " · /llms-full.txt: " + (hasFull ? "已上线" : "缺失"))
+              : ("GEO Score " + sc + "/100 · /llms.txt: " + (hasLlms ? "Live" : "Missing") + " · /llms-full.txt: " + (hasFull ? "Live" : "Missing"))) +
+          '</div>' +
+          '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
+            '<a class="btn btn-sm" href="https://citeready-checker.appwrite.network/generator?url=' + encodeURIComponent(host) + '" target="_blank" rel="noopener">' + esc(lang === "zh" ? "自动生成 /llms.txt →" : "Compile /llms.txt →") + '</a>' +
+            '<a class="btn btn-primary btn-sm" href="' + esc(ckUrl) + '" target="_blank" rel="noopener">' + esc(lang === "zh" ? "解锁修复 ($2) →" : "Unlock Fixes ($2) →") + '</a>' +
+          '</div>';
+      } catch (e) {
+        box.className = "live-res show";
+        box.textContent = (lang === "zh" ? "线上检测失败：" : "Live check failed: ") + (e.message || "error");
+      } finally {
+        btn.disabled = false;
+        btn.textContent = t("liveBtn");
+      }
+    }
+
+    function loadSample(k) {
+      document.getElementById("mdInput").value = SAMPLES[k] || SAMPLES.saas;
+      document.querySelectorAll(".preset-btn").forEach(function (b) { b.classList.toggle("active", b.getAttribute("data-tpl") === k); });
+      renderLint();
+    }
+
+    function applyLang(next, persist) {
+      lang = next === "zh" ? "zh" : "en";
+      document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
+      document.getElementById("lpEn").classList.toggle("active", lang === "en");
+      document.getElementById("lpZh").classList.toggle("active", lang === "zh");
+      if (persist) { try { localStorage.setItem("of_lang_v5", lang); } catch {} }
+      document.querySelectorAll("[data-i18n]").forEach(function (el) {
+        const k = el.getAttribute("data-i18n");
+        if (k) el.textContent = t(k);
+      });
+      renderLint();
+    }
+
+    document.getElementById("lpEn").addEventListener("click", function () { applyLang("en", true); });
+    document.getElementById("lpZh").addEventListener("click", function () { applyLang("zh", true); });
+    document.getElementById("mdInput").addEventListener("input", renderLint);
+    document.getElementById("fmtBtn").addEventListener("click", function () {
+      document.getElementById("mdInput").value = autoFormat(document.getElementById("mdInput").value);
+      renderLint();
+    });
+    document.getElementById("copyBtn").addEventListener("click", function () {
+      const btn = this;
+      const txt = document.getElementById("mdInput").value;
+      const done = function () { btn.textContent = t("copied"); setTimeout(function () { btn.textContent = t("copyBtn"); }, 1600); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done).catch(done);
+      else done();
+    });
+    document.getElementById("dlBtn").addEventListener("click", function () {
+      const blob = new Blob([document.getElementById("mdInput").value], { type: "text/plain;charset=utf-8" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "llms.txt";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(function () { URL.revokeObjectURL(a.href); }, 500);
+    });
+    document.querySelectorAll(".preset-btn").forEach(function (b) {
+      b.addEventListener("click", function () { loadSample(b.getAttribute("data-tpl")); });
+    });
+    document.getElementById("liveForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      checkLiveDomain(document.getElementById("liveInput").value);
+    });
+    document.querySelectorAll(".chip[data-dom]").forEach(function (c) {
+      c.addEventListener("click", function () {
+        const d = c.getAttribute("data-dom");
+        document.getElementById("liveInput").value = d;
+        checkLiveDomain(d);
+      });
+    });
+
+    loadSample("saas");
+    applyLang(lang, false);
+    opTrack("pageview");
+  })();
+  </script>
+</body>
+</html>

@@ -13,6 +13,8 @@
 - **NEW — 2026 Top 50 AI & Dev SaaS AI Search Readiness & `/llms.txt` Benchmark (Live Measured Study + Raw JSON):** [https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.html](https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.html) (`74%` `/llms.txt` · `22%` `/llms-full.txt` · `32%` zero Schema.org · 4 frontier AI labs missing root `/llms.txt`)
 - **Free Interactive AI Crawler `robots.txt` Policy Builder (11 Bots):** [https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html](https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html)
 - **Free Interactive Schema.org `@graph` JSON-LD Builder (HTML & Next.js):** [https://zcoldwater.github.io/citeready-cli/schema-jsonld-graph-builder.html](https://zcoldwater.github.io/citeready-cli/schema-jsonld-graph-builder.html)
+- **Free Interactive `/llms.txt` Spec Linter & Token Validator:** [https://zcoldwater.github.io/citeready-cli/llms-txt-validator-2026.html](https://zcoldwater.github.io/citeready-cli/llms-txt-validator-2026.html)
+- **Live Cloud AI `robots.txt` Importer & Policy Builder:** [https://citeready-checker.appwrite.network/robots-builder](https://citeready-checker.appwrite.network/robots-builder)
 - **Free Online `/llms.txt` Compiler & Sitemap Gap Scanner:** [https://citeready-checker.appwrite.network/generator](https://citeready-checker.appwrite.network/generator)
 - **Docs & Honest Comparisons ($2 (was $12) vs. €89+/mo Trackers):** [https://zcoldwater.github.io/citeready-cli/](https://zcoldwater.github.io/citeready-cli/) · [Peec AI vs. CiteReady](https://zcoldwater.github.io/launch-audit-reports/compare/peec-ai-vs-citeready.html) · [Compare Guide](https://zcoldwater.github.io/citeready-cli/compare.html) · [GitHub Action CI Guide](https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html)
 - **CiteReady Web Pro ($2 Launch Special (was $12) — Instant In-Browser Unlock, 14-Day Refund):** [Gumroad Checkout](https://omnipulse-x402.appwrite.network/go/gumroad/citeready) · [Direct 7-Chain Checkout](https://omnipulse-x402.appwrite.network/checkout/citeready)
@@ -50,7 +52,10 @@ Zero software installs, zero monthly subscriptions. Unlock Web Pro right inside 
 ## Optional Open-Source CLI & GitHub Action (`uses: zColdWater/citeready-cli@v1`)
 
 ```bash
-# Audit any live URL in seconds (Node.js 18+, zero dependencies)
+# Zero-install instant terminal scorecard (POSIX sh + curl)
+curl -fsSL https://citeready-checker.appwrite.network/cli.sh | sh -s -- stripe.com
+
+# Or run the MIT CLI directly (Node.js 18+, zero dependencies)
 npx github:zColdWater/citeready-cli check https://stripe.com
 npx github:zColdWater/citeready-cli check https://yoursite.com --min-score 75 --require-llms-txt --require-jsonld
 ```
