@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2026 AI Crawler User-Agents &amp; Cloudflare / Nginx / Vercel WAF Allowlist Generator | CiteReady</title>
+  <meta name="description" content="Complete 2026 reference of all 11 AI crawler User-Agents (OAI-SearchBot, ChatGPT-User, PerplexityBot, Claude-SearchBot, GPTBot, ClaudeBot, Google-Extended, Bytespider) plus interactive Cloudflare WAF, Nginx, and Vercel Firewall skip-rule generator." />
+  <meta name="keywords" content="OAI-SearchBot user agent, PerplexityBot Cloudflare WAF, allow ChatGPT Search Cloudflare, AI crawler user agents 2026, ClaudeBot user agent, Nginx AI bot rules, fix 403 AI crawler" />
+  <link rel="canonical" href="https://zcoldwater.github.io/citeready-cli/ai-crawler-user-agents-2026.html" />
+  <link rel="icon" type="image/svg+xml" href="https://citeready-checker.appwrite.network/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="2026 AI Crawler User-Agents &amp; WAF Skip-Rule Generator | CiteReady" />
+  <meta property="og:description" content="Fix accidental Cloudflare 403/503 blocks on OAI-SearchBot, PerplexityBot &amp; Claude-SearchBot. Generate exact Cloudflare WAF, Nginx &amp; Vercel rules and test live HTTP status in 2 seconds." />
+  <meta property="og:url" content="https://zcoldwater.github.io/citeready-cli/ai-crawler-user-agents-2026.html" />
+  <meta property="og:image" content="https://brand-checker.appwrite.network/assets/cover-citeready-2usd.png" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="720" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="2026 AI Crawler User-Agents &amp; Cloudflare WAF Allowlist Generator" />
+  <meta name="twitter:description" content="Reference table of 11 AI bots + interactive Cloudflare WAF, Nginx &amp; Vercel skip-rule generator + live 2s WAF checker." />
+  <meta name="twitter:image" content="https://brand-checker.appwrite.network/assets/cover-citeready-2usd.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://zcoldwater.github.io/citeready-cli/#org",
+        "name": "OmniForge · Agent Arena Studio",
+        "url": "https://citeready-checker.appwrite.network/",
+        "sameAs": [
+          "https://github.com/zColdWater/citeready-cli",
+          "https://x.com/agentarenastudi"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://zcoldwater.github.io/citeready-cli/#website",
+        "name": "CiteReady Docs & Tools",
+        "url": "https://zcoldwater.github.io/citeready-cli/",
+        "publisher": { "@id": "https://zcoldwater.github.io/citeready-cli/#org" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://zcoldwater.github.io/citeready-cli/ai-crawler-user-agents-2026.html#app",
+        "name": "CiteReady 2026 AI Crawler User-Agent & WAF Skip-Rule Generator",
+        "url": "https://zcoldwater.github.io/citeready-cli/ai-crawler-user-agents-2026.html",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web",
+        "description": "Interactive directory of 11 major AI search and model training crawlers with live Cloudflare WAF, Nginx, Vercel Middleware, and robots.txt allowlist code generation.",
+        "publisher": { "@id": "https://zcoldwater.github.io/citeready-cli/#org" },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://zcoldwater.github.io/citeready-cli/ai-crawler-user-agents-2026.html"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "CiteReady CLI", "item": "https://zcoldwater.github.io/citeready-cli/" },
+          { "@type": "ListItem", "position": 2, "name": "AI Crawler User-Agents & WAF", "item": "https://zcoldwater.github.io/citeready-cli/ai-crawler-user-agents-2026.html" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why do ChatGPT Search and Perplexity still fail to cite my site when robots.txt says Allow: /?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CDN and WAF bot-management rules (such as Cloudflare Bot Fight Mode or Managed Challenges) run before robots.txt is evaluated and frequently return HTTP 403 or 503 JS challenges to headless search crawlers. Adding an explicit WAF Skip Rule for OAI-SearchBot, ChatGPT-User, PerplexityBot, and Claude-SearchBot fixes silent citation drops."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which AI User-Agents should I allow for live search citations vs. block for training?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Allow OAI-SearchBot, ChatGPT-User, PerplexityBot, Claude-SearchBot, Bytespider, and Baiduspider for real-time AI search citations. If you prefer to opt out of foundation model training, block GPTBot, ClaudeBot, Google-Extended, Applebot-Extended, and CCBot."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #ffffff; --bg-subtle: #f8fafc; --ink: #0f172a; --ink-2: #334155; --muted: #64748b;
+      --line: #e2e8f0; --line-strong: #cbd5e1;
+      --accent: #4f46e5; --accent-hover: #4338ca; --accent-soft: #eef2ff; --accent-bd: #c7d2fe;
+      --ok-bg: #ecfdf5; --ok-fg: #047857; --ok-bd: #a7f3d0;
+      --warn-bg: #fffbeb; --warn-fg: #b45309; --warn-bd: #fde68a;
+      --bad-bg: #fef2f2; --bad-fg: #b91c1c; --bad-bd: #fecaca;
+      --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      --r: 10px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .mono { font-family: var(--mono); }
+    .num { font-variant-numeric: tabular-nums; }
+    .topbar { position: sticky; top: 0; z-index: 40; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+    .topbar-inner { max-width: 1180px; margin: 0 auto; padding: 0 24px; height: 63px; display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 800; font-size: 16px; letter-spacing: -0.02em; white-space: nowrap; }
+    .brand:hover { text-decoration: none; }
+    .brand-mark { width: 28px; height: 28px; border-radius: 7px; background: linear-gradient(135deg,#0f172a,#312e81 55%,#4f46e5); display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .nav { display: flex; align-items: center; gap: 14px; font-size: 13px; }
+    .nav a { color: var(--ink-2); font-weight: 500; white-space: nowrap; }
+    .nav a:hover { color: var(--ink); text-decoration: none; }
+    .nav a.active { color: var(--accent); font-weight: 700; }
+    .nav-actions { display: flex; align-items: center; gap: 8px; }
+    .lang-pill { display: inline-flex; border: 1px solid var(--line-strong); border-radius: 999px; padding: 2px; background: var(--bg-subtle); }
+    .lang-btn { border: 0; background: transparent; color: var(--muted); padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; cursor: pointer; font-family: inherit; }
+    .lang-btn.active { background: var(--ink); color: #fff; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 9px 15px; border-radius: 8px; font-size: 13.5px; font-weight: 600; cursor: pointer; border: 1px solid var(--line-strong); background: #fff; color: var(--ink); font-family: inherit; white-space: nowrap; }
+    .btn:hover { background: var(--bg-subtle); text-decoration: none; }
+    .btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: #fff; }
+    .btn-dark { background: var(--ink); border-color: var(--ink); color: #fff; }
+    .btn-dark:hover { background: #1e293b; color: #fff; }
+    .btn-sm { padding: 6px 12px; font-size: 12.5px; }
+    .shell { max-width: 1180px; margin: 0 auto; border-left: 1px solid var(--line); border-right: 1px solid var(--line); background: #fff; }
+    .band { padding: 40px 36px; border-bottom: 1px solid var(--line); }
+    .band.subtle { background: var(--bg-subtle); }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 11.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+    h1 { margin: 0 0 10px; font-size: clamp(26px, 3.6vw, 40px); line-height: 1.12; letter-spacing: -0.03em; font-weight: 800; max-width: 900px; }
+    h2 { margin: 0 0 10px; font-size: 21px; font-weight: 800; letter-spacing: -0.02em; }
+    .lead { margin: 0 0 20px; font-size: 15.5px; color: var(--ink-2); max-width: 780px; }
+    .live-card { background: var(--bg-subtle); border: 1px solid var(--line-strong); border-radius: 12px; padding: 14px 16px; margin-bottom: 20px; }
+    .live-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    .live-input { flex: 1; min-width: 220px; padding: 10px 12px; border: 1px solid var(--line-strong); border-radius: 8px; font-size: 13.5px; font-family: var(--mono); background: #fff; color: var(--ink); }
+    .chips { display: flex; gap: 7px; flex-wrap: wrap; align-items: center; margin-top: 9px; font-size: 12px; color: var(--muted); }
+    .chip { border: 1px solid var(--line-strong); background: #fff; color: var(--ink-2); padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; cursor: pointer; font-family: var(--mono); }
+    .chip:hover { border-color: var(--accent); color: var(--accent); }
+    .live-res { display: none; margin-top: 12px; padding: 12px 14px; border-radius: 9px; border: 1px solid var(--accent-bd); background: var(--accent-soft); font-size: 13px; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .live-res.show { display: flex; }
+    .live-res.is-bad { border-color: var(--bad-bd); background: var(--bad-bg); }
+    .panel { border: 1px solid var(--line); border-radius: var(--r); background: #fff; overflow: hidden; margin-bottom: 22px; }
+    .panel-head { padding: 13px 18px; border-bottom: 1px solid var(--line); background: var(--bg-subtle); display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .panel-body { padding: 16px 18px; }
+    .tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+    .tab-btn { border: 1px solid var(--line-strong); background: #fff; color: var(--ink-2); padding: 5px 11px; border-radius: 7px; font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit; }
+    .tab-btn.active { background: var(--ink); border-color: var(--ink); color: #fff; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+    th { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); background: #fbfdff; font-weight: 700; }
+    tr:last-child td { border-bottom: 0; }
+    .pill { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 999px; font-size: 10.5px; font-weight: 700; border: 1px solid transparent; white-space: nowrap; }
+    .p-ok { background: var(--ok-bg); color: var(--ok-fg); border-color: var(--ok-bd); }
+    .p-warn { background: var(--warn-bg); color: var(--warn-fg); border-color: var(--warn-bd); }
+    .p-info { background: var(--accent-soft); color: var(--accent); border-color: var(--accent-bd); }
+    .code-out { width: 100%; min-height: 230px; padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: #0f172a; color: #e2e8f0; font-family: var(--mono); font-size: 12.5px; line-height: 1.55; resize: vertical; }
+    .cta-box { background: linear-gradient(135deg,#0f172a 0%,#1e1b4b 60%,#312e81 100%); color: #fff; border-radius: 12px; padding: 24px 26px; display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap; }
+    .cta-box h2 { color: #fff; margin: 0 0 6px; font-size: 20px; }
+    .cta-box p { margin: 0; color: #cbd5e1; font-size: 13.5px; max-width: 640px; }
+    .price-old { text-decoration: line-through; opacity: 0.65; margin-right: 4px; }
+    footer { padding: 26px 36px; font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; background: #fff; }
+    .ft-links { display: flex; gap: 14px; flex-wrap: wrap; }
+    .ft-links a { color: var(--ink-2); }
+    @media (max-width: 720px) {
+      .nav { display: none; }
+      .band { padding: 26px 16px; }
+      footer { padding: 20px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="https://citeready-checker.appwrite.network/">
+        <span class="brand-mark"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5Z" fill="#ffffff"/><circle cx="12" cy="12" r="2.2" fill="#38bdf8"/></svg></span>
+        <span>CiteReady</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="https://citeready-checker.appwrite.network/">Live Auditor</a>
+        <a href="./ai-search-readiness-benchmark-2026.html">Top 50 Benchmark</a>
+        <a href="./robots-txt-ai-bots-2026.html">robots.txt Builder</a>
+        <a href="./llms-txt-validator-2026.html">/llms.txt Linter</a>
+        <a href="./ai-crawler-user-agents-2026.html" class="active">WAF &amp; User-Agents</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-pill" role="group" aria-label="Language">
+          <button type="button" class="lang-btn active" id="lpEn">EN</button>
+          <button type="button" class="lang-btn" id="lpZh">中文</button>
+        </div>
+        <a class="btn btn-primary btn-sm" href="https://citeready-checker.appwrite.network/" target="_blank" rel="noopener" data-i18n="navAudit">Audit Live Site &rarr;</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="band">
+      <div class="eyebrow mono"><span class="dot"></span><span data-i18n="eyebrow">2026 AI CRAWLER USER-AGENTS &amp; WAF SKIP-RULE GENERATOR · 11 BOTS</span></div>
+      <h1 data-i18n="h1">Stop Cloudflare &amp; WAF 403 challenges from silencing your AI search citations.</h1>
+      <p class="lead" data-i18n="lead">Select which AI crawlers to allowlist, generate exact copy-paste Cloudflare WAF expressions, Nginx maps, or Vercel Middleware rules, and verify live HTTP status &amp; X-Robots-Tag headers in 2 seconds.</p>
+
+      <div class="live-card">
+        <form id="liveForm" class="live-row" autocomplete="off">
+          <input id="liveInput" class="live-input" type="text" maxlength="160" placeholder="Test any domain for live WAF 403/503 challenges & 10 AI bots, e.g. stripe.com, cloudflare.com" />
+          <button id="liveBtn" type="submit" class="btn btn-dark" data-i18n="liveBtn">Test Live WAF &amp; Bots</button>
+        </form>
+        <div class="chips">
+          <span data-i18n="tryLive">Try live test:</span>
+          <button type="button" class="chip" data-dom="stripe.com">stripe.com</button>
+          <button type="button" class="chip" data-dom="vercel.com">vercel.com</button>
+          <button type="button" class="chip" data-dom="linear.app">linear.app</button>
+          <button type="button" class="chip" data-dom="supabase.com">supabase.com</button>
+        </div>
+        <div id="liveRes" class="live-res" role="status"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head">
+          <strong data-i18n="wafTitle">Generated WAF Allowlist Snippet</strong>
+          <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+            <div class="tabs" id="stackTabs">
+              <button type="button" class="tab-btn active" data-stack="cloudflare">Cloudflare WAF</button>
+              <button type="button" class="tab-btn" data-stack="nginx">Nginx Map</button>
+              <button type="button" class="tab-btn" data-stack="vercel">Vercel / Next.js</button>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm" id="copyBtn" data-i18n="copyBtn">Copy Rule</button>
+          </div>
+        </div>
+        <div class="panel-body">
+          <textarea id="wafOut" class="code-out" readonly aria-label="Generated WAF allowlist rule"></textarea>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-bottom:0">
+        <div class="panel-head">
+          <strong data-i18n="dirTitle">11 Major AI Crawler User-Agent Reference (Check to Include in Allowlist)</strong>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <button type="button" class="btn btn-sm" id="selSearchBtn" data-i18n="selSearch">Select Search Bots (6)</button>
+            <button type="button" class="btn btn-sm" id="selAllBtn" data-i18n="selAll">Select All (11)</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th style="width:44px">Allow</th>
+                <th data-i18n="thToken">User-Agent Token</th>
+                <th data-i18n="thVendor">AI Vendor</th>
+                <th data-i18n="thRole">Crawler Role</th>
+                <th data-i18n="thRec">Default Guidance</th>
+              </tr>
+            </thead>
+            <tbody id="botTbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="band subtle">
+      <div class="cta-box">
+        <div>
+          <h2 data-i18n="ctaTitle">Get complete 5-platform fixes, 50-URL batch CSV &amp; A4 PDF — $2 once.</h2>
+          <p data-i18n="ctaSub">CiteReady Web Pro reveals unmasked Cloudflare WAF skip rules, Next.js/WordPress/Webflow/Shopify patches, Schema.org @graph HTML, 50-URL CSV exports, and branded A4 PDF reports ($2 Launch Special, was $12 — or $5 Complete Suite, was $29). 14-day refund.</p>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" style="background:#fff;color:#0f172a;border-color:#fff" id="ctaDirectLink" href="https://omnipulse-x402.appwrite.network/checkout/citeready" target="_blank" rel="noopener"><span class="price-old">$12</span> Unlock Pro — $2</a>
+          <a class="btn" style="background:rgba(255,255,255,0.12);color:#fff;border-color:rgba(255,255,255,0.3)" href="https://omnipulse-x402.appwrite.network/go/gumroad/suite" target="_blank" rel="noopener"><span class="price-old">$29</span> Complete Suite — $5</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>OmniForge &middot; Agent Arena Studio &middot; <a href="mailto:agentarenastudio@proton.me">agentarenastudio@proton.me</a></span>
+      <div class="ft-links">
+        <a href="./index.html">CiteReady CLI</a>
+        <a href="./ai-search-readiness-benchmark-2026.html">Top 50 Benchmark</a>
+        <a href="./robots-txt-ai-bots-2026.html">robots.txt Builder</a>
+        <a href="./schema-jsonld-graph-builder.html">Schema @graph Builder</a>
+        <a href="./llms-txt-validator-2026.html">/llms.txt Linter</a>
+        <a href="https://citeready-checker.appwrite.network/robots-builder" target="_blank" rel="noopener">Live Cloud Importer</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+  (function () {
+    const opTrack=(()=>{const E="https://omnipulse-x402.appwrite.network/v1/telemetry",D=document,W=window,R=D.documentElement,G=navigator,L=location,S=W.screen,M=Math,N=Date.now,I="cr_"+N().toString(36)+"_"+M.random().toString(36).slice(2,10),on=(t,e,f,o)=>t.addEventListener(e,f,o);let z="",d=0,v=D.hidden?0:N(),m=0,la=0,c={scan:0,outbound:0,paywall:0};try{z=Intl.DateTimeFormat().resolvedOptions().timeZone||""}catch{}const fl=()=>{if(v)d+=M.max(0,N()-v);v=D.hidden?0:N()},us=()=>{m=M.max(m,M.min(100,M.round(M.max(0,W.scrollY)/M.max(1,R.scrollHeight-W.innerHeight)*100)))},tx=ev=>{fl();us();const b=JSON.stringify({site:"citeready",sid:I,event:ev,path:"/ai-crawler-user-agents-2026",webdriver:!!G.webdriver,screen:S?S.width+"x"+S.height:"0x0",dwellSec:M.round(d/1e3),scrollPct:m,scansRun:c.scan,outboundClicks:c.outbound,paywallClicks:c.paywall,referrer:(D.referrer||"").slice(0,128),tz:z,lang:R.lang||"en"});try{if(!G.sendBeacon?.(E,new Blob([b],{type:"text/plain"})))fetch(E,{method:"POST",body:b,keepalive:!0}).catch(()=>{})}catch{}},lv=()=>{fl();v=0;if(N()-la>1e3){la=N();tx("leave")}},tr=ev=>{if(ev in c)c[ev]++;tx(ev)};on(W,"scroll",us,{passive:!0});on(D,"visibilitychange",()=>D.hidden?lv():v=N());on(W,"pagehide",lv);setInterval(()=>!D.hidden&&tx("heartbeat"),15e3);on(D,"click",e=>{const a=e.target?.closest?.("a[href]"),h=a?.href||"";if(/\/(go\/gumroad|checkout)\/|gumroad\.com/i.test(h))tr("paywall");else if(/^https?:/.test(h)&&a.origin!==L.origin)tr("outbound")},!0);return tr})();
+
+    const BOTS = [
+      { id: "OAI-SearchBot", vendor: "OpenAI (ChatGPT Search)", vendorZh: "OpenAI（ChatGPT 实时搜索）", role: "search", roleEn: "Live Search", roleZh: "实时搜索", recEn: "Allow for ChatGPT citations", recZh: "建议放行以获 ChatGPT 引用" },
+      { id: "ChatGPT-User", vendor: "OpenAI (Real-Time User Fetch)", vendorZh: "OpenAI（用户实时提问抓取）", role: "search", roleEn: "Live Citation", roleZh: "实时引用", recEn: "Allow for live browsing answers", recZh: "建议放行以支持实时联网回答" },
+      { id: "PerplexityBot", vendor: "Perplexity AI", vendorZh: "Perplexity AI 搜索", role: "search", roleEn: "Live Search", roleZh: "实时搜索", recEn: "Allow for Perplexity citations", recZh: "建议放行以获 Perplexity 引用" },
+      { id: "Claude-SearchBot", vendor: "Anthropic (Claude Web Search)", vendorZh: "Anthropic（Claude 搜索）", role: "search", roleEn: "Live Search", roleZh: "实时搜索", recEn: "Allow for Claude live citations", recZh: "建议放行以获 Claude 实时引用" },
+      { id: "Bytespider", vendor: "ByteDance (Doubao AI)", vendorZh: "字节跳动（豆包 AI）", role: "search", roleEn: "AI Search", roleZh: "AI 搜索", recEn: "Allow for Doubao / CN traffic", recZh: "面向中文/豆包流量建议放行" },
+      { id: "Baiduspider", vendor: "Baidu (AI Search / Ernie)", vendorZh: "百度（AI 搜索 / 文心）", role: "search", roleEn: "AI Search", roleZh: "AI 搜索", recEn: "Allow for Baidu AI answers", recZh: "面向百度 AI 问答建议放行" },
+      { id: "GPTBot", vendor: "OpenAI (Model Training)", vendorZh: "OpenAI（模型训练）", role: "train", roleEn: "Training", roleZh: "模型训练", recEn: "Optional: block if opting out of training", recZh: "可选：若不参与训练可单独拦截" },
+      { id: "ClaudeBot", vendor: "Anthropic (Training & Crawl)", vendorZh: "Anthropic（训练与抓取）", role: "train", roleEn: "Training", roleZh: "模型训练", recEn: "Optional: allow or block per policy", recZh: "可选：按内容版权策略决定" },
+      { id: "Google-Extended", vendor: "Google (Gemini / Vertex)", vendorZh: "Google（Gemini 训练）", role: "train", roleEn: "Training", roleZh: "模型训练", recEn: "Optional: does not affect Google Search", recZh: "可选：拦截不影响常规 Google 搜索" },
+      { id: "Applebot-Extended", vendor: "Apple Intelligence Training", vendorZh: "Apple Intelligence 训练", role: "train", roleEn: "Training", roleZh: "模型训练", recEn: "Optional: separate from Spotlight/Siri", recZh: "可选：独立于常规 Apple 搜索" },
+      { id: "CCBot", vendor: "Common Crawl", vendorZh: "Common Crawl 语料库", role: "train", roleEn: "Dataset", roleZh: "公开语料", recEn: "Optional: feeds open training sets", recZh: "可选：供开源模型数据集抓取" }
+    ];
+
+    const I18N = {
+      en: {
+        navAudit: "Audit Live Site →",
+        eyebrow: "2026 AI CRAWLER USER-AGENTS & WAF SKIP-RULE GENERATOR · 11 BOTS",
+        h1: "Stop Cloudflare & WAF 403 challenges from silencing your AI search citations.",
+        lead: "Select which AI crawlers to allowlist, generate exact copy-paste Cloudflare WAF expressions, Nginx maps, or Vercel Middleware rules, and verify live HTTP status & X-Robots-Tag headers in 2 seconds.",
+        liveBtn: "Test Live WAF & Bots", checking: "Testing live...", tryLive: "Try live test:",
+        wafTitle: "Generated WAF Allowlist Snippet", copyBtn: "Copy Rule", copied: "Copied",
+        dirTitle: "11 Major AI Crawler User-Agent Reference (Check to Include in Allowlist)",
+        selSearch: "Select Search Bots (6)", selAll: "Select All (11)",
+        thToken: "User-Agent Token", thVendor: "AI Vendor", thRole: "Crawler Role", thRec: "Default Guidance",
+        ctaTitle: "Get complete 5-platform fixes, 50-URL batch CSV & A4 PDF — $2 once.",
+        ctaSub: "CiteReady Web Pro reveals unmasked Cloudflare WAF skip rules, Next.js/WordPress/Webflow/Shopify patches, Schema.org @graph HTML, 50-URL CSV exports, and branded A4 PDF reports ($2 Launch Special, was $12 — or $5 Complete Suite, was $29). 14-day refund."
+      },
+      zh: {
+        navAudit: "2 秒在线实测 →",
+        eyebrow: "2026 AI 爬虫 USER-AGENT 与 WAF 放行规则生成器 · 11 大爬虫",
+        h1: "告别 Cloudflare 与 WAF 403 误杀，畅通 AI 搜索实时引用通道。",
+        lead: "勾选需要放行的 AI 搜索爬虫，一键生成 Cloudflare WAF 自定义表达式、Nginx Map 或 Vercel 中间件放行代码，并支持 2 秒在线核验站点真实 HTTP 状态与防火墙挑战。",
+        liveBtn: "2 秒实测 WAF 与爬虫", checking: "实时检测中...", tryLive: "一键实测域名：",
+        wafTitle: "已生成的 WAF 白名单放行规则", copyBtn: "复制规则", copied: "已复制",
+        dirTitle: "11 大主流 AI 爬虫 User-Agent 完整对照表（勾选即加入上方白名单）",
+        selSearch: "仅选搜索爬虫 (6)", selAll: "全选全部 (11)",
+        thToken: "User-Agent 标识", thVendor: "所属 AI 厂商", thRole: "爬虫类型", thRec: "策略建议",
+        ctaTitle: "获取 5 平台完整修复代码、50 站批量 CSV 与 A4 PDF — $2 买断。",
+        ctaSub: "CiteReady Web Pro 原地解锁 Cloudflare WAF 跳过规则、Next.js / WordPress / Webflow / Shopify 补丁、Schema.org @graph 代码与 A4 PDF（$2 破冰特惠，原价 $12；全栈套票 $5，原价 $29），享 14 天退款保障。"
+      }
+    };
+
+    let lang = "en";
+    let stack = "cloudflare";
+    const selected = new Set(BOTS.filter(function (b) { return b.role === "search"; }).map(function (b) { return b.id; }));
+    try {
+      const q = new URLSearchParams(location.search).get("lang");
+      const saved = localStorage.getItem("of_lang_v5");
+      if (q === "zh" || q === "en") lang = q;
+      else if (saved === "zh" || saved === "en") lang = saved;
+    } catch {}
+
+    function t(k) { return (I18N[lang] && I18N[lang][k]) || I18N.en[k] || k; }
+    function esc(s) { return String(s == null ? "" : s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+    function cleanDomain(raw) { return String(raw || "").trim().replace(/^https?:\/\//i, "").replace(/\/.*$/, "").replace(/[^a-zA-Z0-9.-]/g, ""); }
+
+    function generateRule() {
+      const list = BOTS.filter(function (b) { return selected.has(b.id); }).map(function (b) { return b.id; });
+      if (!list.length) return "# Select at least one AI crawler below to generate a WAF allowlist rule.";
+      if (stack === "cloudflare") {
+        return [
+          "# Cloudflare Security -> WAF -> Custom Rules -> Action: Skip (Bot Fight Mode / Managed Challenges)",
+          "# Rule Name: Allow Verified AI Search Crawlers",
+          "",
+          list.map(function (id) { return '(http.user_agent contains "' + id + '")'; }).join(" or\n")
+        ].join("\n");
+      }
+      if (stack === "nginx") {
+        return [
+          "# /etc/nginx/conf.d/ai-crawlers.conf — Flag allowlisted AI search crawlers to bypass rate-limit / challenge",
+          "map $http_user_agent $is_allowed_ai_bot {",
+          "    default 0;",
+          list.map(function (id) { return '    ~*' + id.replace(/-/g, "\\-") + ' 1;'; }).join("\n"),
+          "}",
+          "",
+          "# Inside server {} block:",
+          "# if ($is_allowed_ai_bot = 1) { add_header X-Robots-Tag \"index, follow\" always; }"
+        ].join("\n");
+      }
+      return [
+        "// middleware.ts (Vercel / Next.js Edge Middleware — Pass through allowlisted AI crawlers)",
+        "import { NextResponse } from 'next/server';",
+        "import type { NextRequest } from 'next/server';",
+        "",
+        "const ALLOWED_AI_BOTS = " + JSON.stringify(list) + ";",
+        "",
+        "export function middleware(req: NextRequest) {",
+        "  const ua = req.headers.get('user-agent') || '';",
+        "  if (ALLOWED_AI_BOTS.some((bot) => ua.includes(bot))) {",
+        "    const res = NextResponse.next();",
+        "    res.headers.set('X-Robots-Tag', 'index, follow');",
+        "    return res;",
+        "  }",
+        "  return NextResponse.next();",
+        "}"
+      ].join("\n");
+    }
+
+    function render() {
+      document.getElementById("wafOut").value = generateRule();
+      const tbody = document.getElementById("botTbody");
+      tbody.innerHTML = BOTS.map(function (b) {
+        const chk = selected.has(b.id) ? " checked" : "";
+        return '<tr>' +
+          '<td><input type="checkbox" class="bot-chk" data-bot="' + esc(b.id) + '"' + chk + ' aria-label="Allow ' + esc(b.id) + '" /></td>' +
+          '<td class="mono" style="font-weight:700">' + esc(b.id) + '</td>' +
+          '<td>' + esc(lang === "zh" ? b.vendorZh : b.vendor) + '</td>' +
+          '<td><span class="pill ' + (b.role === "search" ? "p-info" : "p-warn") + '">' + esc(lang === "zh" ? b.roleZh : b.roleEn) + '</span></td>' +
+          '<td style="color:var(--ink-2)">' + esc(lang === "zh" ? b.recZh : b.recEn) + '</td>' +
+        '</tr>';
+      }).join("");
+      tbody.querySelectorAll(".bot-chk").forEach(function (inp) {
+        inp.addEventListener("change", function () {
+          const id = inp.getAttribute("data-bot");
+          if (inp.checked) selected.add(id); else selected.delete(id);
+          document.getElementById("wafOut").value = generateRule();
+        });
+      });
+    }
+
+    async function testLiveWaf(raw) {
+      const dom = cleanDomain(raw);
+      if (!dom) return;
+      const btn = document.getElementById("liveBtn");
+      const box = document.getElementById("liveRes");
+      btn.disabled = true;
+      btn.textContent = t("checking");
+      opTrack("scan");
+      try {
+        const r = await fetch("https://citeready-checker.appwrite.network/api/free-geo?url=" + encodeURIComponent("https://" + dom), { headers: { Accept: "application/json" } });
+        const d = await r.json();
+        if (!r.ok || !d.ok) throw new Error(d.error || "Audit failed");
+        const host = d.domain || dom;
+        const sc = Number(d.assessment && d.assessment.score) || 0;
+        const issues = Array.isArray(d.assessment && d.assessment.structuredIssues) ? d.assessment.structuredIssues.length : 0;
+        const bots = (d.robotsTxt && d.robotsTxt.crawlers) || [];
+        const allowed = bots.filter(function (b) { return b.allowed; }).length;
+        const hasWaf = (d.httpStatus === 403 || d.httpStatus === 503);
+        const ckUrl = (d.upgrade && d.upgrade.instantCheckoutUrl) || ("https://omnipulse-x402.appwrite.network/checkout/citeready?domain=" + encodeURIComponent(host) + "&score=" + sc + "&issues=" + issues);
+        document.getElementById("ctaDirectLink").href = ckUrl;
+        box.className = "live-res show" + (hasWaf || allowed < bots.length ? " is-bad" : "");
+        box.innerHTML =
+          '<div><strong>' + esc(host) + '</strong> &middot; HTTP ' + esc(d.httpStatus || 200) + (hasWaf ? ' (WAF Challenge Detected)' : '') +
+            ' &middot; ' + esc(allowed + '/' + bots.length + (lang === "zh" ? " 个 AI 爬虫放行 · 评分 " : " AI bots open · Score ") + sc + '/100') +
+          '</div>' +
+          '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
+            '<a class="btn btn-sm" href="https://citeready-checker.appwrite.network/robots-builder?url=' + encodeURIComponent(host) + '" target="_blank" rel="noopener">' + esc(lang === "zh" ? "在线编辑 robots.txt →" : "Edit robots.txt →") + '</a>' +
+            '<a class="btn btn-primary btn-sm" href="' + esc(ckUrl) + '" target="_blank" rel="noopener">' + esc(lang === "zh" ? "解锁修复 ($2) →" : "Unlock Fixes ($2) →") + '</a>' +
+          '</div>';
+      } catch (e) {
+        box.className = "live-res show is-bad";
+        box.textContent = (lang === "zh" ? "线上检测失败：" : "Live check failed: ") + (e.message || "error");
+      } finally {
+        btn.disabled = false;
+        btn.textContent = t("liveBtn");
+      }
+    }
+
+    function applyLang(next, persist) {
+      lang = next === "zh" ? "zh" : "en";
+      document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
+      document.getElementById("lpEn").classList.toggle("active", lang === "en");
+      document.getElementById("lpZh").classList.toggle("active", lang === "zh");
+      if (persist) { try { localStorage.setItem("of_lang_v5", lang); } catch {} }
+      document.querySelectorAll("[data-i18n]").forEach(function (el) {
+        const k = el.getAttribute("data-i18n");
+        if (k) el.textContent = t(k);
+      });
+      render();
+    }
+
+    document.getElementById("lpEn").addEventListener("click", function () { applyLang("en", true); });
+    document.getElementById("lpZh").addEventListener("click", function () { applyLang("zh", true); });
+    document.querySelectorAll("#stackTabs .tab-btn").forEach(function (b) {
+      b.addEventListener("click", function () {
+        stack = b.getAttribute("data-stack") || "cloudflare";
+        document.querySelectorAll("#stackTabs .tab-btn").forEach(function (x) { x.classList.toggle("active", x === b); });
+        document.getElementById("wafOut").value = generateRule();
+      });
+    });
+    document.getElementById("selSearchBtn").addEventListener("click", function () {
+      selected.clear();
+      BOTS.filter(function (b) { return b.role === "search"; }).forEach(function (b) { selected.add(b.id); });
+      render();
+    });
+    document.getElementById("selAllBtn").addEventListener("click", function () {
+      BOTS.forEach(function (b) { selected.add(b.id); });
+      render();
+    });
+    document.getElementById("copyBtn").addEventListener("click", function () {
+      const btn = this;
+      const txt = document.getElementById("wafOut").value;
+      const done = function () { btn.textContent = t("copied"); setTimeout(function () { btn.textContent = t("copyBtn"); }, 1600); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done).catch(done);
+      else done();
+    });
+    document.getElementById("liveForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      testLiveWaf(document.getElementById("liveInput").value);
+    });
+    document.querySelectorAll(".chip[data-dom]").forEach(function (c) {
+      c.addEventListener("click", function () {
+        const d = c.getAttribute("data-dom");
+        document.getElementById("liveInput").value = d;
+        testLiveWaf(d);
+      });
+    });
+
+    applyLang(lang, false);
+    opTrack("pageview");
+  })();
+  </script>
+</body>
+</html>

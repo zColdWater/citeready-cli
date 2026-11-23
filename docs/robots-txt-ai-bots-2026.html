@@ -21,47 +21,50 @@
   <meta name="twitter:image" content="https://brand-checker.appwrite.network/assets/cover-citeready-2usd.png" />
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebApplication",
-        "name": "CiteReady AI Crawler robots.txt Policy Builder (2026)",
-        "url": "https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html",
-        "applicationCategory": "DeveloperApplication",
-        "operatingSystem": "Web",
-        "description": "Interactive robots.txt policy generator separating live AI search citation crawlers (OAI-SearchBot, ChatGPT-User, PerplexityBot, Claude-SearchBot, Bytespider, Baiduspider) from model training crawlers (GPTBot, ClaudeBot, Google-Extended, Applebot-Extended, CCBot).",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
-        },
-        "publisher": { "@id": "https://zcoldwater.github.io/citeready-cli/#org" }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "CiteReady AI Crawler robots.txt Policy Builder (2026)",
+      "url": "https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "description": "Interactive robots.txt policy generator separating live AI search citation crawlers (OAI-SearchBot, ChatGPT-User, PerplexityBot, Claude-SearchBot, Bytespider, Baiduspider) from model training crawlers (GPTBot, ClaudeBot, Google-Extended, Applebot-Extended, CCBot).",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Can I allow ChatGPT Search citations while blocking OpenAI model training?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. OpenAI separates OAI-SearchBot and ChatGPT-User (live search indexing and real-time user citation fetches) from GPTBot (foundation model training). Set Allow: / for OAI-SearchBot and ChatGPT-User while setting Disallow: / for GPTBot."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does robots.txt alone guarantee AI bots can read my site?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. Even when robots.txt allows AI search crawlers, Cloudflare Bot Fight Mode, WAF 403/503 challenges, X-Robots-Tag: noindex headers, or client-only JS rendering can still block citations. Run a live 2-second check at https://citeready-checker.appwrite.network/ to verify live HTTP responses."
-            }
-          }
-        ]
+      "publisher": {
+        "@id": "https://zcoldwater.github.io/citeready-cli/#org"
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I allow ChatGPT Search citations while blocking OpenAI model training?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. OpenAI separates OAI-SearchBot and ChatGPT-User (live search indexing and real-time user citation fetches) from GPTBot (foundation model training). Set Allow: / for OAI-SearchBot and ChatGPT-User while setting Disallow: / for GPTBot."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does robots.txt alone guarantee AI bots can read my site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Even when robots.txt allows AI search crawlers, Cloudflare Bot Fight Mode, WAF 403/503 challenges, X-Robots-Tag: noindex headers, or client-only JS rendering can still block citations. Run a live 2-second check at https://citeready-checker.appwrite.network/ to verify live HTTP responses."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 
   <style>
@@ -175,6 +178,7 @@
         <a href="./robots-txt-ai-bots-2026.html" class="active">robots.txt Builder</a>
         <a href="./schema-jsonld-graph-builder.html">Schema @graph Builder</a>
         <a href="./llms-txt-validator-2026.html">/llms.txt Linter</a>
+        <a href="./ai-crawler-user-agents-2026.html">WAF &amp; User-Agents</a>
         <a href="./compare.html">Compare</a>
       </nav>
       <div class="nav-actions">

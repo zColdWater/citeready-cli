@@ -21,47 +21,50 @@
   <meta name="twitter:image" content="https://brand-checker.appwrite.network/assets/cover-citeready-2usd.png" />
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebApplication",
-        "name": "CiteReady Schema.org @graph JSON-LD Generator (2026)",
-        "url": "https://zcoldwater.github.io/citeready-cli/schema-jsonld-graph-builder.html",
-        "applicationCategory": "DeveloperApplication",
-        "operatingSystem": "Web",
-        "description": "Free interactive Schema.org JSON-LD @graph builder outputting valid HTML <head> and Next.js App Router snippets connecting Organization, WebSite, SoftwareApplication, Offer, and FAQPage entities.",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
-        },
-        "publisher": { "@id": "https://zcoldwater.github.io/citeready-cli/#org" }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "CiteReady Schema.org @graph JSON-LD Generator (2026)",
+      "url": "https://zcoldwater.github.io/citeready-cli/schema-jsonld-graph-builder.html",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "description": "Free interactive Schema.org JSON-LD @graph builder outputting valid HTML <head> and Next.js App Router snippets connecting Organization, WebSite, SoftwareApplication, Offer, and FAQPage entities.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://zcoldwater.github.io/citeready-cli/schema-jsonld-graph-builder.html"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Why use a single Schema.org @graph block instead of separate JSON-LD scripts?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Linking Organization, WebSite, SoftwareApplication, Offer, and FAQPage inside one @graph with stable @id URIs eliminates entity ambiguity so ChatGPT Search, Perplexity, Claude, and Google AI Overviews unambiguously tie your pricing, docs, and product capabilities to your brand."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Should JSON-LD be server-rendered for AI crawlers?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Most AI search crawlers (including OAI-SearchBot, PerplexityBot, and ClaudeBot) inspect raw server-rendered HTML without executing heavy client-side JavaScript. Render JSON-LD directly in your server HTML head or Next.js Server Component layout.tsx."
-            }
-          }
-        ]
+      "publisher": {
+        "@id": "https://zcoldwater.github.io/citeready-cli/#org"
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why use a single Schema.org @graph block instead of separate JSON-LD scripts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Linking Organization, WebSite, SoftwareApplication, Offer, and FAQPage inside one @graph with stable @id URIs eliminates entity ambiguity so ChatGPT Search, Perplexity, Claude, and Google AI Overviews unambiguously tie your pricing, docs, and product capabilities to your brand."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should JSON-LD be server-rendered for AI crawlers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Most AI search crawlers (including OAI-SearchBot, PerplexityBot, and ClaudeBot) inspect raw server-rendered HTML without executing heavy client-side JavaScript. Render JSON-LD directly in your server HTML head or Next.js Server Component layout.tsx."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 
   <style>
@@ -160,6 +163,7 @@
         <a href="./robots-txt-ai-bots-2026.html">robots.txt Builder</a>
         <a href="./schema-jsonld-graph-builder.html" class="active">Schema @graph Builder</a>
         <a href="./llms-txt-validator-2026.html">/llms.txt Linter</a>
+        <a href="./ai-crawler-user-agents-2026.html">WAF &amp; User-Agents</a>
         <a href="./compare.html">Compare</a>
       </nav>
       <div class="nav-actions">

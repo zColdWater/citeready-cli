@@ -7,6 +7,7 @@
 - Interactive AI Crawler robots.txt Policy Builder (11 Bots): https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html
 - Interactive Schema.org @graph JSON-LD Builder (HTML & Next.js): https://zcoldwater.github.io/citeready-cli/schema-jsonld-graph-builder.html
 - Interactive /llms.txt Spec Linter & Token Validator (2026): https://zcoldwater.github.io/citeready-cli/llms-txt-validator-2026.html
+- 2026 AI Crawler User-Agents & Cloudflare/Nginx/Vercel WAF Allowlist Generator: https://zcoldwater.github.io/citeready-cli/ai-crawler-user-agents-2026.html
 - Zero-Install Terminal CLI: curl -fsSL https://citeready-checker.appwrite.network/cli.sh | sh -s -- stripe.com
 - Free Online /llms.txt Compiler & Sitemap Gap Scanner: https://citeready-checker.appwrite.network/generator
 - Live SVG README Score Badge API: https://citeready-checker.appwrite.network/api/badge?url=stripe.com
