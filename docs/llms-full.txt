@@ -8,6 +8,8 @@ CiteReady v5.0 helps founders, marketing teams, and technical SEO agencies verif
 
 - **Flagship v6.0 Web App (100/100 A+ Self-Audited, Dual-Site PK & Live SVG Badges):** https://citeready-checker.appwrite.network
 - **2026 Top 50 AI & Dev SaaS Empirical Benchmark Study (74% /llms.txt, 32% Zero Schema, Full JSON Dataset):** https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.html | https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.json
+- **Interactive AI Crawler robots.txt Policy Builder (11 Bots):** https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html
+- **Interactive Schema.org @graph JSON-LD Builder (HTML & Next.js):** https://zcoldwater.github.io/citeready-cli/schema-jsonld-graph-builder.html
 - **Free Online /llms.txt Generator:** https://citeready-checker.appwrite.network/generator
 - **Live SVG README Score Badge API:** https://citeready-checker.appwrite.network/api/badge?url=stripe.com
 - **Docs & Landing Page:** https://zcoldwater.github.io/citeready-cli/
@@ -19,7 +21,7 @@ CiteReady v5.0 helps founders, marketing teams, and technical SEO agencies verif
 
 Unlike `$348–$1,068+/yr` passive prompt-tracking subscriptions (such as Peec AI or Otterly.AI), CiteReady Web Pro focuses strictly on **on-demand technical AI crawlability auditing and ready-to-paste configuration generation** with zero monthly fees and a 14-day refund guarantee:
 
-1. **CiteReady Web Pro ($2 Launch Special (was $12))**
+1. **CiteReady Web Pro ($2 Launch Special, was $12)**
    - Unmasked 5-platform 3-step fix wizard (`Next.js / Vercel`, `WordPress`, `Webflow / Shopify`, `Cloudflare / WAF`, `Cursor / Lovable` prompt)
    - Complete copy-paste Schema.org `@graph` JSON-LD, `robots.txt` AI crawler rules, Competitor VS-Page blueprint, and root `/llms.txt`
    - Online 50-URL batch scanner table with UTF-8 BOM Excel/CSV export
@@ -28,10 +30,10 @@ Unlike `$348–$1,068+/yr` passive prompt-tracking subscriptions (such as Peec A
    - Gumroad Checkout: https://omnipulse-x402.appwrite.network/go/gumroad/citeready
    - Direct Checkout: https://omnipulse-x402.appwrite.network/checkout/citeready
 
-2. **OmniForge OmniForge Complete Suite ($5 Launch Special, was $29)**
+2. **OmniForge Complete Suite ($5 Launch Special, was $29)**
    - Unlocks Web Pro across all 4 v5.0 web apps in one license pass: **VibeShield ($2)** + **BrandShield (100% Free)** + **CiteReady ($2)** + **InboxShield ($2)**.
-   - Gumroad Bundle: https://omnipulse-x402.appwrite.network/go/gumroad/launch-stack
-   - Direct Checkout: https://omnipulse-x402.appwrite.network/checkout/launch-stack
+   - Gumroad Bundle: https://omnipulse-x402.appwrite.network/go/gumroad/suite
+   - Direct Checkout: https://omnipulse-x402.appwrite.network/checkout/suite
 
 ## Optional Open-Source CLI & GitHub Action (`uses: zColdWater/citeready-cli@v1`)
 

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Crawler robots.txt Generator (2026) — Allow ChatGPT, Perplexity &amp; Claude Search | CiteReady</title>
+  <meta name="description" content="Free interactive 2026 robots.txt generator for AI crawlers. Allow live AI search bots (OAI-SearchBot, PerplexityBot, Claude-SearchBot) while controlling model training scrapers (GPTBot, ClaudeBot, Google-Extended, CCBot)." />
+  <meta name="keywords" content="robots.txt AI bots 2026, allow OAI-SearchBot block GPTBot, PerplexityBot robots.txt, ClaudeBot robots.txt, AI crawler policy generator, GEO robots.txt template" />
+  <link rel="canonical" href="https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html" />
+  <link rel="icon" type="image/svg+xml" href="https://citeready-checker.appwrite.network/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AI Crawler robots.txt Generator (2026) — ChatGPT Search, Perplexity &amp; Claude" />
+  <meta property="og:description" content="Configure all 11 major AI search &amp; training crawlers visually, copy or download a clean robots.txt, and verify live HTTP &amp; WAF behavior in 2 seconds." />
+  <meta property="og:url" content="https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html" />
+  <meta property="og:image" content="https://brand-checker.appwrite.network/assets/cover-citeready-2usd.png" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="720" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI Crawler robots.txt Policy Builder (2026)" />
+  <meta name="twitter:description" content="Allow ChatGPT Search &amp; Perplexity citations while blocking training scrapers — instant copy-paste robots.txt." />
+  <meta name="twitter:image" content="https://brand-checker.appwrite.network/assets/cover-citeready-2usd.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "CiteReady AI Crawler robots.txt Policy Builder (2026)",
+        "url": "https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web",
+        "description": "Interactive robots.txt policy generator separating live AI search citation crawlers (OAI-SearchBot, ChatGPT-User, PerplexityBot, Claude-SearchBot, Bytespider, Baiduspider) from model training crawlers (GPTBot, ClaudeBot, Google-Extended, Applebot-Extended, CCBot).",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "OmniForge · Agent Arena Studio",
+          "url": "https://citeready-checker.appwrite.network/"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I allow ChatGPT Search citations while blocking OpenAI model training?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. OpenAI separates OAI-SearchBot and ChatGPT-User (live search indexing and real-time user citation fetches) from GPTBot (foundation model training). Set Allow: / for OAI-SearchBot and ChatGPT-User while setting Disallow: / for GPTBot."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does robots.txt alone guarantee AI bots can read my site?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Even when robots.txt allows AI search crawlers, Cloudflare Bot Fight Mode, WAF 403/503 challenges, X-Robots-Tag: noindex headers, or client-only JS rendering can still block citations. Run a live 2-second check at https://citeready-checker.appwrite.network/ to verify live HTTP responses."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #ffffff; --bg-subtle: #f8fafc; --surface: #ffffff;
+      --ink: #0f172a; --ink-2: #334155; --muted: #64748b;
+      --line: #e2e8f0; --line-strong: #cbd5e1;
+      --accent: #4f46e5; --accent-hover: #4338ca; --accent-soft: #eef2ff; --accent-bd: #c7d2fe;
+      --ok-bg: #ecfdf5; --ok-fg: #047857; --ok-bd: #a7f3d0;
+      --warn-bg: #fffbeb; --warn-fg: #b45309; --warn-bd: #fde68a;
+      --bad-bg: #fef2f2; --bad-fg: #b91c1c; --bad-bd: #fecaca;
+      --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      --r: 10px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .mono { font-family: var(--mono); }
+    .num { font-variant-numeric: tabular-nums; }
+    .topbar { position: sticky; top: 0; z-index: 40; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+    .topbar-inner { max-width: 1180px; margin: 0 auto; padding: 0 24px; height: 63px; display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 800; font-size: 16px; letter-spacing: -0.02em; white-space: nowrap; }
+    .brand:hover { text-decoration: none; }
+    .brand-mark { width: 28px; height: 28px; border-radius: 7px; background: linear-gradient(135deg,#0f172a,#312e81 55%,#4f46e5); display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .nav { display: flex; align-items: center; gap: 16px; font-size: 13.5px; }
+    .nav a { color: var(--ink-2); font-weight: 500; white-space: nowrap; }
+    .nav a:hover { color: var(--ink); text-decoration: none; }
+    .nav a.active { color: var(--accent); font-weight: 700; }
+    .nav-actions { display: flex; align-items: center; gap: 8px; }
+    .lang-pill { display: inline-flex; border: 1px solid var(--line-strong); border-radius: 999px; padding: 2px; background: var(--bg-subtle); }
+    .lang-btn { border: 0; background: transparent; color: var(--muted); padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; cursor: pointer; font-family: inherit; }
+    .lang-btn.active { background: var(--ink); color: #fff; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 9px 15px; border-radius: 8px; font-size: 13.5px; font-weight: 600; cursor: pointer; border: 1px solid var(--line-strong); background: #fff; color: var(--ink); font-family: inherit; white-space: nowrap; transition: background 0.14s, border-color 0.14s; }
+    .btn:hover { background: var(--bg-subtle); text-decoration: none; }
+    .btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: #fff; }
+    .btn-dark { background: var(--ink); border-color: var(--ink); color: #fff; }
+    .btn-dark:hover { background: #1e293b; color: #fff; }
+    .btn-sm { padding: 6px 12px; font-size: 12.5px; }
+    .shell { max-width: 1180px; margin: 0 auto; border-left: 1px solid var(--line); border-right: 1px solid var(--line); background: #fff; }
+    .band { padding: 44px 36px; border-bottom: 1px solid var(--line); }
+    .band.subtle { background: var(--bg-subtle); }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 11.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+    h1 { margin: 0 0 12px; font-size: clamp(28px, 3.8vw, 42px); line-height: 1.12; letter-spacing: -0.03em; font-weight: 800; max-width: 900px; }
+    h2 { margin: 0 0 10px; font-size: 22px; line-height: 1.25; letter-spacing: -0.02em; font-weight: 800; }
+    .lead { margin: 0 0 22px; font-size: 16px; color: var(--ink-2); max-width: 760px; }
+    .preset-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+    .preset-btn { padding: 8px 14px; border-radius: 8px; border: 1px solid var(--line-strong); background: #fff; color: var(--ink-2); font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; }
+    .preset-btn.active { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+    .workspace { display: grid; grid-template-columns: 1.18fr 0.82fr; gap: 22px; align-items: start; }
+    .panel { border: 1px solid var(--line); border-radius: var(--r); background: #fff; overflow: hidden; }
+    .panel-head { padding: 14px 18px; border-bottom: 1px solid var(--line); background: var(--bg-subtle); display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .panel-body { padding: 16px 18px; }
+    .group-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); padding: 10px 18px 6px; background: #fbfdff; border-bottom: 1px solid var(--line); }
+    .bot-row { display: grid; grid-template-columns: 1.15fr 1fr auto; gap: 10px; align-items: center; padding: 11px 18px; border-bottom: 1px solid var(--line); font-size: 13.5px; }
+    .bot-row:last-child { border-bottom: 0; }
+    .bot-name { font-weight: 700; color: var(--ink); }
+    .bot-owner { font-size: 12px; color: var(--muted); }
+    .pill { display: inline-flex; align-items: center; padding: 2px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; border: 1px solid transparent; white-space: nowrap; }
+    .p-ok { background: var(--ok-bg); color: var(--ok-fg); border-color: var(--ok-bd); }
+    .p-bad { background: var(--bad-bg); color: var(--bad-fg); border-color: var(--bad-bd); }
+    .p-info { background: var(--accent-soft); color: var(--accent); border-color: var(--accent-bd); }
+    .p-warn { background: var(--warn-bg); color: var(--warn-fg); border-color: var(--warn-bd); }
+    .seg { display: inline-flex; border: 1px solid var(--line-strong); border-radius: 7px; overflow: hidden; background: var(--bg-subtle); }
+    .seg button { border: 0; background: transparent; padding: 5px 10px; font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit; color: var(--muted); }
+    .seg button.on-allow { background: var(--ok-fg); color: #fff; }
+    .seg button.on-block { background: var(--bad-fg); color: #fff; }
+    .field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+    .field label { display: block; font-size: 12px; font-weight: 700; color: var(--ink-2); margin-bottom: 5px; }
+    .field input { width: 100%; padding: 9px 11px; border: 1px solid var(--line-strong); border-radius: 8px; font-size: 13px; color: var(--ink); background: #fff; font-family: var(--mono); }
+    .code-out { width: 100%; min-height: 360px; padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: #0f172a; color: #e2e8f0; font-family: var(--mono); font-size: 12.5px; line-height: 1.55; resize: vertical; }
+    .verify-strip { margin-top: 14px; padding: 14px 16px; border: 1px solid var(--accent-bd); border-radius: 9px; background: var(--accent-soft); display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px; }
+    .proof-card { border: 1px solid var(--line); border-radius: var(--r); padding: 18px; background: #fff; }
+    .proof-v { font-size: 28px; font-weight: 800; letter-spacing: -0.03em; color: var(--ink); line-height: 1.1; }
+    .proof-l { font-size: 12.5px; color: var(--ink-2); margin-top: 6px; }
+    .cta-box { background: linear-gradient(135deg,#0f172a 0%,#1e1b4b 60%,#312e81 100%); color: #fff; border-radius: 12px; padding: 26px 28px; display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap; }
+    .cta-box h2 { color: #fff; margin: 0 0 6px; font-size: 21px; }
+    .cta-box p { margin: 0; color: #cbd5e1; font-size: 14px; max-width: 640px; }
+    .price-old { text-decoration: line-through; opacity: 0.65; margin-right: 4px; }
+    footer { padding: 28px 36px; font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; background: #fff; }
+    .ft-links { display: flex; gap: 14px; flex-wrap: wrap; }
+    .ft-links a { color: var(--ink-2); }
+    @media (max-width: 960px) {
+      .workspace { grid-template-columns: 1fr; }
+      .proof-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 720px) {
+      .nav { display: none; }
+      .band { padding: 28px 18px; }
+      .field-grid { grid-template-columns: 1fr; }
+      .bot-row { grid-template-columns: 1fr auto; }
+      .bot-role-col { display: none; }
+      footer { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="https://citeready-checker.appwrite.network/">
+        <span class="brand-mark"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5Z" fill="#ffffff"/><circle cx="12" cy="12" r="2.2" fill="#38bdf8"/></svg></span>
+        <span>CiteReady</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="https://citeready-checker.appwrite.network/">Live Auditor</a>
+        <a href="./ai-search-readiness-benchmark-2026.html">Top 50 Benchmark</a>
+        <a href="./robots-txt-ai-bots-2026.html" class="active">robots.txt Builder</a>
+        <a href="./schema-jsonld-graph-builder.html">Schema @graph Builder</a>
+        <a href="./compare.html">Compare</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-pill" role="group" aria-label="Language">
+          <button type="button" class="lang-btn active" id="lpEn">EN</button>
+          <button type="button" class="lang-btn" id="lpZh">中文</button>
+        </div>
+        <a class="btn btn-primary btn-sm" href="https://citeready-checker.appwrite.network/" target="_blank" rel="noopener" data-i18n="navAudit">Audit Live URL &rarr;</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="band">
+      <div class="eyebrow mono"><span class="dot"></span><span data-i18n="eyebrow">2026 AI CRAWLER ROBOTS.TXT POLICY BUILDER · 11 BOTS</span></div>
+      <h1 data-i18n="h1">Allow AI search citations. Control model training scrapers.</h1>
+      <p class="lead" data-i18n="lead">Visually configure all 11 major AI crawlers (ChatGPT Search, Perplexity, Claude, Google AI, Apple, Doubao &amp; Baidu), copy or download a clean robots.txt, and verify live HTTP &amp; WAF behavior in 2 seconds.</p>
+
+      <div class="preset-row" id="presetRow">
+        <button type="button" class="preset-btn active" data-preset="recommended" data-i18n="pRec">Recommended: Allow AI Search, Block Training</button>
+        <button type="button" class="preset-btn" data-preset="open" data-i18n="pOpen">Maximum Visibility: Allow All 11 AI Bots</button>
+        <button type="button" class="preset-btn" data-preset="strict" data-i18n="pStrict">Strict Protection: Block All AI Crawlers</button>
+      </div>
+
+      <div class="workspace">
+        <div class="panel">
+          <div class="panel-head">
+            <strong data-i18n="matrixTitle">11-Crawler AI Policy Matrix</strong>
+            <span class="pill p-info num" id="summaryPill">6 Allowed · 5 Blocked</span>
+          </div>
+          <div class="group-label" data-i18n="grpSearch">Live AI Search &amp; Real-Time Citation Bots</div>
+          <div id="searchBots"></div>
+          <div class="group-label" data-i18n="grpTrain">Foundation Model Training &amp; Corpus Scrapers</div>
+          <div id="trainBots"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <strong class="mono">/robots.txt</strong>
+            <div style="display:flex;gap:8px">
+              <button type="button" class="btn btn-sm" id="copyBtn" data-i18n="copyBtn">Copy robots.txt</button>
+              <button type="button" class="btn btn-primary btn-sm" id="dlBtn" data-i18n="dlBtn">Download</button>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="field-grid">
+              <div class="field">
+                <label for="domInput" data-i18n="domLbl">Your Domain (for Sitemap line)</label>
+                <input id="domInput" type="text" value="example.com" placeholder="yourdomain.com" />
+              </div>
+              <div class="field">
+                <label for="privInput" data-i18n="privLbl">Private Disallow Paths (comma-separated)</label>
+                <input id="privInput" type="text" value="/admin/, /api/private/" placeholder="/admin/, /internal/" />
+              </div>
+            </div>
+            <textarea id="robotsOut" class="code-out" readonly aria-label="Generated robots.txt"></textarea>
+            <div class="verify-strip">
+              <div>
+                <strong style="font-size:13.5px;color:var(--ink)" data-i18n="verTitle">WAF or X-Robots-Tag can still override robots.txt</strong>
+                <div style="font-size:12.5px;color:var(--ink-2)" data-i18n="verSub">Verify your live site across 10 AI crawlers, Cloudflare challenges &amp; headers in 2 seconds.</div>
+              </div>
+              <a class="btn btn-dark btn-sm" id="verifyLiveLink" href="https://citeready-checker.appwrite.network/" target="_blank" rel="noopener" data-i18n="verBtn">Verify Live Site &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band subtle">
+      <div class="eyebrow mono"><span class="dot"></span><span data-i18n="benchEyebrow">EMPIRICAL DATA · 2026 TOP 50 AI &amp; DEV SAAS BENCHMARK</span></div>
+      <h2 data-i18n="benchTitle">How the top 50 AI &amp; developer SaaS companies configure robots.txt</h2>
+      <p style="margin:0;color:var(--ink-2);max-width:740px" data-i18n="benchSub">Measured live with CiteReady on November 23, 2026 across 50 leading AI labs, cloud platforms, developer APIs, and SaaS tools.</p>
+      <div class="proof-grid">
+        <div class="proof-card">
+          <div class="proof-v num">94% <span style="font-size:15px;font-weight:600;color:var(--muted)">(47/50)</span></div>
+          <div class="proof-l" data-i18n="stat1">Allow all 10 major AI crawlers in robots.txt — top developer platforms treat AI search citations as a primary acquisition channel.</div>
+        </div>
+        <div class="proof-card">
+          <div class="proof-v num">74% <span style="font-size:15px;font-weight:600;color:var(--muted)">(37/50)</span></div>
+          <div class="proof-l" data-i18n="stat2">Already ship a root /llms.txt index, yet only 22% (11/50) publish /llms-full.txt for deep documentation ingestion.</div>
+        </div>
+        <div class="proof-card">
+          <div class="proof-v num">32% <span style="font-size:15px;font-weight:600;color:var(--muted)">(16/50)</span></div>
+          <div class="proof-l" data-i18n="stat3">Score 0/100 on Schema.org JSON-LD Entity Graphs — including OpenAI, Anthropic, Hugging Face, and Perplexity homepages.</div>
+        </div>
+      </div>
+      <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn btn-sm" href="./ai-search-readiness-benchmark-2026.html" data-i18n="readBench">Explore Full 50-Site Benchmark &rarr;</a>
+        <a class="btn btn-sm" href="./schema-jsonld-graph-builder.html" data-i18n="openSchema">Build Schema.org @graph JSON-LD &rarr;</a>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="cta-box">
+        <div>
+          <h2 data-i18n="ctaTitle">Need tailored Cloudflare WAF, Next.js &amp; Schema.org fixes? — $2 once.</h2>
+          <p data-i18n="ctaSub">CiteReady Web Pro unlocks unmasked 3-step framework fix guides, 50-URL concurrent batch CSV exports, and branded A4 PDF audit reports directly in your browser ($2 Launch Special, was $12 — or $5 Complete Suite, was $29). 14-day refund guarantee.</p>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" style="background:#fff;color:#0f172a;border-color:#fff" href="https://omnipulse-x402.appwrite.network/checkout/citeready" target="_blank" rel="noopener"><span class="price-old">$12</span> Unlock Pro — $2</a>
+          <a class="btn" style="background:rgba(255,255,255,0.12);color:#fff;border-color:rgba(255,255,255,0.3)" href="https://omnipulse-x402.appwrite.network/go/gumroad/suite" target="_blank" rel="noopener"><span class="price-old">$29</span> Complete Suite — $5</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>OmniForge &middot; Agent Arena Studio &middot; <a href="mailto:agentarenastudio@proton.me">agentarenastudio@proton.me</a></span>
+      <div class="ft-links">
+        <a href="./index.html">CiteReady CLI</a>
+        <a href="./ai-search-readiness-benchmark-2026.html">Top 50 Benchmark</a>
+        <a href="./schema-jsonld-graph-builder.html">Schema @graph Builder</a>
+        <a href="./compare.html">Compare</a>
+        <a href="https://citeready-checker.appwrite.network/generator" target="_blank" rel="noopener">/llms.txt Compiler</a>
+        <a href="https://citeready-checker.appwrite.network/.well-known/mcp.json" target="_blank" rel="noopener">MCP &amp; x402</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+  (function () {
+    const opTrack=(()=>{const E="https://omnipulse-x402.appwrite.network/v1/telemetry",D=document,W=window,R=D.documentElement,G=navigator,L=location,S=W.screen,M=Math,N=Date.now,I="cr_"+N().toString(36)+"_"+M.random().toString(36).slice(2,10),on=(t,e,f,o)=>t.addEventListener(e,f,o);let z="",d=0,v=D.hidden?0:N(),m=0,la=0,c={scan:0,outbound:0,paywall:0};try{z=Intl.DateTimeFormat().resolvedOptions().timeZone||""}catch{}const fl=()=>{if(v)d+=M.max(0,N()-v);v=D.hidden?0:N()},us=()=>{m=M.max(m,M.min(100,M.round(M.max(0,W.scrollY)/M.max(1,R.scrollHeight-W.innerHeight)*100)))},tx=ev=>{fl();us();const b=JSON.stringify({site:"citeready",sid:I,event:ev,path:"/robots-txt-ai-bots-2026",webdriver:!!G.webdriver,screen:S?S.width+"x"+S.height:"0x0",dwellSec:M.round(d/1e3),scrollPct:m,scansRun:c.scan,outboundClicks:c.outbound,paywallClicks:c.paywall,referrer:(D.referrer||"").slice(0,128),tz:z,lang:R.lang||"en"});try{if(!G.sendBeacon?.(E,new Blob([b],{type:"text/plain"})))fetch(E,{method:"POST",body:b,keepalive:!0}).catch(()=>{})}catch{}},lv=()=>{fl();v=0;if(N()-la>1e3){la=N();tx("leave")}},tr=ev=>{if(ev in c)c[ev]++;tx(ev)};on(W,"scroll",us,{passive:!0});on(D,"visibilitychange",()=>D.hidden?lv():v=N());on(W,"pagehide",lv);setInterval(()=>!D.hidden&&tx("heartbeat"),15e3);on(D,"click",e=>{const a=e.target?.closest?.("a[href]"),h=a?.href||"";if(/\/(go\/gumroad|checkout)\/|gumroad\.com/i.test(h))tr("paywall");else if(/^https?:/.test(h)&&a.origin!==L.origin)tr("outbound")},!0);return tr})();
+
+    const BOTS = [
+      { id: "OAI-SearchBot", owner: "OpenAI (ChatGPT Search)", ownerZh: "OpenAI（ChatGPT 实时搜索）", group: "search", role: "Live Search", roleZh: "实时搜索" },
+      { id: "ChatGPT-User", owner: "OpenAI (User Citation Fetch)", ownerZh: "OpenAI（用户触发实时抓取）", group: "search", role: "Live Citation", roleZh: "实时引用" },
+      { id: "PerplexityBot", owner: "Perplexity AI", ownerZh: "Perplexity AI 搜索", group: "search", role: "Live Search", roleZh: "实时搜索" },
+      { id: "Claude-SearchBot", owner: "Anthropic (Claude Web Search)", ownerZh: "Anthropic（Claude 搜索）", group: "search", role: "Live Search", roleZh: "实时搜索" },
+      { id: "Bytespider", owner: "ByteDance (Doubao AI)", ownerZh: "字节跳动（豆包 AI）", group: "search", role: "AI Search", roleZh: "AI 搜索" },
+      { id: "Baiduspider", owner: "Baidu (AI Search / Ernie)", ownerZh: "百度（AI 搜索 / 文心）", group: "search", role: "AI Search", roleZh: "AI 搜索" },
+      { id: "GPTBot", owner: "OpenAI (Model Training)", ownerZh: "OpenAI（模型训练语料）", group: "train", role: "Training", roleZh: "模型训练" },
+      { id: "ClaudeBot", owner: "Anthropic (Training & Indexing)", ownerZh: "Anthropic（训练与抓取）", group: "train", role: "Training", roleZh: "模型训练" },
+      { id: "Google-Extended", owner: "Google (Gemini / Vertex Training)", ownerZh: "Google（Gemini 训练）", group: "train", role: "Training", roleZh: "模型训练" },
+      { id: "Applebot-Extended", owner: "Apple Intelligence Training", ownerZh: "Apple Intelligence 训练", group: "train", role: "Training", roleZh: "模型训练" },
+      { id: "CCBot", owner: "Common Crawl Dataset", ownerZh: "Common Crawl 公开语料库", group: "train", role: "Dataset", roleZh: "语料库" }
+    ];
+
+    const I18N = {
+      en: {
+        navAudit: "Audit Live URL →",
+        eyebrow: "2026 AI CRAWLER ROBOTS.TXT POLICY BUILDER · 11 BOTS",
+        h1: "Allow AI search citations. Control model training scrapers.",
+        lead: "Visually configure all 11 major AI crawlers (ChatGPT Search, Perplexity, Claude, Google AI, Apple, Doubao & Baidu), copy or download a clean robots.txt, and verify live HTTP & WAF behavior in 2 seconds.",
+        pRec: "Recommended: Allow AI Search, Block Training",
+        pOpen: "Maximum Visibility: Allow All 11 AI Bots",
+        pStrict: "Strict Protection: Block All AI Crawlers",
+        matrixTitle: "11-Crawler AI Policy Matrix",
+        grpSearch: "Live AI Search & Real-Time Citation Bots",
+        grpTrain: "Foundation Model Training & Corpus Scrapers",
+        copyBtn: "Copy robots.txt", copied: "Copied", dlBtn: "Download",
+        domLbl: "Your Domain (for Sitemap line)", privLbl: "Private Disallow Paths (comma-separated)",
+        verTitle: "WAF or X-Robots-Tag can still override robots.txt",
+        verSub: "Verify your live site across 10 AI crawlers, Cloudflare challenges & headers in 2 seconds.",
+        verBtn: "Verify Live Site →",
+        benchEyebrow: "EMPIRICAL DATA · 2026 TOP 50 AI & DEV SAAS BENCHMARK",
+        benchTitle: "How the top 50 AI & developer SaaS companies configure robots.txt",
+        benchSub: "Measured live with CiteReady on November 23, 2026 across 50 leading AI labs, cloud platforms, developer APIs, and SaaS tools.",
+        stat1: "Allow all 10 major AI crawlers in robots.txt — top developer platforms treat AI search citations as a primary acquisition channel.",
+        stat2: "Already ship a root /llms.txt index, yet only 22% (11/50) publish /llms-full.txt for deep documentation ingestion.",
+        stat3: "Score 0/100 on Schema.org JSON-LD Entity Graphs — including OpenAI, Anthropic, Hugging Face, and Perplexity homepages.",
+        readBench: "Explore Full 50-Site Benchmark →",
+        openSchema: "Build Schema.org @graph JSON-LD →",
+        ctaTitle: "Need tailored Cloudflare WAF, Next.js & Schema.org fixes? — $2 once.",
+        ctaSub: "CiteReady Web Pro unlocks unmasked 3-step framework fix guides, 50-URL concurrent batch CSV exports, and branded A4 PDF audit reports directly in your browser ($2 Launch Special, was $12 — or $5 Complete Suite, was $29). 14-day refund guarantee.",
+        allow: "Allow", block: "Block"
+      },
+      zh: {
+        navAudit: "免费在线实测 →",
+        eyebrow: "2026 AI 爬虫 ROBOTS.TXT 策略生成器 · 11 大主流爬虫",
+        h1: "精准放行 AI 实时搜索引用，精细管控模型训练抓取。",
+        lead: "可视化配置 11 大国内外 AI 爬虫（ChatGPT Search、Perplexity、Claude、Google AI、Apple、豆包、百度），一键复制或下载标准 robots.txt，并支持 2 秒在线核验 WAF 与 HTTP 响应头。",
+        pRec: "推荐策略：放行 AI 搜索，拦截训练语料",
+        pOpen: "最大曝光：全部 11 个 AI 爬虫放行",
+        pStrict: "严格防护：拦截全部 AI 爬虫",
+        matrixTitle: "11 大 AI 爬虫权限控制矩阵",
+        grpSearch: "实时 AI 搜索与用户引用抓取爬虫",
+        grpTrain: "大模型底层训练与公开语料库爬虫",
+        copyBtn: "复制 robots.txt", copied: "已复制", dlBtn: "下载文件",
+        domLbl: "你的网站域名（用于 Sitemap 行）", privLbl: "需屏蔽的私密路径（逗号分隔）",
+        verTitle: "WAF 防火墙或 X-Robots-Tag 仍可能覆盖 robots.txt",
+        verSub: "使用 CiteReady 2 秒实测你的线上站点是否被 Cloudflare 403/503 或响应头误拦。",
+        verBtn: "2 秒在线实测 →",
+        benchEyebrow: "实测基准数据 · 2026 全球 50 强 AI 与开发 SaaS 报告",
+        benchTitle: "全球 50 强 AI 与开发者 SaaS 是如何配置 robots.txt 的",
+        benchSub: "2026 年 11 月 23 日使用 CiteReady 实时探测 50 家头部大模型实验室、云平台、API 与开发工具官网。",
+        stat1: "在 robots.txt 中放行全部 10 大 AI 爬虫——头部开发者平台已把 AI 搜索引用视为核心获客渠道。",
+        stat2: "已部署根目录 /llms.txt 索引，但仅 22%（11/50）补齐了深度文档索引 /llms-full.txt。",
+        stat3: "在 Schema.org JSON-LD 实体图谱中得 0/100 分，包括 OpenAI、Anthropic、Hugging Face 与 Perplexity 官网首页。",
+        readBench: "查看完整 50 强实测榜单 →",
+        openSchema: "生成 Schema.org @graph JSON-LD →",
+        ctaTitle: "需要专属 Cloudflare WAF、Next.js 与 Schema.org 补丁？— $2 一次买断。",
+        ctaSub: "CiteReady Web Pro 当前 $2 破冰特惠（原价 $12）原地解锁无打码三步框架修复代码、50 站批量 CSV 与正式 A4 PDF（全栈套票 $5，原价 $29），享 14 天退款保障。",
+        allow: "放行", block: "拦截"
+      }
+    };
+
+    let lang = "en";
+    try {
+      const q = new URLSearchParams(location.search).get("lang");
+      const saved = localStorage.getItem("of_lang_v5");
+      if (q === "zh" || q === "en") lang = q;
+      else if (saved === "zh" || saved === "en") lang = saved;
+    } catch {}
+
+    const state = {};
+    function applyPreset(name) {
+      BOTS.forEach(function (b) {
+        if (name === "open") state[b.id] = "allow";
+        else if (name === "strict") state[b.id] = "block";
+        else state[b.id] = b.group === "search" ? "allow" : "block";
+      });
+      document.querySelectorAll(".preset-btn").forEach(function (btn) {
+        btn.classList.toggle("active", btn.getAttribute("data-preset") === name);
+      });
+      render();
+    }
+
+    function t(k) { return (I18N[lang] && I18N[lang][k]) || I18N.en[k] || k; }
+    function esc(s) { return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+
+    function cleanDomain(raw) {
+      return String(raw || "").trim().replace(/^https?:\/\//i, "").replace(/\/.*$/, "").replace(/[^a-zA-Z0-9.-]/g, "");
+    }
+
+    function generateRobots() {
+      const dom = cleanDomain(document.getElementById("domInput").value) || "example.com";
+      const privPaths = String(document.getElementById("privInput").value || "")
+        .split(",").map(function (s) { return s.trim(); }).filter(Boolean);
+      const lines = [
+        "# Generated by CiteReady AI Crawler robots.txt Policy Builder (2026)",
+        "# Verify live crawler & WAF status: https://citeready-checker.appwrite.network/?url=" + encodeURIComponent(dom),
+        "",
+        "User-agent: *",
+        "Allow: /"
+      ];
+      privPaths.forEach(function (p) {
+        lines.push("Disallow: " + (p.startsWith("/") ? p : "/" + p));
+      });
+      lines.push("");
+
+      const allowedSearch = BOTS.filter(function (b) { return state[b.id] === "allow"; });
+      const blockedBots = BOTS.filter(function (b) { return state[b.id] === "block"; });
+
+      if (allowedSearch.length) {
+        lines.push("# Explicitly Allowed AI Crawlers");
+        allowedSearch.forEach(function (b) {
+          lines.push("User-agent: " + b.id);
+          lines.push("Allow: /");
+          privPaths.forEach(function (p) { lines.push("Disallow: " + (p.startsWith("/") ? p : "/" + p)); });
+          lines.push("");
+        });
+      }
+      if (blockedBots.length) {
+        lines.push("# Blocked AI Crawlers");
+        blockedBots.forEach(function (b) {
+          lines.push("User-agent: " + b.id);
+          lines.push("Disallow: /");
+          lines.push("");
+        });
+      }
+      lines.push("Sitemap: https://" + dom + "/sitemap.xml");
+      return lines.join("\n");
+    }
+
+    function renderBotList(containerId, groupName) {
+      const el = document.getElementById(containerId);
+      el.innerHTML = BOTS.filter(function (b) { return b.group === groupName; }).map(function (b) {
+        const isAllow = state[b.id] === "allow";
+        return '<div class="bot-row">' +
+          '<div><div class="bot-name mono">' + esc(b.id) + '</div><div class="bot-owner">' + esc(lang === "zh" ? b.ownerZh : b.owner) + '</div></div>' +
+          '<div class="bot-role-col"><span class="pill ' + (b.group === "search" ? "p-info" : "p-warn") + '">' + esc(lang === "zh" ? b.roleZh : b.role) + '</span></div>' +
+          '<div class="seg">' +
+            '<button type="button" data-bot="' + esc(b.id) + '" data-val="allow" class="' + (isAllow ? "on-allow" : "") + '">' + esc(t("allow")) + '</button>' +
+            '<button type="button" data-bot="' + esc(b.id) + '" data-val="block" class="' + (!isAllow ? "on-block" : "") + '">' + esc(t("block")) + '</button>' +
+          '</div>' +
+        '</div>';
+      }).join("");
+      el.querySelectorAll("button[data-bot]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          state[btn.getAttribute("data-bot")] = btn.getAttribute("data-val");
+          document.querySelectorAll(".preset-btn").forEach(function (p) { p.classList.remove("active"); });
+          render();
+        });
+      });
+    }
+
+    function render() {
+      renderBotList("searchBots", "search");
+      renderBotList("trainBots", "train");
+      const allowed = BOTS.filter(function (b) { return state[b.id] === "allow"; }).length;
+      const blocked = BOTS.length - allowed;
+      document.getElementById("summaryPill").textContent = lang === "zh"
+        ? (allowed + " 个放行 · " + blocked + " 个拦截")
+        : (allowed + " Allowed · " + blocked + " Blocked");
+      document.getElementById("robotsOut").value = generateRobots();
+      const dom = cleanDomain(document.getElementById("domInput").value);
+      const link = document.getElementById("verifyLiveLink");
+      link.href = dom && dom !== "example.com"
+        ? ("https://citeready-checker.appwrite.network/?url=" + encodeURIComponent(dom))
+        : "https://citeready-checker.appwrite.network/";
+    }
+
+    function applyLang(next, persist) {
+      lang = next === "zh" ? "zh" : "en";
+      document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
+      document.getElementById("lpEn").classList.toggle("active", lang === "en");
+      document.getElementById("lpZh").classList.toggle("active", lang === "zh");
+      if (persist) { try { localStorage.setItem("of_lang_v5", lang); } catch {} }
+      document.querySelectorAll("[data-i18n]").forEach(function (el) {
+        const k = el.getAttribute("data-i18n");
+        if (k) el.textContent = t(k);
+      });
+      render();
+    }
+
+    document.getElementById("lpEn").addEventListener("click", function () { applyLang("en", true); });
+    document.getElementById("lpZh").addEventListener("click", function () { applyLang("zh", true); });
+    document.querySelectorAll(".preset-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () { applyPreset(btn.getAttribute("data-preset")); });
+    });
+    document.getElementById("domInput").addEventListener("input", render);
+    document.getElementById("privInput").addEventListener("input", render);
+    document.getElementById("copyBtn").addEventListener("click", function () {
+      const btn = this;
+      const txt = document.getElementById("robotsOut").value;
+      const done = function () { btn.textContent = t("copied"); setTimeout(function () { btn.textContent = t("copyBtn"); }, 1600); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done).catch(done);
+      else done();
+    });
+    document.getElementById("dlBtn").addEventListener("click", function () {
+      const blob = new Blob([document.getElementById("robotsOut").value], { type: "text/plain;charset=utf-8" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "robots.txt";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(function () { URL.revokeObjectURL(a.href); }, 500);
+    });
+
+    applyPreset("recommended");
+    applyLang(lang, false);
+    opTrack("pageview");
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Schema.org @graph JSON-LD Generator for AI Search (2026) — Organization, SoftwareApplication &amp; FAQPage | CiteReady</title>
+  <meta name="description" content="Free interactive Schema.org @graph JSON-LD builder for AI search (ChatGPT Search, Perplexity, Claude, Google AI). Generate valid linked Organization, WebSite, SoftwareApplication, Offer &amp; FAQPage markup for HTML or Next.js App Router." />
+  <meta name="keywords" content="Schema.org JSON-LD generator 2026, @graph JSON-LD SaaS, SoftwareApplication schema generator, FAQPage JSON-LD Next.js, GEO structured data builder, AI search entity graph" />
+  <link rel="canonical" href="https://zcoldwater.github.io/citeready-cli/schema-jsonld-graph-builder.html" />
+  <link rel="icon" type="image/svg+xml" href="https://citeready-checker.appwrite.network/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Schema.org @graph JSON-LD Generator for AI Search (2026)" />
+  <meta property="og:description" content="32% of top 50 AI &amp; Dev SaaS homepages score 0/100 on Schema.org entity graphs. Build valid linked Organization + SoftwareApplication + Offer + FAQPage JSON-LD in 30 seconds." />
+  <meta property="og:url" content="https://zcoldwater.github.io/citeready-cli/schema-jsonld-graph-builder.html" />
+  <meta property="og:image" content="https://brand-checker.appwrite.network/assets/cover-citeready-2usd.png" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="720" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Schema.org @graph JSON-LD Generator for AI Search (2026)" />
+  <meta name="twitter:description" content="Generate valid HTML &amp; Next.js App Router JSON-LD entity graphs linking Organization, WebSite, SoftwareApplication, Offer &amp; FAQPage." />
+  <meta name="twitter:image" content="https://brand-checker.appwrite.network/assets/cover-citeready-2usd.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "CiteReady Schema.org @graph JSON-LD Generator (2026)",
+        "url": "https://zcoldwater.github.io/citeready-cli/schema-jsonld-graph-builder.html",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web",
+        "description": "Free interactive Schema.org JSON-LD @graph builder outputting valid HTML <head> and Next.js App Router snippets connecting Organization, WebSite, SoftwareApplication, Offer, and FAQPage entities.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "OmniForge · Agent Arena Studio",
+          "url": "https://citeready-checker.appwrite.network/"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why use a single Schema.org @graph block instead of separate JSON-LD scripts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Linking Organization, WebSite, SoftwareApplication, Offer, and FAQPage inside one @graph with stable @id URIs eliminates entity ambiguity so ChatGPT Search, Perplexity, Claude, and Google AI Overviews unambiguously tie your pricing, docs, and product capabilities to your brand."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should JSON-LD be server-rendered for AI crawlers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Most AI search crawlers (including OAI-SearchBot, PerplexityBot, and ClaudeBot) inspect raw server-rendered HTML without executing heavy client-side JavaScript. Render JSON-LD directly in your server HTML head or Next.js Server Component layout.tsx."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #ffffff; --bg-subtle: #f8fafc; --ink: #0f172a; --ink-2: #334155; --muted: #64748b;
+      --line: #e2e8f0; --line-strong: #cbd5e1;
+      --accent: #4f46e5; --accent-hover: #4338ca; --accent-soft: #eef2ff; --accent-bd: #c7d2fe;
+      --ok-bg: #ecfdf5; --ok-fg: #047857; --ok-bd: #a7f3d0;
+      --warn-bg: #fffbeb; --warn-fg: #b45309; --warn-bd: #fde68a;
+      --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      --r: 10px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .mono { font-family: var(--mono); }
+    .num { font-variant-numeric: tabular-nums; }
+    .topbar { position: sticky; top: 0; z-index: 40; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+    .topbar-inner { max-width: 1180px; margin: 0 auto; padding: 0 24px; height: 63px; display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 800; font-size: 16px; letter-spacing: -0.02em; white-space: nowrap; }
+    .brand:hover { text-decoration: none; }
+    .brand-mark { width: 28px; height: 28px; border-radius: 7px; background: linear-gradient(135deg,#0f172a,#312e81 55%,#4f46e5); display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .nav { display: flex; align-items: center; gap: 16px; font-size: 13.5px; }
+    .nav a { color: var(--ink-2); font-weight: 500; white-space: nowrap; }
+    .nav a:hover { color: var(--ink); text-decoration: none; }
+    .nav a.active { color: var(--accent); font-weight: 700; }
+    .nav-actions { display: flex; align-items: center; gap: 8px; }
+    .lang-pill { display: inline-flex; border: 1px solid var(--line-strong); border-radius: 999px; padding: 2px; background: var(--bg-subtle); }
+    .lang-btn { border: 0; background: transparent; color: var(--muted); padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; cursor: pointer; font-family: inherit; }
+    .lang-btn.active { background: var(--ink); color: #fff; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 9px 15px; border-radius: 8px; font-size: 13.5px; font-weight: 600; cursor: pointer; border: 1px solid var(--line-strong); background: #fff; color: var(--ink); font-family: inherit; white-space: nowrap; }
+    .btn:hover { background: var(--bg-subtle); text-decoration: none; }
+    .btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: #fff; }
+    .btn-dark { background: var(--ink); border-color: var(--ink); color: #fff; }
+    .btn-dark:hover { background: #1e293b; color: #fff; }
+    .btn-sm { padding: 6px 12px; font-size: 12.5px; }
+    .shell { max-width: 1180px; margin: 0 auto; border-left: 1px solid var(--line); border-right: 1px solid var(--line); background: #fff; }
+    .band { padding: 44px 36px; border-bottom: 1px solid var(--line); }
+    .band.subtle { background: var(--bg-subtle); }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 11.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+    h1 { margin: 0 0 12px; font-size: clamp(28px, 3.8vw, 42px); line-height: 1.12; letter-spacing: -0.03em; font-weight: 800; max-width: 900px; }
+    h2 { margin: 0 0 10px; font-size: 22px; line-height: 1.25; letter-spacing: -0.02em; font-weight: 800; }
+    .lead { margin: 0 0 22px; font-size: 16px; color: var(--ink-2); max-width: 780px; }
+    .preset-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
+    .preset-btn { padding: 7px 13px; border-radius: 8px; border: 1px solid var(--line-strong); background: #fff; color: var(--ink-2); font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; }
+    .preset-btn.active { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+    .workspace { display: grid; grid-template-columns: 0.98fr 1.02fr; gap: 22px; align-items: start; }
+    .panel { border: 1px solid var(--line); border-radius: var(--r); background: #fff; overflow: hidden; }
+    .panel-head { padding: 13px 18px; border-bottom: 1px solid var(--line); background: var(--bg-subtle); display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .panel-body { padding: 16px 18px; }
+    .row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .field { margin-bottom: 12px; }
+    .field label { display: block; font-size: 12px; font-weight: 700; color: var(--ink-2); margin-bottom: 4px; }
+    .field input, .field select, .field textarea { width: 100%; padding: 8px 10px; border: 1px solid var(--line-strong); border-radius: 7px; font-size: 13px; color: var(--ink); background: #fff; font-family: inherit; }
+    .field textarea { resize: vertical; min-height: 54px; }
+    .tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+    .tab-btn { border: 1px solid var(--line-strong); background: #fff; color: var(--ink-2); padding: 5px 11px; border-radius: 7px; font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit; }
+    .tab-btn.active { background: var(--ink); border-color: var(--ink); color: #fff; }
+    .pill { display: inline-flex; align-items: center; padding: 2px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; border: 1px solid transparent; white-space: nowrap; }
+    .p-ok { background: var(--ok-bg); color: var(--ok-fg); border-color: var(--ok-bd); }
+    .p-info { background: var(--accent-soft); color: var(--accent); border-color: var(--accent-bd); }
+    .code-out { width: 100%; min-height: 440px; padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: #0f172a; color: #e2e8f0; font-family: var(--mono); font-size: 12px; line-height: 1.52; resize: vertical; }
+    .graph-strip { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 10px 12px; background: var(--bg-subtle); border: 1px solid var(--line); border-radius: 8px; margin-bottom: 12px; font-size: 12px; }
+    .node-chip { padding: 3px 9px; border-radius: 6px; background: #fff; border: 1px solid var(--accent-bd); color: var(--accent); font-weight: 700; font-family: var(--mono); }
+    .verify-strip { margin-top: 14px; padding: 14px 16px; border: 1px solid var(--accent-bd); border-radius: 9px; background: var(--accent-soft); display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .cta-box { background: linear-gradient(135deg,#0f172a 0%,#1e1b4b 60%,#312e81 100%); color: #fff; border-radius: 12px; padding: 26px 28px; display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap; }
+    .cta-box h2 { color: #fff; margin: 0 0 6px; font-size: 21px; }
+    .cta-box p { margin: 0; color: #cbd5e1; font-size: 14px; max-width: 640px; }
+    .price-old { text-decoration: line-through; opacity: 0.65; margin-right: 4px; }
+    footer { padding: 28px 36px; font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; background: #fff; }
+    .ft-links { display: flex; gap: 14px; flex-wrap: wrap; }
+    .ft-links a { color: var(--ink-2); }
+    @media (max-width: 960px) { .workspace { grid-template-columns: 1fr; } }
+    @media (max-width: 720px) {
+      .nav { display: none; }
+      .band { padding: 28px 18px; }
+      .row-2 { grid-template-columns: 1fr; }
+      footer { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="https://citeready-checker.appwrite.network/">
+        <span class="brand-mark"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5Z" fill="#ffffff"/><circle cx="12" cy="12" r="2.2" fill="#38bdf8"/></svg></span>
+        <span>CiteReady</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="https://citeready-checker.appwrite.network/">Live Auditor</a>
+        <a href="./ai-search-readiness-benchmark-2026.html">Top 50 Benchmark</a>
+        <a href="./robots-txt-ai-bots-2026.html">robots.txt Builder</a>
+        <a href="./schema-jsonld-graph-builder.html" class="active">Schema @graph Builder</a>
+        <a href="./compare.html">Compare</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-pill" role="group" aria-label="Language">
+          <button type="button" class="lang-btn active" id="lpEn">EN</button>
+          <button type="button" class="lang-btn" id="lpZh">中文</button>
+        </div>
+        <a class="btn btn-primary btn-sm" href="https://citeready-checker.appwrite.network/" target="_blank" rel="noopener" data-i18n="navAudit">Audit Live URL &rarr;</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="band">
+      <div class="eyebrow mono"><span class="dot"></span><span data-i18n="eyebrow">2026 SCHEMA.ORG @GRAPH BUILDER · LINKED ENTITY GRAPH</span></div>
+      <h1 data-i18n="h1">Generate a 100/100 Schema.org @graph JSON-LD block in 30 seconds.</h1>
+      <p class="lead" data-i18n="lead">In our live 2026 Top 50 AI &amp; Dev SaaS Benchmark, 32% of leading sites (16/50) scored 0/100 on Schema.org entity graphs. Compile a clean, interconnected Organization + WebSite + SoftwareApplication + Offer + FAQPage block for HTML or Next.js App Router.</p>
+
+      <div class="preset-row">
+        <button type="button" class="preset-btn active" data-tpl="devtool" data-i18n="tplDev">Preset: DevTool / API SaaS</button>
+        <button type="button" class="preset-btn" data-tpl="b2b" data-i18n="tplB2b">Preset: B2B Productivity SaaS</button>
+        <button type="button" class="preset-btn" data-tpl="indie" data-i18n="tplIndie">Preset: One-Time Indie Tool</button>
+      </div>
+
+      <div class="workspace">
+        <div class="panel">
+          <div class="panel-head">
+            <strong data-i18n="formTitle">Entity Graph Configuration</strong>
+            <span class="pill p-ok" id="validPill">Valid JSON-LD · 5 Entities</span>
+          </div>
+          <div class="panel-body">
+            <div class="row-2">
+              <div class="field">
+                <label for="fBrand" data-i18n="lBrand">Product / Brand Name</label>
+                <input id="fBrand" type="text" value="Acme Cloud API" />
+              </div>
+              <div class="field">
+                <label for="fUrl" data-i18n="lUrl">Canonical Homepage URL</label>
+                <input id="fUrl" class="mono" type="text" value="https://acme-api.example" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="fDesc" data-i18n="lDesc">One-Sentence Product Description (cited by AI answers)</label>
+              <textarea id="fDesc">Serverless Postgres branching and instant preview databases for modern TypeScript teams.</textarea>
+            </div>
+            <div class="row-2">
+              <div class="field">
+                <label for="fCat" data-i18n="lCat">Schema Application Category</label>
+                <select id="fCat">
+                  <option value="DeveloperApplication">DeveloperApplication</option>
+                  <option value="BusinessApplication">BusinessApplication</option>
+                  <option value="WebApplication">WebApplication</option>
+                  <option value="SecurityApplication">SecurityApplication</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="fPrice" data-i18n="lPrice">Starting Price (USD, e.g. 0 or 29.00)</label>
+                <input id="fPrice" class="mono" type="text" value="0" />
+              </div>
+            </div>
+            <div class="row-2">
+              <div class="field">
+                <label for="fLogo" data-i18n="lLogo">Logo Image URL (optional)</label>
+                <input id="fLogo" class="mono" type="text" value="https://acme-api.example/logo.png" />
+              </div>
+              <div class="field">
+                <label for="fSame" data-i18n="lSame">Official Links / sameAs (comma-separated)</label>
+                <input id="fSame" class="mono" type="text" value="https://github.com/acme, https://x.com/acme" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="fQ1" data-i18n="lQ1">FAQ #1 Question (extracted by Perplexity &amp; ChatGPT)</label>
+              <input id="fQ1" type="text" value="How does Acme Cloud API differ from traditional managed databases?" />
+            </div>
+            <div class="field">
+              <label for="fA1" data-i18n="lA1">FAQ #1 Concise Answer</label>
+              <textarea id="fA1">Acme creates copy-on-write database branches in under 1 second per pull request with zero idle billing.</textarea>
+            </div>
+            <div class="field">
+              <label for="fQ2" data-i18n="lQ2">FAQ #2 Question</label>
+              <input id="fQ2" type="text" value="Is there a free tier for production evaluation?" />
+            </div>
+            <div class="field" style="margin-bottom:0">
+              <label for="fA2" data-i18n="lA2">FAQ #2 Concise Answer</label>
+              <textarea id="fA2">Yes. Every workspace includes 10 database branches, 5 GB storage, and automated daily backups at $0/month.</textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <div class="tabs" id="fmtTabs">
+              <button type="button" class="tab-btn active" data-fmt="html">HTML &lt;head&gt;</button>
+              <button type="button" class="tab-btn" data-fmt="nextjs">Next.js layout.tsx</button>
+              <button type="button" class="tab-btn" data-fmt="json">Raw JSON-LD</button>
+            </div>
+            <div style="display:flex;gap:8px">
+              <button type="button" class="btn btn-sm" id="copyBtn" data-i18n="copyBtn">Copy Snippet</button>
+              <button type="button" class="btn btn-primary btn-sm" id="dlBtn" data-i18n="dlBtn">Download .jsonld</button>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="graph-strip">
+              <span class="node-chip">Organization</span><span>&rarr;</span>
+              <span class="node-chip">WebSite</span><span>&rarr;</span>
+              <span class="node-chip">SoftwareApplication</span><span>&rarr;</span>
+              <span class="node-chip">Offer</span><span>&rarr;</span>
+              <span class="node-chip">FAQPage</span>
+            </div>
+            <textarea id="codeOut" class="code-out" readonly aria-label="Generated Schema.org JSON-LD"></textarea>
+            <div class="verify-strip">
+              <div>
+                <strong style="font-size:13.5px;color:var(--ink)" data-i18n="verTitle">Deploy server-side, then verify your live 0-100 Entity Score</strong>
+                <div style="font-size:12.5px;color:var(--ink-2)" data-i18n="verSub">CiteReady inspects raw server HTML (no JS execution) just like OAI-SearchBot &amp; PerplexityBot.</div>
+              </div>
+              <a class="btn btn-dark btn-sm" id="verifyLiveLink" href="https://citeready-checker.appwrite.network/" target="_blank" rel="noopener" data-i18n="verBtn">Verify Live Score &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band subtle">
+      <div class="cta-box">
+        <div>
+          <h2 data-i18n="ctaTitle">Auto-generate tailored fixes + 50-URL batch CSV &amp; A4 PDF — $2 once.</h2>
+          <p data-i18n="ctaSub">CiteReady Web Pro audits your live domain across 10 AI crawlers, Schema.org depth &amp; /llms.txt, then unlocks copy-paste fixes for Next.js, WordPress, Webflow, Shopify, Cloudflare &amp; Cursor ($2 Launch Special, was $12 — or $5 Complete Suite, was $29). 14-day refund.</p>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" style="background:#fff;color:#0f172a;border-color:#fff" href="https://omnipulse-x402.appwrite.network/checkout/citeready" target="_blank" rel="noopener"><span class="price-old">$12</span> Unlock Pro — $2</a>
+          <a class="btn" style="background:rgba(255,255,255,0.12);color:#fff;border-color:rgba(255,255,255,0.3)" href="https://omnipulse-x402.appwrite.network/go/gumroad/suite" target="_blank" rel="noopener"><span class="price-old">$29</span> Complete Suite — $5</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>OmniForge &middot; Agent Arena Studio &middot; <a href="mailto:agentarenastudio@proton.me">agentarenastudio@proton.me</a></span>
+      <div class="ft-links">
+        <a href="./index.html">CiteReady CLI</a>
+        <a href="./ai-search-readiness-benchmark-2026.html">Top 50 Benchmark</a>
+        <a href="./robots-txt-ai-bots-2026.html">robots.txt Builder</a>
+        <a href="./compare.html">Compare</a>
+        <a href="https://citeready-checker.appwrite.network/generator" target="_blank" rel="noopener">/llms.txt Compiler</a>
+        <a href="https://citeready-checker.appwrite.network/.well-known/mcp.json" target="_blank" rel="noopener">MCP &amp; x402</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+  (function () {
+    const opTrack=(()=>{const E="https://omnipulse-x402.appwrite.network/v1/telemetry",D=document,W=window,R=D.documentElement,G=navigator,L=location,S=W.screen,M=Math,N=Date.now,I="cr_"+N().toString(36)+"_"+M.random().toString(36).slice(2,10),on=(t,e,f,o)=>t.addEventListener(e,f,o);let z="",d=0,v=D.hidden?0:N(),m=0,la=0,c={scan:0,outbound:0,paywall:0};try{z=Intl.DateTimeFormat().resolvedOptions().timeZone||""}catch{}const fl=()=>{if(v)d+=M.max(0,N()-v);v=D.hidden?0:N()},us=()=>{m=M.max(m,M.min(100,M.round(M.max(0,W.scrollY)/M.max(1,R.scrollHeight-W.innerHeight)*100)))},tx=ev=>{fl();us();const b=JSON.stringify({site:"citeready",sid:I,event:ev,path:"/schema-jsonld-graph-builder",webdriver:!!G.webdriver,screen:S?S.width+"x"+S.height:"0x0",dwellSec:M.round(d/1e3),scrollPct:m,scansRun:c.scan,outboundClicks:c.outbound,paywallClicks:c.paywall,referrer:(D.referrer||"").slice(0,128),tz:z,lang:R.lang||"en"});try{if(!G.sendBeacon?.(E,new Blob([b],{type:"text/plain"})))fetch(E,{method:"POST",body:b,keepalive:!0}).catch(()=>{})}catch{}},lv=()=>{fl();v=0;if(N()-la>1e3){la=N();tx("leave")}},tr=ev=>{if(ev in c)c[ev]++;tx(ev)};on(W,"scroll",us,{passive:!0});on(D,"visibilitychange",()=>D.hidden?lv():v=N());on(W,"pagehide",lv);setInterval(()=>!D.hidden&&tx("heartbeat"),15e3);on(D,"click",e=>{const a=e.target?.closest?.("a[href]"),h=a?.href||"";if(/\/(go\/gumroad|checkout)\/|gumroad\.com/i.test(h))tr("paywall");else if(/^https?:/.test(h)&&a.origin!==L.origin)tr("outbound")},!0);return tr})();
+
+    const TEMPLATES = {
+      devtool: {
+        brand: "Acme Cloud API",
+        url: "https://acme-api.example",
+        desc: "Serverless Postgres branching and instant preview databases for modern TypeScript teams.",
+        cat: "DeveloperApplication",
+        price: "0",
+        logo: "https://acme-api.example/logo.png",
+        same: "https://github.com/acme, https://x.com/acme",
+        q1: "How does Acme Cloud API differ from traditional managed databases?",
+        a1: "Acme creates copy-on-write database branches in under 1 second per pull request with zero idle billing.",
+        q2: "Is there a free tier for production evaluation?",
+        a2: "Yes. Every workspace includes 10 database branches, 5 GB storage, and automated daily backups at $0/month."
+      },
+      b2b: {
+        brand: "PulseDesk Analytics",
+        url: "https://pulsedesk.example",
+        desc: "Real-time revenue attribution and cohort forecasting built for B2B SaaS finance and growth teams.",
+        cat: "BusinessApplication",
+        price: "49.00",
+        logo: "https://pulsedesk.example/brand.png",
+        same: "https://github.com/pulsedesk, https://x.com/pulsedesk",
+        q1: "Which billing systems integrate natively with PulseDesk?",
+        a1: "PulseDesk syncs live Stripe, Paddle, and Chargebee webhooks in under 2 minutes with zero SQL engineering.",
+        q2: "How is PulseDesk Analytics priced?",
+        a2: "Plans start at $49/month with unlimited team seats and a 14-day free trial."
+      },
+      indie: {
+        brand: "ShipCheck Auditor",
+        url: "https://shipcheck.example",
+        desc: "One-time browser-based technical launch auditor for solo founders verifying DNS, security headers, and AI crawlability.",
+        cat: "WebApplication",
+        price: "9.00",
+        logo: "https://shipcheck.example/icon.png",
+        same: "https://github.com/shipcheck",
+        q1: "Does ShipCheck require a recurring subscription?",
+        a1: "No. Core audits are free forever and the Pro workbench unlocks permanently for a single $9 one-time payment.",
+        q2: "Does ShipCheck store scanned domains?",
+        a2: "No. All diagnostics are stateless, read-only public inspections processed in memory."
+      }
+    };
+
+    const I18N = {
+      en: {
+        navAudit: "Audit Live URL →",
+        eyebrow: "2026 SCHEMA.ORG @GRAPH BUILDER · LINKED ENTITY GRAPH",
+        h1: "Generate a 100/100 Schema.org @graph JSON-LD block in 30 seconds.",
+        lead: "In our live 2026 Top 50 AI & Dev SaaS Benchmark, 32% of leading sites (16/50) scored 0/100 on Schema.org entity graphs. Compile a clean, interconnected Organization + WebSite + SoftwareApplication + Offer + FAQPage block for HTML or Next.js App Router.",
+        tplDev: "Preset: DevTool / API SaaS", tplB2b: "Preset: B2B Productivity SaaS", tplIndie: "Preset: One-Time Indie Tool",
+        formTitle: "Entity Graph Configuration",
+        lBrand: "Product / Brand Name", lUrl: "Canonical Homepage URL",
+        lDesc: "One-Sentence Product Description (cited by AI answers)",
+        lCat: "Schema Application Category", lPrice: "Starting Price (USD, e.g. 0 or 29.00)",
+        lLogo: "Logo Image URL (optional)", lSame: "Official Links / sameAs (comma-separated)",
+        lQ1: "FAQ #1 Question (extracted by Perplexity & ChatGPT)", lA1: "FAQ #1 Concise Answer",
+        lQ2: "FAQ #2 Question", lA2: "FAQ #2 Concise Answer",
+        copyBtn: "Copy Snippet", copied: "Copied", dlBtn: "Download .jsonld",
+        verTitle: "Deploy server-side, then verify your live 0-100 Entity Score",
+        verSub: "CiteReady inspects raw server HTML (no JS execution) just like OAI-SearchBot & PerplexityBot.",
+        verBtn: "Verify Live Score →",
+        ctaTitle: "Auto-generate tailored fixes + 50-URL batch CSV & A4 PDF — $2 once.",
+        ctaSub: "CiteReady Web Pro audits your live domain across 10 AI crawlers, Schema.org depth & /llms.txt, then unlocks copy-paste fixes for Next.js, WordPress, Webflow, Shopify, Cloudflare & Cursor ($2 Launch Special, was $12 — or $5 Complete Suite, was $29). 14-day refund.",
+        validBadge: "Valid JSON-LD · 5 Linked Entities"
+      },
+      zh: {
+        navAudit: "免费在线实测 →",
+        eyebrow: "2026 SCHEMA.ORG @GRAPH 实体图谱生成器",
+        h1: "30 秒生成 100/100 满分 Schema.org @graph JSON-LD 代码。",
+        lead: "2026 全球 50 强 AI 与开发 SaaS 实测显示，32%（16/50）的知名官网在 Schema.org 实体图谱得 0 分。填写核心信息即可一键生成标准互联的 Organization + WebSite + SoftwareApplication + Offer + FAQPage 实体代码，支持 HTML 与 Next.js App Router。",
+        tplDev: "模板：开发者 API / 云工具", tplB2b: "模板：B2B 增长 SaaS", tplIndie: "模板：买断制独立产品",
+        formTitle: "实体图谱参数配置",
+        lBrand: "产品 / 品牌名称", lUrl: "官网规范网址（Canonical URL）",
+        lDesc: "一句话产品定义（供 AI 回答精准引用）",
+        lCat: "Schema 应用类别", lPrice: "起步价格（USD，例如 0 或 29.00）",
+        lLogo: "Logo 图片链接（选填）", lSame: "官方主页链接 sameAs（逗号分隔）",
+        lQ1: "高频问答 #1（易被 Perplexity / ChatGPT 摘录）", lA1: "问答 #1 精炼回答",
+        lQ2: "高频问答 #2", lA2: "问答 #2 精炼回答",
+        copyBtn: "复制代码", copied: "已复制", dlBtn: "下载 .jsonld",
+        verTitle: "服务端部署上线后，2 秒核验线上 0-100 实体图谱得分",
+        verSub: "CiteReady 直接读取服务端原始 HTML（不依赖前端 JS），与 OAI-SearchBot / PerplexityBot 视角一致。",
+        verBtn: "在线实测实体得分 →",
+        ctaTitle: "自动生成全栈专属补丁 + 50 站批量 CSV 与 A4 PDF — $2 买断。",
+        ctaSub: "CiteReady Web Pro 2 秒完成 10 大 AI 爬虫、Schema 实体深度与 /llms.txt 检测，并解锁 Next.js / WordPress / Webflow / Shopify / Cloudflare / Cursor 无打码修复代码（$2 破冰特惠，原价 $12；全栈套票 $5，原价 $29），享 14 天退款保障。",
+        validBadge: "JSON-LD 语法校验通过 · 5 类互联实体"
+      }
+    };
+
+    let lang = "en";
+    let fmt = "html";
+    try {
+      const q = new URLSearchParams(location.search).get("lang");
+      const saved = localStorage.getItem("of_lang_v5");
+      if (q === "zh" || q === "en") lang = q;
+      else if (saved === "zh" || saved === "en") lang = saved;
+    } catch {}
+
+    function t(k) { return (I18N[lang] && I18N[lang][k]) || I18N.en[k] || k; }
+    function normalizeBaseUrl(raw) {
+      const s = String(raw || "").trim();
+      if (!s) return "https://example.com";
+      return /^https?:\/\//i.test(s) ? s.replace(/\/+$/, "") : ("https://" + s.replace(/\/+$/, ""));
+    }
+
+    function buildGraphObj() {
+      const brand = document.getElementById("fBrand").value.trim() || "Acme App";
+      const base = normalizeBaseUrl(document.getElementById("fUrl").value);
+      const desc = document.getElementById("fDesc").value.trim() || "Modern web application.";
+      const cat = document.getElementById("fCat").value || "DeveloperApplication";
+      const rawPrice = document.getElementById("fPrice").value.trim().replace(/[^0-9.]/g, "");
+      const price = rawPrice || "0";
+      const logo = document.getElementById("fLogo").value.trim();
+      const sameAs = document.getElementById("fSame").value.split(",").map(function (x) { return x.trim(); }).filter(function (x) { return /^https?:\/\//i.test(x); });
+      const q1 = document.getElementById("fQ1").value.trim();
+      const a1 = document.getElementById("fA1").value.trim();
+      const q2 = document.getElementById("fQ2").value.trim();
+      const a2 = document.getElementById("fA2").value.trim();
+
+      const org = { "@type": "Organization", "@id": base + "/#org", name: brand, url: base + "/" };
+      if (logo) org.logo = logo;
+      if (sameAs.length) org.sameAs = sameAs;
+
+      const website = {
+        "@type": "WebSite",
+        "@id": base + "/#website",
+        name: brand,
+        url: base + "/",
+        publisher: { "@id": base + "/#org" }
+      };
+
+      const app = {
+        "@type": "SoftwareApplication",
+        "@id": base + "/#app",
+        name: brand,
+        url: base + "/",
+        applicationCategory: cat,
+        operatingSystem: "Web",
+        description: desc,
+        publisher: { "@id": base + "/#org" },
+        offers: {
+          "@type": "Offer",
+          price: price,
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          url: base + "/"
+        }
+      };
+
+      const graph = [org, website, app];
+      const faqs = [];
+      if (q1 && a1) faqs.push({ "@type": "Question", name: q1, acceptedAnswer: { "@type": "Answer", text: a1 } });
+      if (q2 && a2) faqs.push({ "@type": "Question", name: q2, acceptedAnswer: { "@type": "Answer", text: a2 } });
+      if (faqs.length) {
+        graph.push({ "@type": "FAQPage", "@id": base + "/#faq", mainEntity: faqs });
+      }
+      return { "@context": "https://schema.org", "@graph": graph };
+    }
+
+    function render() {
+      const obj = buildGraphObj();
+      const pretty = JSON.stringify(obj, null, 2);
+      const openTag = "<" + 'script type="application/ld+json">';
+      const closeTag = "<" + "/script>";
+      let out = pretty;
+      if (fmt === "html") {
+        out = openTag + "\n" + pretty + "\n" + closeTag;
+      } else if (fmt === "nextjs") {
+        out = [
+          "// app/layout.tsx (Next.js App Router — Server Component)",
+          "const schemaGraph = " + pretty + ";",
+          "",
+          "export default function RootLayout({ children }: { children: React.ReactNode }) {",
+          "  return (",
+          '    <html lang="en">',
+          "      <head>",
+          "        <" + 'script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }} />',
+          "      </head>",
+          "      <body>{children}</body>",
+          "    </html>",
+          "  );",
+          "}"
+        ].join("\n");
+      }
+      document.getElementById("codeOut").value = out;
+      document.getElementById("validPill").textContent = t("validBadge");
+      const base = normalizeBaseUrl(document.getElementById("fUrl").value);
+      const host = base.replace(/^https?:\/\//i, "").replace(/\/.*$/, "");
+      document.getElementById("verifyLiveLink").href = host && !host.endsWith(".example")
+        ? ("https://citeready-checker.appwrite.network/?url=" + encodeURIComponent(host))
+        : "https://citeready-checker.appwrite.network/";
+    }
+
+    function loadTemplate(key) {
+      const d = TEMPLATES[key] || TEMPLATES.devtool;
+      document.getElementById("fBrand").value = d.brand;
+      document.getElementById("fUrl").value = d.url;
+      document.getElementById("fDesc").value = d.desc;
+      document.getElementById("fCat").value = d.cat;
+      document.getElementById("fPrice").value = d.price;
+      document.getElementById("fLogo").value = d.logo;
+      document.getElementById("fSame").value = d.same;
+      document.getElementById("fQ1").value = d.q1;
+      document.getElementById("fA1").value = d.a1;
+      document.getElementById("fQ2").value = d.q2;
+      document.getElementById("fA2").value = d.a2;
+      document.querySelectorAll(".preset-btn").forEach(function (b) {
+        b.classList.toggle("active", b.getAttribute("data-tpl") === key);
+      });
+      render();
+    }
+
+    function applyLang(next, persist) {
+      lang = next === "zh" ? "zh" : "en";
+      document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
+      document.getElementById("lpEn").classList.toggle("active", lang === "en");
+      document.getElementById("lpZh").classList.toggle("active", lang === "zh");
+      if (persist) { try { localStorage.setItem("of_lang_v5", lang); } catch {} }
+      document.querySelectorAll("[data-i18n]").forEach(function (el) {
+        const k = el.getAttribute("data-i18n");
+        if (k) el.textContent = t(k);
+      });
+      render();
+    }
+
+    document.getElementById("lpEn").addEventListener("click", function () { applyLang("en", true); });
+    document.getElementById("lpZh").addEventListener("click", function () { applyLang("zh", true); });
+    document.querySelectorAll(".preset-btn").forEach(function (b) {
+      b.addEventListener("click", function () { loadTemplate(b.getAttribute("data-tpl")); });
+    });
+    document.querySelectorAll("#fmtTabs .tab-btn").forEach(function (b) {
+      b.addEventListener("click", function () {
+        fmt = b.getAttribute("data-fmt") || "html";
+        document.querySelectorAll("#fmtTabs .tab-btn").forEach(function (x) { x.classList.toggle("active", x === b); });
+        render();
+      });
+    });
+    ["fBrand","fUrl","fDesc","fCat","fPrice","fLogo","fSame","fQ1","fA1","fQ2","fA2"].forEach(function (id) {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener("input", render);
+      if (el && el.tagName === "SELECT") el.addEventListener("change", render);
+    });
+    document.getElementById("copyBtn").addEventListener("click", function () {
+      const btn = this;
+      const txt = document.getElementById("codeOut").value;
+      const done = function () { btn.textContent = t("copied"); setTimeout(function () { btn.textContent = t("copyBtn"); }, 1600); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done).catch(done);
+      else done();
+    });
+    document.getElementById("dlBtn").addEventListener("click", function () {
+      const raw = JSON.stringify(buildGraphObj(), null, 2);
+      const blob = new Blob([raw], { type: "application/ld+json;charset=utf-8" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "schema-graph.jsonld";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(function () { URL.revokeObjectURL(a.href); }, 500);
+    });
+
+    loadTemplate("devtool");
+    applyLang(lang, false);
+    opTrack("pageview");
+  })();
+  </script>
+</body>
+</html>

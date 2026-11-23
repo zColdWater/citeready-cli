@@ -11,10 +11,12 @@
 
 - **Flagship v6.0 Online Web App (Zero Signup, 2-Second Single & Side-by-Side PK Audit):** [https://citeready-checker.appwrite.network](https://citeready-checker.appwrite.network)
 - **NEW — 2026 Top 50 AI & Dev SaaS AI Search Readiness & `/llms.txt` Benchmark (Live Measured Study + Raw JSON):** [https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.html](https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.html) (`74%` `/llms.txt` · `22%` `/llms-full.txt` · `32%` zero Schema.org · 4 frontier AI labs missing root `/llms.txt`)
+- **Free Interactive AI Crawler `robots.txt` Policy Builder (11 Bots):** [https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html](https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html)
+- **Free Interactive Schema.org `@graph` JSON-LD Builder (HTML & Next.js):** [https://zcoldwater.github.io/citeready-cli/schema-jsonld-graph-builder.html](https://zcoldwater.github.io/citeready-cli/schema-jsonld-graph-builder.html)
 - **Free Online `/llms.txt` Compiler & Sitemap Gap Scanner:** [https://citeready-checker.appwrite.network/generator](https://citeready-checker.appwrite.network/generator)
 - **Docs & Honest Comparisons ($2 (was $12) vs. €89+/mo Trackers):** [https://zcoldwater.github.io/citeready-cli/](https://zcoldwater.github.io/citeready-cli/) · [Peec AI vs. CiteReady](https://zcoldwater.github.io/launch-audit-reports/compare/peec-ai-vs-citeready.html) · [Compare Guide](https://zcoldwater.github.io/citeready-cli/compare.html) · [GitHub Action CI Guide](https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html)
 - **CiteReady Web Pro ($2 Launch Special (was $12) — Instant In-Browser Unlock, 14-Day Refund):** [Gumroad Checkout](https://omnipulse-x402.appwrite.network/go/gumroad/citeready) · [Direct 7-Chain Checkout](https://omnipulse-x402.appwrite.network/checkout/citeready)
-- **OmniForge Complete Suite ($5 Launch Special, was $29 — Unlocks VibeShield + InboxShield + CiteReady; BrandShield 100% Free):** [Gumroad Bundle](https://omnipulse-x402.appwrite.network/go/gumroad/launch-stack) · [Direct Checkout](https://omnipulse-x402.appwrite.network/checkout/launch-stack)
+- **OmniForge Complete Suite ($5 Launch Special, was $29 — Unlocks VibeShield + InboxShield + CiteReady; BrandShield 100% Free):** [Gumroad Bundle](https://omnipulse-x402.appwrite.network/go/gumroad/suite) · [Direct Checkout](https://omnipulse-x402.appwrite.network/checkout/suite)
 
 ---
 
@@ -30,7 +32,7 @@
 
 Zero software installs, zero monthly subscriptions. Unlock Web Pro right inside [citeready-checker.appwrite.network](https://citeready-checker.appwrite.network) with one-time payment (Gumroad or 7-chain USDT/USDC) and a **14-day refund guarantee**:
 
-| Capability | Free Online Scanner & OSS CLI | CiteReady Web Pro ($2 (was $12)) | Complete Suite ($5, was $29) |
+| Capability | Free Online Scanner & OSS CLI | CiteReady Web Pro ($2, was $12) | Complete Suite ($5, was $29) |
 | :--- | :---: | :---: | :---: |
 | **10 Global & China AI Crawler Matrix + `X-Robots-Tag`** | Unlimited 1-by-1 | **Unlimited + exact `robots.txt` patch** | **All 4 v5.0 Web Apps Included** |
 | **Schema.org Entity Graph Depth Score** | Live scan + score | **Unmasked `@graph` JSON-LD code** | **CiteReady + VibeShield ($2)** |
@@ -41,7 +43,7 @@ Zero software installs, zero monthly subscriptions. Unlock Web Pro right inside 
 
 > **Honest Scope:** CiteReady audits and generates **technical on-site AI crawlability, `robots.txt`, Schema.org entity markup, and `/llms.txt`** on demand — it is not a `$1,000+/yr` daily LLM prompt-polling tracker.
 
-**[Unlock CiteReady Web Pro ($2 (was $12))](https://omnipulse-x402.appwrite.network/go/gumroad/citeready)** · **[Complete Suite ($5, was $29)](https://omnipulse-x402.appwrite.network/go/gumroad/launch-stack)** · **[Direct Multi-Chain Checkout](https://omnipulse-x402.appwrite.network/checkout/citeready)**
+**[Unlock CiteReady Web Pro ($2, was $12)](https://omnipulse-x402.appwrite.network/go/gumroad/citeready)** · **[Complete Suite ($5, was $29)](https://omnipulse-x402.appwrite.network/go/gumroad/suite)** · **[Direct Multi-Chain Checkout](https://omnipulse-x402.appwrite.network/checkout/citeready)**
 
 ---
 

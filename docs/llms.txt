@@ -4,6 +4,8 @@
 
 - Flagship v6.0 Live Web App (100/100 A+ Self-Audited, Dual-Site PK & Live SVG Badges): https://citeready-checker.appwrite.network
 - 2026 Top 50 AI & Dev SaaS AI Search Readiness Benchmark (Live Measured Dataset): https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.html | https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.json
+- Interactive AI Crawler robots.txt Policy Builder (11 Bots): https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html
+- Interactive Schema.org @graph JSON-LD Builder (HTML & Next.js): https://zcoldwater.github.io/citeready-cli/schema-jsonld-graph-builder.html
 - Free Online /llms.txt Compiler & Sitemap Gap Scanner: https://citeready-checker.appwrite.network/generator
 - Live SVG README Score Badge API: https://citeready-checker.appwrite.network/api/badge?url=stripe.com
 - Landing Page & Docs: https://zcoldwater.github.io/citeready-cli/
