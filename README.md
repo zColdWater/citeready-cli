@@ -9,6 +9,17 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-success.svg)](./package.json)
 
+
+<!-- shipbastion-hero:start -->
+<p align="center">
+  <a href="https://cite.shipbastion.com/">
+    <img src="./assets/shipbastion-citeready-preview.png" alt="ShipBastion CiteReady — AI Search Readiness (GEO), Bot Access & /llms.txt Auditor" width="100%" />
+  </a>
+</p>
+
+*Live AI search visibility auditor at [cite.shipbastion.com](https://cite.shipbastion.com/) — ChatGPT, Perplexity, Claude & Google AI crawl checks.*
+<!-- shipbastion-hero:end -->
+
 - **Flagship v6.0 Online Web App (Zero Signup, 2-Second Single & Side-by-Side PK Audit):** [https://cite.shipbastion.com](https://cite.shipbastion.com)
 - **NEW — 2026 Top 50 AI & Dev SaaS AI Search Readiness & `/llms.txt` Benchmark (Live Measured Study + Raw JSON):** [https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.html](https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.html) (`74%` `/llms.txt` · `22%` `/llms-full.txt` · `32%` zero Schema.org · 4 frontier AI labs missing root `/llms.txt`)
 - **Free Interactive AI Crawler `robots.txt` Policy Builder (11 Bots):** [https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html](https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html)
