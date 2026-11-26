@@ -2,31 +2,31 @@
 
 > Verify whether ChatGPT Search (OAI-SearchBot), Perplexity (PerplexityBot), Claude (ClaudeBot), Google AI Overviews (Google-Extended), Apple Intelligence, Doubao (Bytespider), and Baidu AI can crawl and cite your website — free in 2 seconds directly in your browser, plus MIT CLI & GitHub Action (`uses: zColdWater/citeready-cli@v1`).
 
-- Flagship v6.0 Live Web App (100/100 A+ Self-Audited, Dual-Site PK & Live SVG Badges): https://citeready-checker.appwrite.network
+- Flagship v6.0 Live Web App (100/100 A+ Self-Audited, Dual-Site PK & Live SVG Badges): https://cite.shipbastion.com
 - 2026 Top 50 AI & Dev SaaS AI Search Readiness Benchmark (Live Measured Dataset): https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.html | https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.json
 - Interactive AI Crawler robots.txt Policy Builder (11 Bots): https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html
 - Interactive Schema.org @graph JSON-LD Builder (HTML & Next.js): https://zcoldwater.github.io/citeready-cli/schema-jsonld-graph-builder.html
 - Interactive /llms.txt Spec Linter & Token Validator (2026): https://zcoldwater.github.io/citeready-cli/llms-txt-validator-2026.html
 - 2026 AI Crawler User-Agents & Cloudflare/Nginx/Vercel WAF Allowlist Generator: https://zcoldwater.github.io/citeready-cli/ai-crawler-user-agents-2026.html
-- Zero-Install Terminal CLI: curl -fsSL https://citeready-checker.appwrite.network/cli.sh | sh -s -- stripe.com
-- Free Online /llms.txt Compiler & Sitemap Gap Scanner: https://citeready-checker.appwrite.network/generator
-- Live SVG README Score Badge API: https://citeready-checker.appwrite.network/api/badge?url=stripe.com
+- Zero-Install Terminal CLI: curl -fsSL https://cite.shipbastion.com/cli.sh | sh -s -- stripe.com
+- Free Online /llms.txt Compiler & Sitemap Gap Scanner: https://cite.shipbastion.com/generator
+- Live SVG README Score Badge API: https://cite.shipbastion.com/api/badge?url=stripe.com
 - Landing Page & Docs: https://zcoldwater.github.io/citeready-cli/
 - Comparison Guide (CiteReady $2 (was $12) vs. Peec AI / Otterly.AI Subscriptions): https://zcoldwater.github.io/citeready-cli/compare.html
 - GitHub Action CI Guide: https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html
 - Open-Source CLI & GitHub Action (MIT, zero dependencies): https://github.com/zColdWater/citeready-cli
-- CiteReady Web Pro ($2 Launch Special, was $12 — Instant in-page unlock, 5-platform fix wizard for Next.js/WordPress/Webflow/Shopify/Cloudflare/Cursor, Schema.org Entity Graph, 50-URL batch CSV, printable A4 PDF, 14-day refund): https://omnipulse-x402.appwrite.network/go/gumroad/citeready
-- Direct Multi-Chain Checkout ($2 Launch Special): https://omnipulse-x402.appwrite.network/checkout/citeready
+- CiteReady Web Pro ($2 Launch Special, was $12 — Instant in-page unlock, 5-platform fix wizard for Next.js/WordPress/Webflow/Shopify/Cloudflare/Cursor, Schema.org Entity Graph, 50-URL batch CSV, printable A4 PDF, 14-day refund): https://api.shipbastion.com/go/gumroad/citeready
+- Direct Multi-Chain Checkout ($2 Launch Special): https://api.shipbastion.com/checkout/citeready
 
 ## OmniForge Complete Launch Readiness Suite ($5 Launch Special, was $29)
 
-- VibeShield v7.0 ($2 Launch Special, was $9): https://vibe-checker.appwrite.network | https://omnipulse-x402.appwrite.network/go/gumroad/vibeshield
-- InboxShield v7.0 ($2 Launch Special, was $9): https://inbox-checker.appwrite.network | https://omnipulse-x402.appwrite.network/go/gumroad/inboxshield
-- CiteReady v6.0 ($2 Launch Special, was $12): https://citeready-checker.appwrite.network | https://omnipulse-x402.appwrite.network/go/gumroad/citeready
-- BrandShield v6.3 (100% Free Forever — 78-TLD Domain & USPTO Trademark): https://brand-checker.appwrite.network
-- OmniForge Complete Suite ($5 Launch Special, was $29 — Unlocks all 3 Pro apps): https://omnipulse-x402.appwrite.network/go/gumroad/suite | https://omnipulse-x402.appwrite.network/checkout/suite
+- VibeShield v7.0 ($2 Launch Special, was $9): https://shipbastion.com | https://api.shipbastion.com/go/gumroad/vibeshield
+- InboxShield v7.0 ($2 Launch Special, was $9): https://inbox.shipbastion.com | https://api.shipbastion.com/go/gumroad/inboxshield
+- CiteReady v6.0 ($2 Launch Special, was $12): https://cite.shipbastion.com | https://api.shipbastion.com/go/gumroad/citeready
+- BrandShield v6.3 (100% Free Forever — 78-TLD Domain & USPTO Trademark): https://brand.shipbastion.com
+- OmniForge Complete Suite ($5 Launch Special, was $29 — Unlocks all 3 Pro apps): https://api.shipbastion.com/go/gumroad/suite | https://api.shipbastion.com/checkout/suite
 
 ## Support & Official Contact
 
 - OmniForge · Agent Arena Studio — agentarenastudio@proton.me | https://x.com/agentarenastudi
-- Support & 14-Day Refund Policy: https://omnipulse-x402.appwrite.network/support | https://omnipulse-x402.appwrite.network/refund-policy
+- Support & 14-Day Refund Policy: https://api.shipbastion.com/support | https://api.shipbastion.com/refund-policy

@@ -2,25 +2,25 @@
 
 **Verify whether ChatGPT Search (`OAI-SearchBot`), Perplexity (`PerplexityBot`), Claude (`ClaudeBot`), Google AI Overviews (`Google-Extended`), Apple Intelligence, Doubao (`Bytespider`), and Baidu AI can crawl and cite your site — free in 2 seconds directly in your browser, or in CI via `zColdWater/citeready-cli@v1`.**
 
-[![CiteReady AI Score](https://citeready-checker.appwrite.network/api/badge?url=citeready-checker.appwrite.network)](https://citeready-checker.appwrite.network/?url=citeready-checker.appwrite.network)
-[![Stripe AI Readiness](https://citeready-checker.appwrite.network/api/badge?url=stripe.com)](https://citeready-checker.appwrite.network/?url=stripe.com)
+[![CiteReady AI Score](https://cite.shipbastion.com/api/badge?url=cite.shipbastion.com)](https://cite.shipbastion.com/?url=cite.shipbastion.com)
+[![Stripe AI Readiness](https://cite.shipbastion.com/api/badge?url=stripe.com)](https://cite.shipbastion.com/?url=stripe.com)
 [![GitHub Action](https://img.shields.io/badge/GitHub%20Action-zColdWater%2Fciteready--cli%40v1-7c3aed?logo=githubactions&logoColor=white)](./action.yml)
 [![Release](https://img.shields.io/github/v/release/zColdWater/citeready-cli?color=10b981)](https://github.com/zColdWater/citeready-cli/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-success.svg)](./package.json)
 
-- **Flagship v6.0 Online Web App (Zero Signup, 2-Second Single & Side-by-Side PK Audit):** [https://citeready-checker.appwrite.network](https://citeready-checker.appwrite.network)
+- **Flagship v6.0 Online Web App (Zero Signup, 2-Second Single & Side-by-Side PK Audit):** [https://cite.shipbastion.com](https://cite.shipbastion.com)
 - **NEW — 2026 Top 50 AI & Dev SaaS AI Search Readiness & `/llms.txt` Benchmark (Live Measured Study + Raw JSON):** [https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.html](https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.html) (`74%` `/llms.txt` · `22%` `/llms-full.txt` · `32%` zero Schema.org · 4 frontier AI labs missing root `/llms.txt`)
 - **Free Interactive AI Crawler `robots.txt` Policy Builder (11 Bots):** [https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html](https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html)
 - **Free Interactive Schema.org `@graph` JSON-LD Builder (HTML & Next.js):** [https://zcoldwater.github.io/citeready-cli/schema-jsonld-graph-builder.html](https://zcoldwater.github.io/citeready-cli/schema-jsonld-graph-builder.html)
 - **Free Interactive `/llms.txt` Spec Linter & Token Validator:** [https://zcoldwater.github.io/citeready-cli/llms-txt-validator-2026.html](https://zcoldwater.github.io/citeready-cli/llms-txt-validator-2026.html)
-- **Live Cloud AI `robots.txt` Importer & Policy Builder:** [https://citeready-checker.appwrite.network/robots-builder](https://citeready-checker.appwrite.network/robots-builder)
+- **Live Cloud AI `robots.txt` Importer & Policy Builder:** [https://cite.shipbastion.com/robots-builder](https://cite.shipbastion.com/robots-builder)
 - **2026 AI Crawler User-Agents & Cloudflare / Nginx / Vercel WAF Allowlist Generator:** [https://zcoldwater.github.io/citeready-cli/ai-crawler-user-agents-2026.html](https://zcoldwater.github.io/citeready-cli/ai-crawler-user-agents-2026.html)
-- **Live Cloud Schema.org `@graph` Auto-Importer:** [https://citeready-checker.appwrite.network/schema-builder](https://citeready-checker.appwrite.network/schema-builder)
-- **Free Online `/llms.txt` Compiler & Sitemap Gap Scanner:** [https://citeready-checker.appwrite.network/generator](https://citeready-checker.appwrite.network/generator)
+- **Live Cloud Schema.org `@graph` Auto-Importer:** [https://cite.shipbastion.com/schema-builder](https://cite.shipbastion.com/schema-builder)
+- **Free Online `/llms.txt` Compiler & Sitemap Gap Scanner:** [https://cite.shipbastion.com/generator](https://cite.shipbastion.com/generator)
 - **Docs & Honest Comparisons ($2 (was $12) vs. €89+/mo Trackers):** [https://zcoldwater.github.io/citeready-cli/](https://zcoldwater.github.io/citeready-cli/) · [Peec AI vs. CiteReady](https://zcoldwater.github.io/launch-audit-reports/compare/peec-ai-vs-citeready.html) · [Compare Guide](https://zcoldwater.github.io/citeready-cli/compare.html) · [GitHub Action CI Guide](https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html)
-- **CiteReady Web Pro ($2 Launch Special (was $12) — Instant In-Browser Unlock, 14-Day Refund):** [Gumroad Checkout](https://omnipulse-x402.appwrite.network/go/gumroad/citeready) · [Direct 7-Chain Checkout](https://omnipulse-x402.appwrite.network/checkout/citeready)
-- **OmniForge Complete Suite ($5 Launch Special, was $29 — Unlocks VibeShield + InboxShield + CiteReady; BrandShield 100% Free):** [Gumroad Bundle](https://omnipulse-x402.appwrite.network/go/gumroad/suite) · [Direct Checkout](https://omnipulse-x402.appwrite.network/checkout/suite)
+- **CiteReady Web Pro ($2 Launch Special (was $12) — Instant In-Browser Unlock, 14-Day Refund):** [Gumroad Checkout](https://api.shipbastion.com/go/gumroad/citeready) · [Direct 7-Chain Checkout](https://api.shipbastion.com/checkout/citeready)
+- **OmniForge Complete Suite ($5 Launch Special, was $29 — Unlocks VibeShield + InboxShield + CiteReady; BrandShield 100% Free):** [Gumroad Bundle](https://api.shipbastion.com/go/gumroad/suite) · [Direct Checkout](https://api.shipbastion.com/checkout/suite)
 
 ---
 
@@ -34,7 +34,7 @@
 
 ## Free Online Web App vs. CiteReady Web Pro (`$2` Launch Special (was ~~`$12`~~))
 
-Zero software installs, zero monthly subscriptions. Unlock Web Pro right inside [citeready-checker.appwrite.network](https://citeready-checker.appwrite.network) with one-time payment (Gumroad or 7-chain USDT/USDC) and a **14-day refund guarantee**:
+Zero software installs, zero monthly subscriptions. Unlock Web Pro right inside [cite.shipbastion.com](https://cite.shipbastion.com) with one-time payment (Gumroad or 7-chain USDT/USDC) and a **14-day refund guarantee**:
 
 | Capability | Free Online Scanner & OSS CLI | CiteReady Web Pro ($2, was $12) | Complete Suite ($5, was $29) |
 | :--- | :---: | :---: | :---: |
@@ -47,7 +47,7 @@ Zero software installs, zero monthly subscriptions. Unlock Web Pro right inside 
 
 > **Honest Scope:** CiteReady audits and generates **technical on-site AI crawlability, `robots.txt`, Schema.org entity markup, and `/llms.txt`** on demand — it is not a `$1,000+/yr` daily LLM prompt-polling tracker.
 
-**[Unlock CiteReady Web Pro ($2, was $12)](https://omnipulse-x402.appwrite.network/go/gumroad/citeready)** · **[Complete Suite ($5, was $29)](https://omnipulse-x402.appwrite.network/go/gumroad/suite)** · **[Direct Multi-Chain Checkout](https://omnipulse-x402.appwrite.network/checkout/citeready)**
+**[Unlock CiteReady Web Pro ($2, was $12)](https://api.shipbastion.com/go/gumroad/citeready)** · **[Complete Suite ($5, was $29)](https://api.shipbastion.com/go/gumroad/suite)** · **[Direct Multi-Chain Checkout](https://api.shipbastion.com/checkout/citeready)**
 
 ---
 
@@ -55,7 +55,7 @@ Zero software installs, zero monthly subscriptions. Unlock Web Pro right inside 
 
 ```bash
 # Zero-install instant terminal scorecard (POSIX sh + curl)
-curl -fsSL https://citeready-checker.appwrite.network/cli.sh | sh -s -- stripe.com
+curl -fsSL https://cite.shipbastion.com/cli.sh | sh -s -- stripe.com
 
 # Or run the MIT CLI directly (Node.js 18+, zero dependencies)
 npx github:zColdWater/citeready-cli check https://stripe.com
@@ -86,12 +86,12 @@ jobs:
 ## Live Badge Embed
 
 ```markdown
-[![CiteReady AI Search Readiness](https://citeready-checker.appwrite.network/api/badge?url=yourdomain.com)](https://citeready-checker.appwrite.network/?url=yourdomain.com)
+[![CiteReady AI Search Readiness](https://cite.shipbastion.com/api/badge?url=yourdomain.com)](https://cite.shipbastion.com/?url=yourdomain.com)
 ```
 
 ## Support & Contact
 
-OmniForge · Agent Arena Studio — `agentarenastudio@proton.me` · [@agentarenastudi](https://x.com/agentarenastudi) · [Support Portal](https://omnipulse-x402.appwrite.network/support) · [14-Day Refund Policy](https://omnipulse-x402.appwrite.network/refund-policy)
+OmniForge · Agent Arena Studio — `agentarenastudio@proton.me` · [@agentarenastudi](https://x.com/agentarenastudi) · [Support Portal](https://api.shipbastion.com/support) · [14-Day Refund Policy](https://api.shipbastion.com/refund-policy)
 
 ## License
 

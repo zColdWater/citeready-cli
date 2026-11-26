@@ -6,15 +6,15 @@
 
 CiteReady v5.0 helps founders, marketing teams, and technical SEO agencies verify and fix technical AI search crawlability directly in the browser in under 2 seconds — checking 10 global and China AI crawlers (`OAI-SearchBot`, `GPTBot`, `ChatGPT-User`, `PerplexityBot`, `ClaudeBot`, `Google-Extended`, `Applebot-Extended`, `Bytespider`, `Baiduspider`, `CCBot`), live `X-Robots-Tag` headers, Schema.org JSON-LD Entity Graph depth, and root `/llms.txt` readiness.
 
-- **Flagship v6.0 Web App (100/100 A+ Self-Audited, Dual-Site PK & Live SVG Badges):** https://citeready-checker.appwrite.network
+- **Flagship v6.0 Web App (100/100 A+ Self-Audited, Dual-Site PK & Live SVG Badges):** https://cite.shipbastion.com
 - **2026 Top 50 AI & Dev SaaS Empirical Benchmark Study (74% /llms.txt, 32% Zero Schema, Full JSON Dataset):** https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.html | https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.json
 - **Interactive AI Crawler robots.txt Policy Builder (11 Bots):** https://zcoldwater.github.io/citeready-cli/robots-txt-ai-bots-2026.html
 - **Interactive Schema.org @graph JSON-LD Builder (HTML & Next.js):** https://zcoldwater.github.io/citeready-cli/schema-jsonld-graph-builder.html
 - Interactive /llms.txt Spec Linter & Token Validator (2026): https://zcoldwater.github.io/citeready-cli/llms-txt-validator-2026.html
 - 2026 AI Crawler User-Agents & Cloudflare/Nginx/Vercel WAF Allowlist Generator: https://zcoldwater.github.io/citeready-cli/ai-crawler-user-agents-2026.html
-- Zero-Install Terminal CLI: curl -fsSL https://citeready-checker.appwrite.network/cli.sh | sh -s -- stripe.com
-- **Free Online /llms.txt Generator:** https://citeready-checker.appwrite.network/generator
-- **Live SVG README Score Badge API:** https://citeready-checker.appwrite.network/api/badge?url=stripe.com
+- Zero-Install Terminal CLI: curl -fsSL https://cite.shipbastion.com/cli.sh | sh -s -- stripe.com
+- **Free Online /llms.txt Generator:** https://cite.shipbastion.com/generator
+- **Live SVG README Score Badge API:** https://cite.shipbastion.com/api/badge?url=stripe.com
 - **Docs & Landing Page:** https://zcoldwater.github.io/citeready-cli/
 - **Comparison Guide ($2 Launch Special (was $12) vs. €89+/mo Trackers):** https://zcoldwater.github.io/citeready-cli/compare.html
 - **GitHub Action CI/CD Guide:** https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html
@@ -30,13 +30,13 @@ Unlike `$348–$1,068+/yr` passive prompt-tracking subscriptions (such as Peec A
    - Online 50-URL batch scanner table with UTF-8 BOM Excel/CSV export
    - Custom-header formal A4 printable PDF client audit report (`@media print`)
    - Instant in-page unlock via Gumroad License Key or 7-chain USDT/USDC
-   - Gumroad Checkout: https://omnipulse-x402.appwrite.network/go/gumroad/citeready
-   - Direct Checkout: https://omnipulse-x402.appwrite.network/checkout/citeready
+   - Gumroad Checkout: https://api.shipbastion.com/go/gumroad/citeready
+   - Direct Checkout: https://api.shipbastion.com/checkout/citeready
 
 2. **OmniForge Complete Suite ($5 Launch Special, was $29)**
    - Unlocks Web Pro across all 4 v5.0 web apps in one license pass: **VibeShield ($2)** + **BrandShield (100% Free)** + **CiteReady ($2)** + **InboxShield ($2)**.
-   - Gumroad Bundle: https://omnipulse-x402.appwrite.network/go/gumroad/suite
-   - Direct Checkout: https://omnipulse-x402.appwrite.network/checkout/suite
+   - Gumroad Bundle: https://api.shipbastion.com/go/gumroad/suite
+   - Direct Checkout: https://api.shipbastion.com/checkout/suite
 
 ## Optional Open-Source CLI & GitHub Action (`uses: zColdWater/citeready-cli@v1`)
 
@@ -46,4 +46,4 @@ npx github:zColdWater/citeready-cli check https://yoursite.com --min-score 75 --
 
 ## Official Contact & Policies
 
-OmniForge · Agent Arena Studio — `agentarenastudio@proton.me` · https://x.com/agentarenastudi · https://omnipulse-x402.appwrite.network/support · https://omnipulse-x402.appwrite.network/refund-policy
+OmniForge · Agent Arena Studio — `agentarenastudio@proton.me` · https://x.com/agentarenastudi · https://api.shipbastion.com/support · https://api.shipbastion.com/refund-policy
