@@ -12,6 +12,7 @@ CiteReady v5.0 helps founders, marketing teams, and technical SEO agencies verif
 - **Interactive Schema.org @graph JSON-LD Builder (HTML & Next.js):** https://zcoldwater.github.io/citeready-cli/schema-jsonld-graph-builder.html
 - Interactive /llms.txt Spec Linter & Token Validator (2026): https://zcoldwater.github.io/citeready-cli/llms-txt-validator-2026.html
 - 2026 AI Crawler User-Agents & Cloudflare/Nginx/Vercel WAF Allowlist Generator: https://zcoldwater.github.io/citeready-cli/ai-crawler-user-agents-2026.html
+- Interactive 18-Point 2026 AI Search & GEO Citation Checklist (Live Auto-Audit): https://zcoldwater.github.io/citeready-cli/ai-search-citation-checklist-2026.html
 - Zero-Install Terminal CLI: curl -fsSL https://cite.shipbastion.com/cli.sh | sh -s -- stripe.com
 - **Free Online /llms.txt Generator:** https://cite.shipbastion.com/generator
 - **Live SVG README Score Badge API:** https://cite.shipbastion.com/api/badge?url=stripe.com

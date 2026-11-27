@@ -1,4 +1,4 @@
-# CiteReady — Online AI Search (GEO), 10-Bot Crawler & `/llms.txt` Auditor (`v5.0` Web App + OSS CLI & GitHub Action)
+# CiteReady — Online AI Search (GEO), 10-Bot Crawler & `/llms.txt` Auditor (`v6.0` Web App + OSS CLI & GitHub Action)
 
 **Verify whether ChatGPT Search (`OAI-SearchBot`), Perplexity (`PerplexityBot`), Claude (`ClaudeBot`), Google AI Overviews (`Google-Extended`), Apple Intelligence, Doubao (`Bytespider`), and Baidu AI can crawl and cite your site — free in 2 seconds directly in your browser, or in CI via `zColdWater/citeready-cli@v1`.**
 
@@ -27,6 +27,7 @@
 - **Free Interactive `/llms.txt` Spec Linter & Token Validator:** [https://zcoldwater.github.io/citeready-cli/llms-txt-validator-2026.html](https://zcoldwater.github.io/citeready-cli/llms-txt-validator-2026.html)
 - **Live Cloud AI `robots.txt` Importer & Policy Builder:** [https://cite.shipbastion.com/robots-builder](https://cite.shipbastion.com/robots-builder)
 - **2026 AI Crawler User-Agents & Cloudflare / Nginx / Vercel WAF Allowlist Generator:** [https://zcoldwater.github.io/citeready-cli/ai-crawler-user-agents-2026.html](https://zcoldwater.github.io/citeready-cli/ai-crawler-user-agents-2026.html)
+- **NEW — 2026 18-Point AI Search & GEO Citation Readiness Checklist (Live 2s Auto-Audit + Markdown Export):** [https://zcoldwater.github.io/citeready-cli/ai-search-citation-checklist-2026.html](https://zcoldwater.github.io/citeready-cli/ai-search-citation-checklist-2026.html)
 - **Live Cloud Schema.org `@graph` Auto-Importer:** [https://cite.shipbastion.com/schema-builder](https://cite.shipbastion.com/schema-builder)
 - **Free Online `/llms.txt` Compiler & Sitemap Gap Scanner:** [https://cite.shipbastion.com/generator](https://cite.shipbastion.com/generator)
 - **Docs & Honest Comparisons ($2 (was $12) vs. €89+/mo Trackers):** [https://zcoldwater.github.io/citeready-cli/](https://zcoldwater.github.io/citeready-cli/) · [Peec AI vs. CiteReady](https://zcoldwater.github.io/launch-audit-reports/compare/peec-ai-vs-citeready.html) · [Compare Guide](https://zcoldwater.github.io/citeready-cli/compare.html) · [GitHub Action CI Guide](https://zcoldwater.github.io/citeready-cli/llms-txt-github-action-guide.html)
